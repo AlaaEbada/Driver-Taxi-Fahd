@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-16 pb-20 sm:pt-40 sm:pb-32">
+      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-16 pb-12 sm:pt-40 sm:pb-32">
         <m.div
           initial="hidden"
           animate="visible"
@@ -140,7 +140,7 @@ const HeroSection = () => {
         <div className="container-luxury py-6">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-serif font-bold text-gold">10+</p>
+              <p className="text-2xl md:text-3xl font-serif font-bold text-gold">15+</p>
               <p className="text-sm text-white/70">
                 {language === 'ar' ? 'سنوات خبرة' : 'Years Experience'}
               </p>
@@ -152,7 +152,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-serif font-bold text-gold">10+</p>
+              <p className="text-2xl md:text-3xl font-serif font-bold text-gold">15+</p>
               <p className="text-sm text-white/70">
                 {language === 'ar' ? 'مدن رئيسية' : 'Major Cities'}
               </p>

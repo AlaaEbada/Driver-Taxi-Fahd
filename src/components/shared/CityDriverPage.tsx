@@ -51,8 +51,8 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             icon: Award,
             title: language === 'ar' ? 'خبرة واسعة' : 'Extensive Experience',
             description: language === 'ar'
-                ? 'أكثر من 10 سنوات خبرة'
-                : 'Over 10 years of experience',
+                ? 'أكثر من 15 سنوات خبرة'
+                : 'Over 15 years of experience',
         },
     ];
 
@@ -193,7 +193,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Award className="w-5 h-5 text-gold" />
-                                <span className="text-sm font-medium">{language === 'ar' ? '10+ سنوات خبرة' : '10+ Years Experience'}</span>
+                                <span className="text-sm font-medium">{language === 'ar' ? '15+ سنوات خبرة' : '15+ Years Experience'}</span>
                             </div>
                         </motion.div>
                     </motion.div>

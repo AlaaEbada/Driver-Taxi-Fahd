@@ -15,7 +15,7 @@ const AboutClient = () => {
     const stats = [
         {
             icon: Clock,
-            value: '10+',
+            value: '15+',
             label: language === 'ar' ? 'سنوات خبرة' : 'Years Experience',
         },
         {
@@ -25,7 +25,7 @@ const AboutClient = () => {
         },
         {
             icon: MapPin,
-            value: '10+',
+            value: '15+',
             label: language === 'ar' ? 'مدن رئيسية' : 'Major Cities',
         },
         {
@@ -92,7 +92,7 @@ const AboutClient = () => {
                                 />
                             </div>
                             <div className="absolute -bottom-6 -right-6 bg-gold text-primary p-6 rounded-xl shadow-xl z-20 hidden md:block">
-                                <p className="text-4xl font-serif font-bold">10+</p>
+                                <p className="text-4xl font-serif font-bold">15+</p>
                                 <p className="text-sm font-medium">{language === 'ar' ? 'سنوات خبرة' : 'Years Experience'}</p>
                             </div>
                         </motion.div>

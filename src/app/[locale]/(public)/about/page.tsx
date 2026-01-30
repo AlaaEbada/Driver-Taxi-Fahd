@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             en: 'About Us - Driver Taxi Fahd'
         },
         description: {
-            ar: 'تعرف على تاكسي فهد - خبرة أكثر من 10 سنوات في تقديم خدمات السائق العربي في إيطاليا وسويسرا.',
-            en: 'Learn more about Driver Taxi Fahd - Professional Arabic driver services in Italy and Switzerland with over 10 years of experience.'
+            ar: 'تعرف على تاكسي فهد - خبرة أكثر من 15 سنة في تقديم خدمات السائق العربي في إيطاليا وسويسرا.',
+            en: 'Learn more about Driver Taxi Fahd - Professional Arabic driver services in Italy and Switzerland with over 15 years of experience.'
         },
         path: '/about',
     }, locale);
