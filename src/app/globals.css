@@ -297,6 +297,8 @@
     font-family: var(--font-tajawal), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   /* Force pointer cursor on all buttons and interactive elements */
@@ -507,7 +509,8 @@ html {
   overflow-x: hidden;
   max-width: 100%;
   font-size: 18px;
-  /* Increased to 18px for better readability */
+  background-color: hsl(var(--primary));
+  /* Added to prevent white space if content scales weirdly */
 }
 
 @media (max-width: 640px) {
