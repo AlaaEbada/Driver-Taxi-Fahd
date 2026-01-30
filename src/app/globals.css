@@ -319,6 +319,12 @@
     font-weight: 700;
     letter-spacing: -0.025em;
   }
+
+  p {
+    @apply leading-relaxed;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
 }
 
 @layer components {
@@ -501,13 +507,13 @@ html {
   overflow-x: hidden;
   max-width: 100%;
   font-size: 18px;
-  /* Increased base from 16px to 18px for better readability */
+  /* Increased to 18px for better readability */
 }
 
 @media (max-width: 640px) {
   html {
-    font-size: 120%;
-    /* Increased from 110% to 120% for mobile devices */
+    font-size: 125%;
+    /* Significant increase for mobile readability as requested */
   }
 }
 

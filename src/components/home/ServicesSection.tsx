@@ -93,7 +93,7 @@ const ServicesSection = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed text-base">
+              <p className="text-muted-foreground leading-relaxed text-xl md:text-base">
                 {service.desc}
               </p>
             </motion.div>

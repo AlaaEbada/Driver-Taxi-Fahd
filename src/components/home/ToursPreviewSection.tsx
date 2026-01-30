@@ -106,13 +106,13 @@ const ToursPreviewSection: React.FC = () => {
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                                         </div>
                                         <div className="p-5 md:p-6 flex flex-col flex-1">
-                                            <h4 className={`font-bold text-lg md:text-xl mb-2 md:mb-3 group-hover:text-gold transition-colors text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.title}</h4>
-                                            <p className={`text-sm text-muted-foreground line-clamp-2 mb-3 md:mb-4 leading-relaxed text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.desc}</p>
+                                            <h4 className={`font-bold text-3xl md:text-2xl mb-2 md:mb-3 group-hover:text-gold transition-colors text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.title}</h4>
+                                            <p className={`text-xl text-muted-foreground line-clamp-2 mb-3 md:mb-4 leading-relaxed text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.desc}</p>
 
                                             <div className={`mt-auto flex items-center pt-3 md:pt-4 border-t border-border/50 justify-center md:${language === 'ar' ? 'justify-end' : 'justify-between'}`}>
-                                                <div className="flex items-center text-gold text-xs md:text-sm font-bold gap-2 group-hover:gap-3 transition-all">
+                                                <div className="flex items-center text-gold text-sm md:text-base font-bold gap-2 group-hover:gap-3 transition-all">
                                                     <span>{language === 'ar' ? 'التفاصيل والحجز' : 'Details & Booking'}</span>
-                                                    <ArrowRight className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                                                    <ArrowRight className={`w-4 h-4 md:w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -123,7 +123,7 @@ const ToursPreviewSection: React.FC = () => {
 
                         <div className="flex justify-center mt-4 md:mt-8">
                             <Link href={language === 'ar' ? '/day-programs' : '/en/day-programs'} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-background border border-border hover:border-gold/50 hover:bg-gold/5 text-foreground font-bold transition-all group shadow-sm hover:shadow-md">
-                                <span className="text-sm">{language === 'ar' ? 'عرض كافة البرامج' : 'View All Programs'}</span>
+                                <span className="text-base">{language === 'ar' ? 'عرض كافة البرامج' : 'View All Programs'}</span>
                                 <ArrowRight className={`w-4 h-4 text-gold group-hover:translate-x-1 transition-transform ${isRTL ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
                             </Link>
                         </div>
@@ -145,13 +145,13 @@ const ToursPreviewSection: React.FC = () => {
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                                         </div>
                                         <div className="p-5 md:p-6 flex flex-col flex-1">
-                                            <h4 className={`font-bold text-lg md:text-xl mb-2 md:mb-3 group-hover:text-gold transition-colors text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.title}</h4>
-                                            <p className={`text-sm text-muted-foreground line-clamp-2 mb-3 md:mb-4 leading-relaxed text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.desc}</p>
+                                            <h4 className={`font-bold text-3xl md:text-2xl mb-2 md:mb-3 group-hover:text-gold transition-colors text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.title}</h4>
+                                            <p className={`text-xl text-muted-foreground line-clamp-2 mb-3 md:mb-4 leading-relaxed text-center md:${language === 'ar' ? 'text-right' : 'text-left'}`}>{tour.desc}</p>
 
                                             <div className={`mt-auto flex items-center pt-3 md:pt-4 border-t border-border/50 justify-center md:${language === 'ar' ? 'justify-end' : 'justify-between'}`}>
-                                                <div className="flex items-center text-gold text-xs md:text-sm font-bold gap-2 group-hover:gap-3 transition-all">
+                                                <div className="flex items-center text-gold text-sm md:text-base font-bold gap-2 group-hover:gap-3 transition-all">
                                                     <span>{language === 'ar' ? 'التفاصيل والحجز' : 'Details & Booking'}</span>
-                                                    <ArrowRight className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                                                    <ArrowRight className={`w-4 h-4 md:w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -162,7 +162,7 @@ const ToursPreviewSection: React.FC = () => {
 
                         <div className="flex justify-center mt-4 md:mt-8">
                             <Link href={language === 'ar' ? '/tour-programs' : '/en/tour-programs'} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-background border border-border hover:border-gold/50 hover:bg-gold/5 text-foreground font-bold transition-all group shadow-sm hover:shadow-md">
-                                <span className="text-sm">{language === 'ar' ? 'عرض البرامج المتكاملة' : 'View Complete Programs'}</span>
+                                <span className="text-base">{language === 'ar' ? 'عرض البرامج المتكاملة' : 'View Complete Programs'}</span>
                                 <ArrowRight className={`w-4 h-4 text-gold group-hover:translate-x-1 transition-transform ${isRTL ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
                             </Link>
                         </div>
