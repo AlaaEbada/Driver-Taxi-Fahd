@@ -1,0 +1,569 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@theme {
+  /* Fonts */
+  --font-serif: var(--font-tajawal), serif;
+  --font-sans: var(--font-tajawal), sans-serif;
+
+  /* Colors */
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-sidebar: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  /* Luxury Theme Colors */
+  --color-gold: hsl(var(--gold));
+  --color-gold-light: hsl(var(--gold-light));
+  --color-gold-dark: hsl(var(--gold-dark));
+
+  --color-navy: hsl(var(--navy));
+  --color-navy-light: hsl(var(--navy-light));
+
+  --color-charcoal: hsl(var(--charcoal));
+  --color-cream: hsl(var(--cream));
+  --color-sand: hsl(var(--sand));
+
+  /* Gradients (Background Images) */
+  --image-gradient-gold: linear-gradient(135deg, hsl(45 80% 50%) 0%, hsl(38 85% 40%) 100%);
+  --image-gradient-navy: linear-gradient(180deg, hsl(220 40% 13%) 0%, hsl(220 35% 20%) 100%);
+  --image-gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.95) 0%, hsl(220 35% 18% / 0.9) 100%);
+  --image-gradient-luxury: linear-gradient(135deg, hsl(45 80% 50% / 0.1) 0%, hsl(38 70% 55% / 0.05) 100%);
+
+  /* Shadows */
+  --shadow-soft: var(--shadow-soft);
+  --shadow-elevated: var(--shadow-elevated);
+  --shadow-gold: var(--shadow-gold);
+
+  /* Border Radius */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Custom Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-shimmer: shimmer 2s infinite;
+  --animate-float: float 3s ease-in-out infinite;
+
+  --animate-fade-up: fadeUp 0.6s ease-out forwards;
+  --animate-fade-in: fadeIn 0.8s ease-out forwards;
+  --animate-slide-in-right: slideInRight 0.6s ease-out forwards;
+  --animate-slide-in-left: slideInLeft 0.6s ease-out forwards;
+  --animate-scale-in: scaleIn 0.5s ease-out forwards;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+/* Luxury Travel Design System - Arabic Driver Italy */
+
+@layer base {
+  :root {
+    /* Core palette - Luxury Navy & Gold */
+    --background: 220 20% 97%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    /* Primary - Deep Navy */
+    --primary: 220 40% 13%;
+    --primary-foreground: 45 60% 90%;
+
+    /* Secondary - Warm Gold */
+    --secondary: 45 80% 50%;
+    --secondary-foreground: 220 40% 13%;
+
+    /* Muted tones */
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Accent - Rich Gold */
+    --accent: 38 70% 55%;
+    --accent-foreground: 220 40% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 45 80% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom luxury tokens */
+    --gold: 45 80% 50%;
+    --gold-light: 45 70% 65%;
+    --gold-dark: 38 85% 40%;
+    --navy: 220 40% 13%;
+    --navy-light: 220 35% 25%;
+    --charcoal: 220 20% 20%;
+    --cream: 45 30% 96%;
+    --sand: 35 25% 90%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 50%) 0%, hsl(38 85% 40%) 100%);
+    --gradient-navy: linear-gradient(180deg, hsl(220 40% 13%) 0%, hsl(220 35% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.95) 0%, hsl(220 35% 18% / 0.9) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(45 80% 50% / 0.1) 0%, hsl(38 70% 55% / 0.05) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(220 40% 13% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(220 40% 13% / 0.15);
+    --shadow-gold: 0 8px 30px -4px hsl(45 80% 50% / 0.3);
+
+    /* Sidebar */
+    --sidebar-background: 220 40% 13%;
+    --sidebar-foreground: 45 30% 90%;
+    --sidebar-primary: 45 80% 50%;
+    --sidebar-primary-foreground: 220 40% 13%;
+    --sidebar-accent: 220 35% 20%;
+    --sidebar-accent-foreground: 45 30% 90%;
+    --sidebar-border: 220 30% 25%;
+    --sidebar-ring: 45 80% 50%;
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 45 20% 95%;
+
+    --card: 220 30% 12%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 220 30% 12%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 45 80% 50%;
+    --primary-foreground: 220 40% 10%;
+
+    --secondary: 220 35% 20%;
+    --secondary-foreground: 45 20% 95%;
+
+    --muted: 220 25% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 38 70% 55%;
+    --accent-foreground: 220 40% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 45 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border) / 0.2);
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-tajawal), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Force pointer cursor on all buttons and interactive elements */
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"] {
+    cursor: pointer !important;
+  }
+
+  /* RTL Support governed by dir attribute */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer components {
+
+  /* Luxury button styles */
+  .btn-luxury {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: var(--gradient-gold);
+    color: hsl(var(--primary));
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 30px -4px hsl(45 80% 50% / 0.3);
+  }
+
+  .btn-luxury:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(38 95% 45%) 100%);
+    box-shadow: 0 12px 40px -4px hsl(45 80% 50% / 0.4);
+  }
+
+  /* Gold accent text */
+  .text-gold-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Gold background gradient */
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+    transition: all 0.3s;
+  }
+
+  .bg-gradient-gold:hover {
+    background: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(38 95% 45%) 100%);
+    box-shadow: 0 4px 15px -3px hsl(45 80% 50% / 0.4);
+  }
+
+  /* Luxury Tabs */
+  .tabs-luxury[data-state="active"] {
+    background: var(--gradient-gold);
+    color: hsl(var(--primary));
+    box-shadow: 0 4px 15px -3px hsl(45 80% 50% / 0.4);
+    transition: all 0.3s;
+  }
+
+  .tabs-luxury[data-state="active"]:hover {
+    background: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(38 95% 45%) 100%);
+    transform: scale(1.02);
+  }
+
+  /* Utility for hover state of gradient gold */
+  .hover\:bg-gradient-gold:hover {
+    background: linear-gradient(135deg, hsl(45 90% 55%) 0%, hsl(38 95% 45%) 100%);
+    box-shadow: 0 4px 15px -3px hsl(45 80% 50% / 0.4);
+    border-color: transparent;
+  }
+
+  /* Luxury card */
+  .card-luxury {
+    background-color: hsl(var(--card));
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px -2px hsl(220 40% 13% / 0.08);
+    transition: all 0.3s;
+  }
+
+  .card-luxury:hover {
+    box-shadow: 0 12px 40px -8px hsl(220 40% 13% / 0.15);
+  }
+
+  /* Gold border accent */
+  .border-gold-accent {
+    border-width: 2px;
+    border-color: hsl(var(--gold));
+  }
+
+  /* Hero overlay */
+  .hero-overlay {
+    background: var(--gradient-hero);
+  }
+
+  /* Luxury divider */
+  .divider-luxury {
+    height: 1px;
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--gradient-gold);
+  }
+
+  /* WhatsApp button */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    transition: transform 0.3s;
+  }
+
+  [dir="rtl"] .whatsapp-float {
+    right: auto;
+    left: 1.5rem;
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  /* Luxury container */
+  .container-luxury {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@layer utilities {
+
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .hardware-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold-dark));
+}
+
+/* TipTap Editor Styles */
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: hsl(var(--muted-foreground));
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.ProseMirror h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+.ProseMirror blockquote {
+  border-left: 3px solid hsl(var(--gold));
+  padding-left: 1em;
+  margin: 1em 0;
+  font-style: italic;
+  color: hsl(var(--muted-foreground));
+}
+
+.ProseMirror[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 3px solid hsl(var(--gold));
+  padding-left: 0;
+  padding-right: 1em;
+}
