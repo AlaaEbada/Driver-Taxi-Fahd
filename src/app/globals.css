@@ -58,7 +58,7 @@
   /* Gradients (Background Images) */
   --image-gradient-gold: linear-gradient(135deg, hsl(45 80% 50%) 0%, hsl(38 85% 40%) 100%);
   --image-gradient-navy: linear-gradient(180deg, hsl(220 40% 13%) 0%, hsl(220 35% 20%) 100%);
-  --image-gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.95) 0%, hsl(220 35% 18% / 0.9) 100%);
+  --image-gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.60) 0%, hsl(220 35% 18% / 0.75) 100%);
   --image-gradient-luxury: linear-gradient(135deg, hsl(45 80% 50% / 0.1) 0%, hsl(38 70% 55% / 0.05) 100%);
 
   /* Shadows */
@@ -236,7 +236,7 @@
     /* Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(45 80% 50%) 0%, hsl(38 85% 40%) 100%);
     --gradient-navy: linear-gradient(180deg, hsl(220 40% 13%) 0%, hsl(220 35% 20%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.95) 0%, hsl(220 35% 18% / 0.9) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 40% 10% / 0.60) 0%, hsl(220 35% 18% / 0.75) 100%);
     --gradient-luxury: linear-gradient(135deg, hsl(45 80% 50% / 0.1) 0%, hsl(38 70% 55% / 0.05) 100%);
 
     /* Shadows */
