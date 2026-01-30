@@ -16,7 +16,7 @@ export default function TourProgramsClient() {
                 ? 'المسار: روما (3 ليالي) - فلورنسا (ليلتان) - فينيسيا (ليلتان). بيناسب محبي الآثار، التصوير، والقصص التاريخية. يفضل التنقل بالقطار السريع.'
                 : 'Route: Rome (3 nights) - Florence (2 nights) - Venice (2 nights). Perfect for lovers of monuments, photography, and historical stories.',
             duration: language === 'ar' ? '7 ليالي' : '7 Nights',
-            image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/cities/Italy classics.webp',
             highlights: language === 'ar'
                 ? ['الكولوسيوم في روما', 'برج بيزا المائل (رحلة نهارية)', 'قنوات فينيسيا المائية', 'ساحة الدومو في فلورنسا']
                 : ['Colosseum in Rome', 'Leaning Tower of Pisa (Day trip)', 'Venice Canals', 'Duomo Square in Florence'],
@@ -27,7 +27,7 @@ export default function TourProgramsClient() {
                 ? 'المسار: ميلانو "نقطة الانطلاق" - بحيرة كومو - بحيرة جاردا - فيرونا. يناسب العائلات، العرسان، ومحبي الهدوء. التنقل بالسائق الخاص هو الأفضل.'
                 : 'Route: Milan (Starting point) - Lake Como - Lake Garda - Verona. Suitable for families, couples, and peace seekers. Private driver is best.',
             duration: language === 'ar' ? '7-10 أيام' : '7-10 Days',
-            image: 'https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/cities/Northern Italy and the lakes.jpg',
             highlights: language === 'ar'
                 ? ['ساحة الدومو في ميلانو', 'قرية بيلاجيو في كومو', 'مدينة ألعاب جاردا لاند', 'بيت جوليت في فيرونا']
                 : ['Duomo Square in Milan', 'Bellagio Village in Como', 'Gardaland Theme Park', 'Juliet\'s House in Verona'],
@@ -38,7 +38,7 @@ export default function TourProgramsClient() {
                 ? 'المسار: فينيسيا - كورتينا دامبيزو (جبال الدولوميت) - بحيرة برايس الفيروزية. يناسب محبي الهايكنج، التزلج، والباحثين عن الأجواء الباردة.'
                 : 'Route: Venice - Cortina d\'Ampezzo (Dolomites) - Lake Braies. Suits hiking, skiing enthusiasts, and those looking for cool weather.',
             duration: language === 'ar' ? '5-7 أيام' : '5-7 Days',
-            image: 'https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&q=80&w=800',
+            image: '/assets/cities/alps.jpg',
             highlights: language === 'ar'
                 ? ['بحيرة برايس الفيروزية', 'بحيرة كاريزا الملونة', 'قمم سيسيليا الصخرية', 'طرق جبلية بانورامية']
                 : ['Lake Braies', 'Lake Carezza', 'Seceda Peaks', 'Panoramic Mountain Roads'],
@@ -57,7 +57,7 @@ export default function TourProgramsClient() {
                         className="relative w-full h-full"
                     >
                         <Image
-                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=2000"
+                            src="/assets/cities/Milan/milan-1.jpg"
                             alt="Tour Programs Italy"
                             fill
                             className="object-cover"

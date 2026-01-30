@@ -17,10 +17,10 @@ const ChamonixMegeveContent = () => {
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/cities/chamonix-megeve/chamonix.webp"
+                        src="/assets/cities/chamonix-megeve/chamonix.jpg"
                         alt={language === 'ar' ? 'شامونيه وميجيف في جبال الألب الفرنسية' : 'Chamonix & Megève Mont Blanc'}
                         fill
-                        className="object-cover"
+                        className="object-cover object-bottom"
                         priority
                         sizes="100vw"
                     />
