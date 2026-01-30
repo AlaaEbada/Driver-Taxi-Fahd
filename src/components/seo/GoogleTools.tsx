@@ -2,10 +2,14 @@
 
 import Script from 'next/script';
 
-export default function GoogleTools() {
-    const gaId = process.env.NEXT_PUBLIC_GA_ID;
-    const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-    const gscId = process.env.NEXT_PUBLIC_GSC_ID;
+interface GoogleToolsProps {
+    settings?: Record<string, string>;
+}
+
+export default function GoogleTools({ settings }: GoogleToolsProps) {
+    const gaId = settings?.google_analytics_id || process.env.NEXT_PUBLIC_GA_ID;
+    const gtmId = settings?.google_tag_manager_id || process.env.NEXT_PUBLIC_GTM_ID;
+    const gscId = settings?.google_search_console_id || process.env.NEXT_PUBLIC_GSC_ID;
 
     return (
         <>

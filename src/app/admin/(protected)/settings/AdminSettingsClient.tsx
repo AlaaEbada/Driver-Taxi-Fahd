@@ -52,7 +52,6 @@ const defaultSettings: SiteSettings = {
 
 const AdminSettingsClient = () => {
     const { language } = useLanguage();
-    const { connectGoogle } = useAuth();
     const searchParams = useSearchParams();
     const queryClient = useQueryClient();
     const [activeTab, setActiveTab] = useState('main');
@@ -63,14 +62,6 @@ const AdminSettingsClient = () => {
         }
     }, [searchParams, language]);
 
-    const handleGoogleConnection = async () => {
-        try {
-            const { error } = await connectGoogle();
-            if (error) throw error;
-        } catch (error: any) {
-            toast.error(error.message || (language === 'ar' ? 'فشل الربط بجوجل' : 'Failed to connect with Google'));
-        }
-    };
 
     const { data: settings, isLoading } = useQuery<SiteSettings>({
         queryKey: ['site-settings'],
@@ -369,17 +360,6 @@ const AdminSettingsClient = () => {
                                                     <Label className="text-sm font-bold text-blue-600 px-1">Search Console Token</Label>
                                                     <Input name="google_search_console_id" defaultValue={settings?.google_search_console_id} placeholder="Verification code" className="h-14 rounded-2xl bg-background/50 border-blue-500/20 font-mono" />
                                                 </div>
-                                            </div>
-                                            <div className="pt-6 border-t border-border/50">
-                                                <Button
-                                                    type="button"
-                                                    variant="outline"
-                                                    onClick={handleGoogleConnection}
-                                                    className="w-full h-14 rounded-2xl border-border/50 hover:bg-gold/5 hover:text-gold hover:border-gold/50 transition-all font-bold gap-3"
-                                                >
-                                                    <Search className="w-5 h-5" />
-                                                    {language === 'ar' ? 'تنشيط الربط البرمجي مع جوجل' : 'Activate Direct Google Link'}
-                                                </Button>
                                             </div>
                                         </div>
                                     </motion.div>

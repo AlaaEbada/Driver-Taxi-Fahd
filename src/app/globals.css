@@ -495,11 +495,20 @@
   }
 }
 
-/* Smooth scroll */
+/* Smooth scroll and global font scaling */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
+  font-size: 18px;
+  /* Increased base from 16px to 18px for better readability */
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 120%;
+    /* Increased from 110% to 120% for mobile devices */
+  }
 }
 
 /* Custom scrollbar */

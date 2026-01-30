@@ -14,6 +14,7 @@ const tajawal = Tajawal({
 import { generateSEO } from '@/lib/seo';
 import JsonLd from '../../components/seo/JsonLd';
 import GoogleTools from '../../components/seo/GoogleTools';
+import { createClient } from '@/integrations/supabase/server';
 
 export function generateStaticParams() {
   return [{ locale: 'ar' }, { locale: 'en' }];
@@ -60,12 +61,22 @@ export default async function RootLayout({
   const { locale } = await params;
   const lang = (locale === 'ar' || locale === 'en') ? (locale as Language) : 'ar';
 
+  const supabaseServer = await createClient();
+  const { data } = await supabaseServer
+    .from('site_settings')
+    .select('key, value_en, value_ar');
+
+  const settings: Record<string, string> = {};
+  (data as any[])?.forEach(row => {
+    settings[row.key] = row.value_en || row.value_ar || '';
+  });
+
   return (
     <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'} className={tajawal.variable} data-scroll-behavior="smooth">
       <body suppressHydrationWarning>
         <JsonLd type="LocalBusiness" language={lang} />
         <Providers locale={lang}>
-          <GoogleTools />
+          <GoogleTools settings={settings} />
           {children}
         </Providers>
       </body>
