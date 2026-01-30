@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-32 pb-20 sm:pt-40 sm:pb-32">
+      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-16 pb-20 sm:pt-40 sm:pb-32">
         <m.div
           initial="hidden"
           animate="visible"
@@ -60,7 +60,7 @@ const HeroSection = () => {
           >
             <MapPin className="w-4 h-4 text-gold flex-shrink-0" />
             <span className="text-gold text-xs sm:text-sm font-medium">
-              {language === 'ar' ? 'ايطاليا • سويسرا • ميلانو • كومو • روما • إنترلاكن' : 'Italy • Switzerland • Milan • Como • Rome • Interlaken'}
+              {language === 'ar' ? 'ايطاليا • سويسرا • ميلانو • كومو • روما' : 'Italy • Switzerland • Milan • Como • Rome'}
             </span>
           </m.div>
 

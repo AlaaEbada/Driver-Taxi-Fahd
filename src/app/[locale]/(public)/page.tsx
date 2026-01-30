@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     return generateSEO({
         title: {
-            ar: 'سائق عربي في ايطاليا وسويسرا | ميلانو - روما - انترلاكن',
-            en: 'Arabic Driver in Italy & Switzerland | Milan - Rome - Interlaken'
+            ar: 'سائق عربي في ايطاليا وسويسرا | ميلانو - روما',
+            en: 'Arabic Driver in Italy & Switzerland | Milan - Rome'
         },
         description: {
             ar: 'أفضل خدمات السائق العربي في إيطاليا مع تاكسي فهد. جولات سياحية، توصيل مطارات، جولات تسوق، وبرامج سياحية متكاملة في ميلانو وروما وكافة المدن الإيطالية.',
