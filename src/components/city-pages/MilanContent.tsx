@@ -17,7 +17,7 @@ const MilanContent = () => {
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/cities/milan/milan-cover.jpg"
+                        src="/assets/cities/milan-city/milan-cover.jpg"
                         alt={language === 'ar' ? 'ميلانو - مدينة المستقبل' : 'Milan - Future City'}
                         fill
                         className="object-cover"
@@ -111,7 +111,7 @@ const MilanContent = () => {
                             className={`${isRTL ? 'order-1 lg:order-2' : 'order-1'} relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-0 hover:rotate-2 transition-transform duration-500`}
                         >
                             <Image
-                                src="/assets/cities/milan/milan-2.jpg"
+                                src="/assets/cities/milan-city/milan-2.jpg"
                                 alt="Sforza Castle"
                                 fill
                                 className="object-cover"
@@ -129,7 +129,7 @@ const MilanContent = () => {
                             className="order-1 relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-0 hover:-rotate-2 transition-transform duration-500"
                         >
                             <Image
-                                src="/assets/cities/milan/milan-1.jpg"
+                                src="/assets/cities/milan-city/milan-1.jpg"
                                 alt="Milan Fashion Street"
                                 fill
                                 className="object-cover"

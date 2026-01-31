@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 async function getReviewImages() {
-    const reviewsDir = path.join(process.cwd(), 'public', 'assets', 'Reviews');
+    const reviewsDir = path.join(process.cwd(), 'public', 'assets', 'reviews');
     try {
         if (fs.existsSync(reviewsDir)) {
             const files = fs.readdirSync(reviewsDir);
             return files
                 .filter(file => /\.(jpe?g|png|webp)$/i.test(file))
-                .map(file => `/assets/Reviews/${file}`);
+                .map(file => `/assets/reviews/${file}`);
         }
     } catch (error) {
         console.error('Error reading reviews directory:', error);

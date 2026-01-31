@@ -84,7 +84,7 @@ export default function DayProgramsClient() {
                         className="w-full h-full relative"
                     >
                         <Image
-                            src="/assets/cities/milan/milan-2.jpg"
+                            src="/assets/cities/milan-city/milan-2.jpg"
                             alt="Day Programs Italy"
                             fill
                             className="object-cover"
@@ -182,7 +182,7 @@ export default function DayProgramsClient() {
                         </div>
                         <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                             <Image
-                                src="/assets/cities/milan/milan-1.jpg"
+                                src="/assets/cities/milan-city/milan-1.jpg"
                                 alt="Milan Duomo"
                                 fill
                                 className="object-cover"

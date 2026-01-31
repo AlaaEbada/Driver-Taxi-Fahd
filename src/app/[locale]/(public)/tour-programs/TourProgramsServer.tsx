@@ -44,7 +44,7 @@ export default function TourProgramsServer({ language }: TourProgramsServerProps
                 <div className="absolute inset-0">
                     <div className="relative w-full h-full">
                         <Image
-                            src="/assets/cities/milan/milan-1.jpg"
+                            src="/assets/cities/milan-city/milan-1.jpg"
                             alt="Tour Programs Italy"
                             fill
                             className="object-cover"

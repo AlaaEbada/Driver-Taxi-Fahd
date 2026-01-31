@@ -117,7 +117,7 @@ export default function TourProgramsClient() {
                         className="relative w-full h-full"
                     >
                         <Image
-                            src="/assets/cities/milan/milan-1.jpg"
+                            src="/assets/cities/milan-city/milan-1.jpg"
                             alt="Tour Programs Italy"
                             fill
                             className="object-cover"

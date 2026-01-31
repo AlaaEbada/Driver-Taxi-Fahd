@@ -17,7 +17,7 @@ const RomeContent = () => {
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/cities/rome/rome-1.webp"
+                        src="/assets/cities/rome-city/rome-1.webp"
                         alt={language === 'ar' ? 'روما - المدينة الخالدة' : 'Rome - The Eternal City'}
                         fill
                         className="object-cover"
@@ -111,7 +111,7 @@ const RomeContent = () => {
                             className={`${isRTL ? 'order-1 lg:order-2' : 'order-1'} relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-0 hover:rotate-2 transition-transform duration-500`}
                         >
                             <Image
-                                src="/assets/cities/rome/rome-2.webp"
+                                src="/assets/cities/rome-city/rome-2.webp"
                                 alt="Colosseum Rome"
                                 fill
                                 className="object-cover"
@@ -129,7 +129,7 @@ const RomeContent = () => {
                             className="order-1 relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-0 hover:-rotate-2 transition-transform duration-500"
                         >
                             <Image
-                                src="/assets/cities/rome/rome-3.webp"
+                                src="/assets/cities/rome-city/rome-3.webp"
                                 alt="Rome Piazzas"
                                 fill
                                 className="object-cover"
