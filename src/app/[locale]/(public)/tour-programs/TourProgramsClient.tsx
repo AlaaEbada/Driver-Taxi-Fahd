@@ -247,7 +247,7 @@ export default function TourProgramsClient() {
             </section>
 
             {/* Selection Advice */}
-            <section className="py-20 bg-muted/30">
+            <section className="py-20">
                 <div className="container-luxury">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold mb-10 text-center">{language === 'ar' ? 'نصيحة عند اختيار برنامجك' : 'Advice for Choosing Your Program'}</h2>

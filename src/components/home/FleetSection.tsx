@@ -32,7 +32,7 @@ const FleetSection = () => {
   const { t, language } = useLanguage();
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding">
       <div className="container-luxury">
         {/* Header */}
         <motion.div

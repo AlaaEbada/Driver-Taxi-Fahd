@@ -126,7 +126,7 @@ export default function DayProgramsClient() {
             </section>
 
             {/* Milan Overview Section */}
-            <section className="py-20 bg-muted/30">
+            <section className="py-20">
                 <div className="container-luxury">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6 text-right rtl:text-right ltr:text-left">
@@ -247,7 +247,7 @@ export default function DayProgramsClient() {
             </section>
 
             {/* Advice Section */}
-            <section className="py-20 border-t border-border bg-muted/20">
+            <section className="py-20 border-t border-border">
                 <div className="container-luxury">
                     <div className="grid lg:grid-cols-2 gap-16 items-center text-right rtl:text-right ltr:text-left">
                         <div className="space-y-6">
