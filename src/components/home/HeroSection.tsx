@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-16 pb-12 sm:pt-40 sm:pb-32">
+      <div className="relative z-10 container-luxury text-center px-4 flex-1 flex flex-col justify-center pt-16 pb-12 sm:pt-40 sm:pb-32 lg:pt-24">
         <m.div
           initial="hidden"
           animate="visible"
@@ -49,7 +49,7 @@ const HeroSection = () => {
               }
             }
           }}
-          className="max-w-4xl mx-auto relative z-30"
+          className="max-w-4xl mx-auto relative z-30 overflow-visible"
         >
           {/* Badge */}
           <m.div
@@ -65,8 +65,8 @@ const HeroSection = () => {
           </m.div>
 
           {/* Title */}
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="text-gold-gradient">{t('hero.title')}</span>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 pt-4 pb-2 overflow-visible" style={{ lineHeight: '1.7' }}>
+            <span className="text-gold-gradient overflow-visible inline-block">{t('hero.title')}</span>
           </h1>
 
           {/* Subtitle */}

@@ -11,6 +11,7 @@ import { DotButton, useDotButton } from '@/components/home/CarouselDots';
 
 const CTASection: React.FC<{ reviewImages?: string[] }> = ({ reviewImages = [] }) => {
   const { t, language, isRTL } = useLanguage();
+  const [isPaused, setIsPaused] = React.useState(false);
 
   // Testimonials Carousel Logic
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -32,12 +33,12 @@ const CTASection: React.FC<{ reviewImages?: string[] }> = ({ reviewImages = [] }
   }, [emblaApi]);
 
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi || isPaused) return;
     const intervalId = setInterval(() => {
       emblaApi.scrollNext();
-    }, 4000);
+    }, 8000);
     return () => clearInterval(intervalId);
-  }, [emblaApi]);
+  }, [emblaApi, isPaused]);
 
   return (
     <section className="relative w-full overflow-hidden" id="cta">
@@ -76,55 +77,63 @@ const CTASection: React.FC<{ reviewImages?: string[] }> = ({ reviewImages = [] }
                 </h3>
               </div>
 
-              <div className="relative w-full max-w-full md:max-w-2xl lg:max-w-sm mx-auto overflow-hidden">
-                <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
-                  <div className="flex touch-pan-y">
-                    {reviewImages.map((src, index) => (
-                      <div key={index} className="flex-[0_0_100%] min-w-0 flex justify-center px-4">
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          className="relative w-full max-w-[600px] h-[400px] rounded-2xl overflow-hidden shadow-xl border border-white/20 bg-[#F3F0E8] p-0 mx-auto"
-                        >
-                          <div className="relative w-full h-full bg-[#F3F0E8]">
-                            <Image
-                              src={src}
-                              alt={`Review-${index + 1}`}
-                              fill
-                              className="object-contain"
-                              sizes="(max-width: 768px) 100vw, 600px"
-                              priority={index === 0}
-                            />
-                          </div>
-                        </motion.div>
-                      </div>
+              <div className="relative">
+                <div className="relative w-full max-w-full md:max-w-2xl lg:max-w-sm mx-auto overflow-hidden">
+                  <div
+                    className="overflow-hidden cursor-grab active:cursor-grabbing"
+                    ref={emblaRef}
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                    onTouchStart={() => setIsPaused(true)}
+                    onTouchEnd={() => setIsPaused(false)}
+                  >
+                    <div className="flex touch-pan-y">
+                      {reviewImages.map((src, index) => (
+                        <div key={index} className="flex-[0_0_100%] min-w-0 flex justify-center px-4">
+                          <motion.div
+                            whileHover={{ scale: 1.02 }}
+                            className="relative w-full max-w-[600px] h-[400px] rounded-2xl overflow-hidden shadow-xl border border-white/20 bg-[#F3F0E8] p-0 mx-auto"
+                          >
+                            <div className="relative w-full h-full bg-[#F3F0E8]">
+                              <Image
+                                src={src}
+                                alt={`Review-${index + 1}`}
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 768px) 100vw, 600px"
+                                priority={index === 0}
+                              />
+                            </div>
+                          </motion.div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center gap-2 mt-6">
+                    {scrollSnaps.map((_: number, index: number) => (
+                      <DotButton
+                        key={index}
+                        onClick={() => onDotButtonClick(index)}
+                        className={'w-1.5 h-1.5 rounded-full transition-all duration-300 ' + (index === selectedIndex ? 'bg-gold w-4' : 'bg-white/20')}
+                      />
                     ))}
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 -translate-y-1/2 left-4 right-4 flex justify-between px-0 lg:-mx-16 pointer-events-none">
-                  <button
-                    onClick={scrollPrev}
-                    className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg flex items-center justify-center text-white hover:bg-gold hover:text-primary transition-all pointer-events-auto"
-                  >
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button
-                    onClick={scrollNext}
-                    className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg flex items-center justify-center text-white hover:bg-gold hover:text-primary transition-all pointer-events-auto"
-                  >
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-                </div>
-
-                <div className="flex justify-center gap-2 mt-6">
-                  {scrollSnaps.map((_: number, index: number) => (
-                    <DotButton
-                      key={index}
-                      onClick={() => onDotButtonClick(index)}
-                      className={'w-1.5 h-1.5 rounded-full transition-all duration-300 ' + (index === selectedIndex ? 'bg-gold w-4' : 'bg-white/20')}
-                    />
-                  ))}
-                </div>
+                {/* Navigation Arrows - At Wrapper Edges */}
+                <button
+                  onClick={scrollPrev}
+                  className="absolute left-0 md:left-4 lg:left-12 top-[45%] md:top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-gold hover:text-gold-dark transition-all z-20"
+                >
+                  <ChevronLeft className="w-8 h-8 stroke-[3]" />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="absolute right-0 md:right-4 lg:right-12 top-[45%] md:top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-gold hover:text-gold-dark transition-all z-20"
+                >
+                  <ChevronRight className="w-8 h-8 stroke-[3]" />
+                </button>
               </div>
             </motion.div>
           )}

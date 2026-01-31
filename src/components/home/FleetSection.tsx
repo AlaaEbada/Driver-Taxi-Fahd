@@ -60,7 +60,7 @@ const FleetSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card-luxury overflow-hidden group"
+              className="card-luxury overflow-hidden group h-full"
             >
               {/* Car Image Placeholder */}
               <div className="h-48 bg-gradient-navy flex items-center justify-center">

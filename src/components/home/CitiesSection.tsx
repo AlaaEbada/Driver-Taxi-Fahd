@@ -23,10 +23,10 @@ const CitiesSection = () => {
       <div className="container-luxury">
         {/* Header */}
         <m.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="text-center mb-16"
         >
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -43,10 +43,10 @@ const CitiesSection = () => {
           {cities.map((city, index) => (
             <m.div
               key={city.slug}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ y: 10 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
               className={`relative group overflow-hidden rounded-2xl ${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''
                 }`}
             >
@@ -80,10 +80,10 @@ const CitiesSection = () => {
 
         {/* View All Button */}
         <m.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.2, ease: "easeOut" }}
           className="text-center mt-12"
         >
           <Button asChild variant="outline" size="lg" className="border-gold text-foreground hover:bg-gold hover:text-primary font-semibold">

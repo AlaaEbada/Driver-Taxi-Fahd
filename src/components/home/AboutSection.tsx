@@ -15,10 +15,10 @@ const AboutSection = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     {/* Image Side - Falcon concept */}
                     <motion.div
-                        initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        initial={{ x: isRTL ? 20 : -20 }}
+                        whileInView={{ x: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
                         className="w-full lg:w-1/2 relative"
                     >
                         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-gold/20">
@@ -45,10 +45,10 @@ const AboutSection = () => {
 
                     {/* Content Side */}
                     <motion.div
-                        initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        initial={{ x: isRTL ? -20 : 20 }}
+                        whileInView={{ x: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
                         className="w-full lg:w-1/2 text-center lg:text-start"
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 text-gold mb-6 border border-gold/20">

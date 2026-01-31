@@ -55,10 +55,10 @@ const ServicesSection = () => {
       <div className="container-luxury">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary mb-6 border border-primary/10">
@@ -81,11 +81,11 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card-luxury p-8 text-center group hover:border-gold/30 hover:shadow-lg transition-all duration-500"
+              initial={{ y: 10 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
+              className="card-luxury p-8 text-center group hover:border-gold/30 transition-all duration-500"
             >
               <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-gold flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-primary shadow-md">
                 <service.icon className="w-8 h-8" />

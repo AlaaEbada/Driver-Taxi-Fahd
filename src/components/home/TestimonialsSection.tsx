@@ -34,13 +34,21 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ reviewImages 
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  const [isPaused, setIsPaused] = React.useState(false);
+  const [hasInteracted, setHasInteracted] = React.useState(false);
+
+  const handleInteraction = useCallback(() => {
+    setIsPaused(true);
+    setHasInteracted(true);
+  }, []);
+
   useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi || isPaused || hasInteracted) return;
     const intervalId = setInterval(() => {
       emblaApi.scrollNext();
-    }, 4000); // 4s interval
+    }, 8000);
     return () => clearInterval(intervalId);
-  }, [emblaApi]);
+  }, [emblaApi, isPaused, hasInteracted]);
 
   if (!reviewImages || reviewImages.length === 0) return null;
 
@@ -54,10 +62,10 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ reviewImages 
       <div className="container-luxury relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="text-center mb-10"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 mb-4 backdrop-blur-sm shadow-sm ring-1 ring-emerald-500/10">
@@ -74,73 +82,86 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ reviewImages 
           </div>
         </motion.div>
 
-        <div className="relative max-w-md mx-auto group">
-          {/* Decorative Elements */}
-          <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-24 h-64 bg-gold/10 blur-[80px] rounded-full pointer-events-none" />
-          <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-24 h-64 bg-gold/10 blur-[80px] rounded-full pointer-events-none" />
+        <div className="relative">
+          <div className="relative max-w-lg mx-auto group px-10 md:px-0">
+            {/* Decorative Elements */}
+            <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-24 h-64 bg-gold/10 blur-[80px] rounded-full pointer-events-none" />
+            <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-24 h-64 bg-gold/10 blur-[80px] rounded-full pointer-events-none" />
 
-          <div className="relative overflow-hidden cursor-grab active:cursor-grabbing py-8" ref={emblaRef}>
-            <div className="flex touch-pan-y">
-              {reviewImages.length > 0 ? (
-                reviewImages.map((src, index) => (
-                  <div key={index} className="flex-[0_0_100%] min-w-0 relative flex justify-center px-4 perspective-1000">
-                    <motion.div
-                      whileHover={{ scale: 1.02, rotateY: 2 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                      className="relative w-full max-w-[280px] aspect-[9/16] rounded-[2rem] overflow-hidden shadow-2xl shadow-black/50 border border-white/5 bg-zinc-900 group/card"
-                    >
-                      {/* Premium Card Border Gradient */}
-                      <div className="absolute inset-0 p-[1px] rounded-[2rem] bg-gradient-to-b from-white/20 via-white/5 to-transparent pointer-events-none" />
+            <div
+              className="relative overflow-hidden cursor-grab active:cursor-grabbing py-8"
+              ref={emblaRef}
+              onMouseEnter={handleInteraction}
+              onMouseLeave={() => !hasInteracted && setIsPaused(false)}
+              onTouchStart={handleInteraction}
+              onSelect={handleInteraction}
+            >
+              <div className="flex touch-pan-y">
+                {reviewImages.length > 0 ? (
+                  reviewImages.map((src, index) => (
+                    <div key={index} className="flex-[0_0_100%] min-w-0 relative flex justify-center px-4 perspective-1000">
+                      <motion.div
+                        whileHover={{ scale: 1.02, rotateY: 2 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                        className="relative w-full max-w-[280px] aspect-[9/16] rounded-[2rem] overflow-hidden shadow-2xl shadow-black/50 border border-white/5 bg-zinc-900 group/card"
+                      >
+                        {/* Premium Card Border Gradient */}
+                        <div className="absolute inset-0 p-[1px] rounded-[2rem] bg-gradient-to-b from-white/20 via-white/5 to-transparent pointer-events-none" />
 
-                      <div className="relative w-full h-full rounded-[1.9rem] overflow-hidden bg-[#F3F0E8]">
-                        <Image
-                          src={src}
-                          alt={`Review-${index + 1}`}
-                          fill
-                          className="object-contain"
-                          sizes="(max-width: 768px) 100vw, 280px"
-                          priority={index === 0}
-                        />
-                      </div>
-
-                      {/* Floating Badge */}
-                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-emerald-500/90 text-white px-3 py-1 rounded-full text-[10px] font-bold shadow-lg shadow-emerald-500/20 border border-white/20 backdrop-blur-md z-10 hover:scale-105 transition-transform cursor-default">
-                        <div className="bg-white rounded-full p-0.5">
-                          <Check className="w-2 h-2 text-emerald-600" />
+                        <div className="relative w-full h-full rounded-[1.9rem] overflow-hidden bg-[#F3F0E8]">
+                          <Image
+                            src={src}
+                            alt={`Review-${index + 1}`}
+                            fill
+                            className="object-contain"
+                            sizes="(max-width: 768px) 100vw, 280px"
+                            priority={index === 0}
+                          />
                         </div>
-                        {language === 'ar' ? 'تقييم موثوق' : 'Verified Client'}
-                      </div>
-                    </motion.div>
-                  </div>
-                ))
-              ) : null}
+
+                        {/* Floating Badge */}
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-emerald-500/90 text-white px-3 py-1 rounded-full text-[10px] font-bold shadow-lg shadow-emerald-500/20 border border-white/20 backdrop-blur-md z-10 hover:scale-105 transition-transform cursor-default">
+                          <div className="bg-white rounded-full p-0.5">
+                            <Check className="w-2 h-2 text-emerald-600" />
+                          </div>
+                          {language === 'ar' ? 'تقييم موثوق' : 'Verified Client'}
+                        </div>
+                      </motion.div>
+                    </div>
+                  ))
+                ) : null}
+              </div>
+            </div>
+
+            {/* Dots Navigation */}
+            <div className="flex justify-center gap-2 mt-4">
+              {scrollSnaps.map((_: number, index: number) => (
+                <DotButton
+                  key={index}
+                  onClick={() => onDotButtonClick(index)}
+                  className={'w-2 h-2 rounded-full transition-all duration-300 ' + (index === selectedIndex ? 'bg-gold w-6' : 'bg-primary/20')}
+                />
+              ))}
             </div>
           </div>
 
-          <button
-            onClick={scrollPrev}
-            className="hidden lg:flex absolute -left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-border shadow-xl items-center justify-center text-primary hover:bg-gold hover:text-primary transition-all z-20 opacity-0 group-hover:opacity-100"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            onClick={scrollNext}
-            className="hidden lg:flex absolute -right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-border shadow-xl items-center justify-center text-primary hover:bg-gold hover:text-primary transition-all z-20 opacity-0 group-hover:opacity-100"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-
-          {/* Dots Navigation */}
-          <div className="flex justify-center gap-2 mt-4">
-            {scrollSnaps.map((_: number, index: number) => (
-              <DotButton
-                key={index}
-                onClick={() => onDotButtonClick(index)}
-                className={'w-2 h-2 rounded-full transition-all duration-300 ' + (index === selectedIndex ? 'bg-gold w-6' : 'bg-primary/20')}
-              />
-            ))}
-          </div>
         </div>
+
+        {/* Navigation Arrows - At Container Edges */}
+        <button
+          onClick={scrollPrev}
+          className="absolute left-2 md:left-8 lg:left-12 top-[60%] md:top-1/2 -translate-y-1/2 w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 flex items-center justify-center text-gold hover:text-gold-dark transition-all z-20"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft className="w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 stroke-[3]" />
+        </button>
+        <button
+          onClick={scrollNext}
+          className="absolute right-2 md:right-8 lg:right-12 top-[60%] md:top-1/2 -translate-y-1/2 w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 flex items-center justify-center text-gold hover:text-gold-dark transition-all z-20"
+          aria-label="Next slide"
+        >
+          <ChevronRight className="w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 stroke-[3]" />
+        </button>
 
         <div className="mt-16 flex justify-center">
           <div className="px-8 py-4 rounded-3xl bg-muted/30 border border-border flex flex-col md:flex-row items-center gap-6 shadow-sm text-center md:text-start">
@@ -160,7 +181,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ reviewImages 
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

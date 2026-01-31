@@ -63,11 +63,11 @@ const WhyChooseUsSection = () => {
                     {features.map((feature, i) => (
                         <motion.div
                             key={i}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="bg-card p-5 sm:p-6 md:p-8 rounded-2xl border border-border hover:border-gold/30 hover:shadow-lg transition-all group text-center"
+                            initial={{ y: 10 }}
+                            whileInView={{ y: 0 }}
+                            viewport={{ once: true, amount: 0.1 }}
+                            transition={{ duration: 0.3, delay: i * 0.05, ease: "easeOut" }}
+                            className="card-luxury p-5 sm:p-6 md:p-8 hover:border-gold/30 transition-all group text-center"
                         >
                             <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6 mx-auto group-hover:scale-110 transition-transform">
                                 <feature.icon className="w-6 h-6" />
