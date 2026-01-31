@@ -56,7 +56,6 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ reviewImages 
     <section className="relative py-12 overflow-hidden w-full bg-zinc-950" id="testimonials">
       {/* Premium Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-950 to-black opacity-80" />
-      <div className="absolute inset-0 bg-[url('/assets/images/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-gold/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="container-luxury relative z-10">

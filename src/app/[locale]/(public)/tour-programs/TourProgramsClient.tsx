@@ -19,7 +19,7 @@ export default function TourProgramsClient() {
                 ar: '7 ليالي',
                 en: '7 Nights'
             },
-            image: '/assets/cities/Italy classics.webp',
+            image: '/assets/cities/italy-classics.webp',
             path: {
                 ar: 'روما (3 ليالي) - فلورنسا (ليلتان) - فينيسيا (ليلتان).',
                 en: 'Rome (3 Nights) - Florence (2 Nights) - Venice (2 Nights).'
@@ -50,7 +50,7 @@ export default function TourProgramsClient() {
                 ar: '7-10 أيام',
                 en: '7-10 Days'
             },
-            image: '/assets/cities/Northern Italy and the lakes.jpg',
+            image: '/assets/cities/northern-italy-and-the-lakes.jpg',
             path: {
                 ar: 'ميلانو - بحيرة كومو - بحيرة جاردا - فيرونا.',
                 en: 'Milan - Lake Como - Lake Garda - Verona.'

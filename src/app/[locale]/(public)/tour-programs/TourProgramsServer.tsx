@@ -12,7 +12,7 @@ export default function TourProgramsServer({ language }: TourProgramsServerProps
             title: language === 'ar' ? '1. برنامج "كلاسيكيات إيطاليا" التاريخ والفن' : '"Italy Classics" Program (History & Art)',
             description: '', // Handled by dangerouslySetInnerHTML below
             duration: language === 'ar' ? '7 ليالي' : '7 Nights',
-            image: '/assets/cities/Italy classics.webp',
+            image: '/assets/cities/italy-classics.webp',
             highlights: language === 'ar'
                 ? ['الكولوسيوم ف روما', 'برج بيزا المائل', 'قنوات فينيسيا', 'محبي الآثار والتصوير']
                 : ['Colosseum in Rome', 'Leaning Tower of Pisa', 'Venice Canals', 'Archaeology & Photography Lovers'],
@@ -21,7 +21,7 @@ export default function TourProgramsServer({ language }: TourProgramsServerProps
             title: language === 'ar' ? '2. برنامج شمال إيطاليا والبحيرات الطبيعة والاسترخاء' : 'North Italy & Lakes Program (Nature & Relaxation)',
             description: '', // Handled by dangerouslySetInnerHTML below
             duration: language === 'ar' ? '7-10 أيام' : '7-10 Days',
-            image: '/assets/cities/Northern Italy and the lakes.jpg',
+            image: '/assets/cities/northern-italy-and-the-lakes.jpg',
             highlights: language === 'ar'
                 ? ['ساحة الدومو في ميلانو', 'قرية "بيلاجيو" في كومو', 'مدينة ألعاب جاردا لاند" للأطفال', 'بيت جوليت فيرونا']
                 : ['Duomo Square in Milan', 'Bellagio Village in Como', 'Gardaland for Children', 'Juliet\'s House in Verona'],

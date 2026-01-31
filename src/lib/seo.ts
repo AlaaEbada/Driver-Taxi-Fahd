@@ -24,7 +24,7 @@ export function generateSEO({
     title,
     description,
     path,
-    image = '/assets/og-image.jpg', // Default OG image
+    image = '/assets/driver-taxi-fahd-logo.png', // Default OG image
     type = 'website',
 }: SEOConfig, locale: string): Metadata {
     const isAr = locale === 'ar';

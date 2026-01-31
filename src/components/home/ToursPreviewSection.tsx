@@ -36,13 +36,13 @@ const ToursPreviewSection: React.FC = () => {
         {
             title: language === 'ar' ? 'برنامج "كلاسيكيات إيطاليا" التاريخ والفن' : '"Italy Classics" Program (History & Art)',
             desc: language === 'ar' ? 'روما 3 ليالي - فلورنسا ليلتان - فينيسيا ليلتان. يناسب محبي الآثار والتصوير والقصص التاريخية.' : 'Rome (3 nights) - Florence (2 nights) - Venice (2 nights). Perfect for archaeology and photography lovers.',
-            img: '/assets/cities/Italy classics.webp',
+            img: '/assets/cities/italy-classics.webp',
             link: language === 'ar' ? '/tour-programs' : '/en/tour-programs'
         },
         {
             title: language === 'ar' ? 'برنامج شمال إيطاليا والبحيرات الطبيعة والاسترخاء' : 'North Italy & Lakes Program (Nature & Relaxation)',
             desc: language === 'ar' ? 'ميلانو - بحيرة كومو - بحيرة جاردا - فيرونا. يناسب العائلات والعرسان ومحبي الهدوء والمناظر الطبيعية.' : 'Milan - Lake Como - Lake Garda - Verona. Perfect for families, honeymooners, and nature lovers.',
-            img: '/assets/cities/Northern Italy and the lakes.jpg',
+            img: '/assets/cities/northern-italy-and-the-lakes.jpg',
             link: language === 'ar' ? '/tour-programs' : '/en/tour-programs'
         },
         {

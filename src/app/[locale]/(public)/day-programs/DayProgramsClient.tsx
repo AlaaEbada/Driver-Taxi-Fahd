@@ -38,7 +38,7 @@ export default function DayProgramsClient() {
                 ar: '10-11 ساعة',
                 en: '10-11 Hours'
             },
-            image: '/assets/cities/Verona.webp',
+            image: '/assets/cities/verona.webp',
         },
         {
             title: {
