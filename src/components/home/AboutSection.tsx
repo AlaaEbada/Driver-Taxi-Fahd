@@ -10,7 +10,7 @@ const AboutSection = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <section className="py-20 bg-background relative overflow-hidden">
+        <section className="py-20 relative overflow-hidden">
             <div className="container-luxury">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     {/* Image Side - Falcon concept */}

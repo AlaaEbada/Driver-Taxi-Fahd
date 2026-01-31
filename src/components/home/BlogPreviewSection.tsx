@@ -38,7 +38,7 @@ const BlogPreviewSection = () => {
     }, []);
 
     return (
-        <section className="py-16 bg-background">
+        <section className="py-16">
             <div className="container-luxury">
                 <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-6 mb-12">
                     <div className="text-center md:text-start">

@@ -88,7 +88,7 @@ const FAQClient = () => {
                 }
             />
 
-            <section className="py-16 bg-background">
+            <section className="py-16">
                 <div className="container-luxury max-w-4xl">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

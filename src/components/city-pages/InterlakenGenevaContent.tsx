@@ -12,7 +12,7 @@ const InterlakenGenevaContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -95,12 +95,12 @@ const InterlakenGenevaContent = () => {
                                         <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 text-gold font-bold">{idx + 1}</div>
                                         <div>
                                             <h4 className="font-bold text-primary">{item.title}</h4>
-                                            <p className="text-sm">{item.desc}</p>
+                                            <p className="text-muted-foreground">{item.desc}</p>
                                         </div>
                                     </li>
                                 ))}
                             </ul>
-                            <p className={`text-sm bg-primary/5 p-4 rounded-xl border-gold italic ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
+                            <p className={`bg-white shadow-md p-4 rounded-xl border-gold italic ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                 <strong>{language === 'ar' ? 'الأجواء والتنقل:' : 'Atmosphere & Transit:'}</strong>
                                 {language === 'ar'
                                     ? ' راقية جداً، مثالية للتسوق في شارع "الرون" (Rue du Rhône) وزيارة متاحف الساعات (مثل متحف باتيك فيليب). إذا كنت تسكن في فندق، ستحصل على بطاقة نقل مجانية للباصات والقوارب.'
@@ -159,7 +159,7 @@ const InterlakenGenevaContent = () => {
                                     : 'Located in the heart of Switzerland between Lake Thun and Lake Brienz, the main gateway for all famous peaks.'}
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="p-4 bg-muted/50 rounded-xl border border-border">
+                                <div className="p-4 bg-white shadow-sm rounded-xl border border-border">
                                     <CheckCircle2 className={`w-5 h-5 text-gold mb-2 ${isRTL ? 'ml-auto' : ''}`} />
                                     <h4 className="font-bold text-sm">
                                         {language === 'ar' ? 'هوهيمات (Höhemathe)' : 'Höhemathe Square'}
@@ -168,7 +168,7 @@ const InterlakenGenevaContent = () => {
                                         {language === 'ar' ? 'ساحة خضراء شاسعة في وسط المدينة ترى منها قمة "يونغفراو"، وهي المكان الذي يهبط فيه محترفو الطيران الشراعي (الباراشوت).' : 'A vast green square in the town center with a view of "Jungfrau" peak, and where paragliders land.'}
                                     </p>
                                 </div>
-                                <div className="p-4 bg-muted/50 rounded-xl border border-border">
+                                <div className="p-4 bg-white shadow-sm rounded-xl border border-border">
                                     <CheckCircle2 className={`w-5 h-5 text-gold mb-2 ${isRTL ? 'ml-auto' : ''}`} />
                                     <h4 className="font-bold text-sm">
                                         {language === 'ar' ? 'القمم القريبة' : 'Nearby Peaks'}
@@ -187,7 +187,7 @@ const InterlakenGenevaContent = () => {
                 </section>
 
                 {/* Driver & Distance Info */}
-                <section className="bg-primary/5 p-8 md:p-12 rounded-3xl border border-gold/20">
+                <section className="bg-white shadow-xl p-8 md:p-12 rounded-3xl border border-gold/20">
                     <h2 className="text-3xl font-serif font-bold text-center mb-10 text-primary">
                         {language === 'ar' ? 'نصيحة السائق والتنقل' : 'Driver\'s Tip & Transit'}
                     </h2>
@@ -195,21 +195,21 @@ const InterlakenGenevaContent = () => {
                         <div className="space-y-4">
                             <Clock className="w-10 h-10 text-gold mx-auto" />
                             <h4 className="font-bold">{language === 'ar' ? 'المسافة' : 'Distance'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'تستغرق الرحلة بالسيارة بين جنيف وانترلاكن حوالي ساعتين ونصف، وإذا كنت قادماً من ميلانو، فإن انترلاكن أقرب لك جغرافياً.' : 'The journey between Geneva and Interlaken takes about 2.5 hours; if coming from Milan, Interlaken is geographically closer to you.'}
                             </p>
                         </div>
                         <div className="space-y-4">
                             <ShoppingBag className="w-10 h-10 text-gold mx-auto" />
                             <h4 className="font-bold">{language === 'ar' ? 'ميزة السائق' : 'Driver Benefit'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'لماذا السائق؟ الطريق يمر بمصانع الشوكولاتة والجبن في "جريير" (Gruyères)، حيث يمكن للسائق التوقف بك هناك، وهو ما يصعب فعله بالقطار.' : 'Why a driver? The road passes by chocolate and cheese factories in Gruyères, where the driver can stop for you, which is difficult by train.'}
                             </p>
                         </div>
                         <div className="space-y-4">
                             <Map className="w-10 h-10 text-gold mx-auto" />
                             <h4 className="font-bold">{language === 'ar' ? 'ميلانو وسويسرا' : 'Milan & Switzerland'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'إذا كنت قادماً من ميلانو، فإن انترلاكن تعتبر جغرافياً أقرب إليك من جنيف.' : 'If you\'re coming from Milan, Interlaken is geographically closer than Geneva.'}
                             </p>
                         </div>

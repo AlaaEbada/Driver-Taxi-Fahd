@@ -12,7 +12,7 @@ const MilanContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -99,7 +99,7 @@ const MilanContent = () => {
                                 ].map((item, idx) => (
                                     <li key={idx} className="bg-card p-5 rounded-2xl border border-border shadow-sm hover:border-gold/30 transition-all">
                                         <h3 className="font-bold text-lg text-primary mb-2">{item.title}</h3>
-                                        <p className="text-muted-foreground text-sm">{item.desc}</p>
+                                        <p className="text-muted-foreground">{item.desc}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -156,7 +156,7 @@ const MilanContent = () => {
                                         <h4 className="font-bold">
                                             {language === 'ar' ? 'جاليريا فيتوريو إيمانويل الثاني' : 'Galleria Vittorio Emanuele II'}
                                         </h4>
-                                        <p className="text-sm text-muted-foreground">
+                                        <p className="text-muted-foreground">
                                             {language === 'ar'
                                                 ? 'أقدم مركز تسوق في العالم، يتميز بسقف زجاجي مذهل وأرضيات من الفسيفساء، ويضم أفخم الماركات العالمية.'
                                                 : 'The world\'s oldest shopping mall, featuring a stunning glass roof and mosaic floors, housing the most luxurious international brands.'}
@@ -166,7 +166,7 @@ const MilanContent = () => {
                                         <h4 className="font-bold">
                                             {language === 'ar' ? 'حي الموضة (Quadrilatero della Moda)' : 'Fashion District (Quadrilatero della Moda)'}
                                         </h4>
-                                        <p className="text-sm text-muted-foreground">
+                                        <p className="text-muted-foreground">
                                             {language === 'ar'
                                                 ? 'مربع الموضة والشوارع الراقية مثل "مونتي نابوليوني"، حيث تجد أرقى الأزياء العالمية في بيئة فخمة جداً.'
                                                 : 'The fashion rectangle and high-end streets like "Via Montenapoleone", where you find the finest international fashion in a very luxurious environment.'}
@@ -199,7 +199,7 @@ const MilanContent = () => {
                 </div>
 
                 {/* Location Advantage */}
-                <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border text-center">
+                <section className="bg-white p-8 md:p-12 rounded-3xl border border-border text-center shadow-xl">
                     <MapPin className="w-12 h-12 text-gold mx-auto mb-4" />
                     <h2 className="text-3xl font-serif font-bold mb-6">
                         {language === 'ar' ? 'الموقع الاستراتيجي' : 'Strategic Location'}
@@ -208,19 +208,19 @@ const MilanContent = () => {
                         {language === 'ar' ? 'تعتبر ميلانو أفضل نقطة انطلاق في إيطاليا لأنها:' : 'Milan is considered the best starting point in Italy because it is:'}
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
+                        <div className="bg-white p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">1h</span>
                             <span className="text-sm text-primary font-bold">
                                 {language === 'ar' ? 'تبعد ساعة واحدة فقط عن بحيرة كومو.' : 'Only one hour away from Lake Como.'}
                             </span>
                         </div>
-                        <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
+                        <div className="bg-white p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">1.5h</span>
                             <span className="text-sm text-primary font-bold">
                                 {language === 'ar' ? 'تبعد ساعة ونصف عن سويسرا (مدينة لوجانو).' : 'One and a half hours away from Switzerland (Lugano).'}
                             </span>
                         </div>
-                        <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
+                        <div className="bg-white p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">Train</span>
                             <span className="text-sm text-primary font-bold">
                                 {language === 'ar' ? 'ترتبط بقطارات سريعة جداً مع روما، فينيسيا، وفلورنسا.' : 'Connected by very high-speed trains to Rome, Venice, and Florence.'}

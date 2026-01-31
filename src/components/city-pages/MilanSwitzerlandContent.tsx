@@ -12,7 +12,7 @@ const MilanSwitzerlandContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section - Reduced Fade */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -91,7 +91,7 @@ const MilanSwitzerlandContent = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className={`mt-4 bg-gold/5 p-4 rounded-xl border-gold/20 border ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
+                                <p className={`mt-4 bg-white shadow-md p-4 rounded-xl border-gold/20 border ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                     <strong>{language === 'ar' ? 'ما يميز سياحة إيطاليا:' : 'What makes Italy unique:'}</strong>
                                     {language === 'ar'
                                         ? ' تنوع الطعام (بيتزا، باستا، جيلاتو)، الدفء الاجتماعي، كثرة المهرجانات، والأسعار التي تعتبر "أرخص نسبياً" مقارنة بجارتها سويسرا.'
@@ -160,7 +160,7 @@ const MilanSwitzerlandContent = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className={`mt-4 bg-primary/5 p-4 rounded-xl border border-primary/10 ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
+                                <p className={`mt-4 bg-white shadow-md p-4 rounded-xl border border-primary/10 ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                     <strong>{language === 'ar' ? 'ما يميز سياحة سويسرا:' : 'What makes Switzerland unique:'}</strong>
                                     {language === 'ar'
                                         ? ' الهدوء التام، دقة المواعيد المتناهية، جودة الشوكولاتة والأجبان، والقطارات التي تعتبر الأجمل في العالم.'
@@ -172,7 +172,7 @@ const MilanSwitzerlandContent = () => {
                 </div>
 
                 {/* How to Combine Section */}
-                <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border text-center">
+                <section className="bg-white shadow-xl p-8 md:p-12 rounded-3xl border border-border text-center">
                     <h2 className="text-2xl md:text-3xl font-serif font-bold mb-6">
                         {language === 'ar' ? 'كيف تدمج بينهما في رحلة واحدة؟' : 'How to Combine Them in One Trip?'}
                     </h2>
@@ -182,7 +182,7 @@ const MilanSwitzerlandContent = () => {
                             : <>The best way to combine both is focusing on <strong>"Northern Italy"</strong> and <strong>"Central Switzerland"</strong> due to geographic proximity.</>}
                     </p>
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <Map className="w-5 h-5" />
                                 {language === 'ar' ? 'نقطة الربط' : 'Connecting Point'}
@@ -191,7 +191,7 @@ const MilanSwitzerlandContent = () => {
                                 {language === 'ar' ? 'مدينة ميلانو (إيطاليا) ومدينة لوجانو (سويسرا). المسافة بينهما حوالي ساعة واحدة فقط بالسيارة.' : 'Milan (Italy) and Lugano (Switzerland). Only about 1 hour apart by car.'}
                             </p>
                         </div>
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5" />
                                 {language === 'ar' ? 'التنقل' : 'Transportation'}
@@ -200,7 +200,7 @@ const MilanSwitzerlandContent = () => {
                                 {language === 'ar' ? 'يمكنك الاستعانة بأبو فهد سائق خاص ليأخذك عبر ممرات جبال الألب الساحرة مثل "ممر سينت غوتهارد".' : 'Hire Abu Fahd as a private driver to take you through enchanting Alpine passes like "St. Gotthard Pass".'}
                             </p>
                         </div>
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <DollarSign className="w-5 h-5" />
                                 {language === 'ar' ? 'العملة' : 'Currency'}
@@ -318,21 +318,21 @@ const MilanSwitzerlandContent = () => {
                                     <Calendar className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الحجز المسبق' : 'Advance Booking'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'إيطاليا وسويسرا وجهات مزدحمة جداً. احجز تذاكر "الدومو" و"اليونغفراو" قبل شهر على الأقل.' : 'Italy and Switzerland are very busy. Book Duomo and Jungfraujoch tickets at least a month in advance.'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'إيطاليا وسويسرا وجهات مزدحمة جداً. احجز تذاكر "الدومو" و"اليونغفراو" قبل شهر على الأقل.' : 'Italy and Switzerland are very busy. Book Duomo and Jungfraujoch tickets at least a month in advance.'}</p>
                                     </div>
                                 </div>
                                 <div className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <Info className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الطقس' : 'Weather'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'أفضل وقت: مايو إلى سبتمبر (طبيعة خضراء)، أو ديسمبر (أجواء الكريسماس والثلوج).' : 'Best time: May to September (green nature), or December (Christmas atmosphere and snow).'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'أفضل وقت: مايو إلى سبتمبر (طبيعة خضراء)، أو ديسمبر (أجواء الكريسماس والثلوج).' : 'Best time: May to September (green nature), or December (Christmas atmosphere and snow).'}</p>
                                     </div>
                                 </div>
                                 <div className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الإنترنت' : 'Internet'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'اشترِ شريحة eSIM (Airalo) تعمل في أوروبا بالكامل (إيطاليا وسويسرا معاً).' : 'Buy an eSIM (like Airalo) that works across all of Europe (both Italy and Switzerland).'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'اشترِ شريحة eSIM (Airalo) تعمل في أوروبا بالكامل (إيطاليا وسويسرا معاً).' : 'Buy an eSIM (like Airalo) that works across all of Europe (both Italy and Switzerland).'}</p>
                                     </div>
                                 </div>
                             </div>

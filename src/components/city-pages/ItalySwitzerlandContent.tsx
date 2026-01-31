@@ -12,7 +12,7 @@ const ItalySwitzerlandContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section - Reduced Fade */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -95,7 +95,7 @@ const ItalySwitzerlandContent = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className={`mt-4 bg-gold/5 p-4 rounded-xl border-gold/20 border ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
+                                <p className={`mt-4 bg-white shadow-md p-4 rounded-xl border-gold/20 border ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                     <strong>{language === 'ar' ? 'ما يميز سياحة إيطاليا:' : 'What makes Italy unique:'}</strong>
                                     {language === 'ar'
                                         ? ' تنوع الطعام بيتزا، باستا، جيلاتو، الدفء الاجتماعي، كثرة المهرجانات، والأسعار التي تعتبر أرخص نسبياً مقارنة بجارتها سويسرا.'
@@ -164,7 +164,7 @@ const ItalySwitzerlandContent = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className={`mt-4 bg-primary/5 p-4 rounded-xl border border-primary/10 ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
+                                <p className={`mt-4 bg-white shadow-md p-4 rounded-xl border border-primary/10 ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                     <strong>{language === 'ar' ? 'ما يميز سياحة سويسرا:' : 'What makes Switzerland unique:'}</strong>
                                     {language === 'ar'
                                         ? ' الهدوء التام، دقة المواعيد المتناهية، جودة الشوكولاتة والأجبان، والقطارات التي تعتبر الأجمل في العالم من حيث الإطلالات.'
@@ -176,7 +176,7 @@ const ItalySwitzerlandContent = () => {
                 </div>
 
                 {/* How to Combine Section */}
-                <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border text-center">
+                <section className="bg-white shadow-xl p-8 md:p-12 rounded-3xl border border-border text-center">
                     <h2 className="text-2xl md:text-3xl font-serif font-bold mb-6">
                         {language === 'ar' ? 'كيف تدمج بينهما في رحلة واحدة؟' : 'How to Combine Them in One Trip?'}
                     </h2>
@@ -186,7 +186,7 @@ const ItalySwitzerlandContent = () => {
                             : <>The best way to combine both is focusing on <strong>"Northern Italy"</strong> and <strong>"Central Switzerland"</strong> due to geographic proximity.</>}
                     </p>
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <Map className="w-5 h-5" />
                                 {language === 'ar' ? 'نقطة الربط' : 'Connecting Point'}
@@ -195,7 +195,7 @@ const ItalySwitzerlandContent = () => {
                                 {language === 'ar' ? 'مدينة ميلانو إيطاليا ومدينة لوجانو سويسرا. المسافة بينهما حوالي ساعة واحدة فقط بالسيارة.' : 'Milan (Italy) and Lugano (Switzerland). Only about 1 hour apart by car.'}
                             </p>
                         </div>
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5" />
                                 {language === 'ar' ? 'التنقل' : 'Transportation'}
@@ -204,7 +204,7 @@ const ItalySwitzerlandContent = () => {
                                 {language === 'ar' ? 'يمكنك الاستعانه بأبو فهد بـ سائق خاص ليأخذك عبر ممرات جبال الألب الساحرة مثل ممر سينت غوتهارد.' : 'Hire Abu Fahd as a private driver to take you through enchanting Alpine passes like "St. Gotthard Pass".'}
                             </p>
                         </div>
-                        <div className={`bg-background p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                        <div className={`bg-white p-6 rounded-xl shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h3 className="font-bold text-gold mb-3 flex items-center gap-2">
                                 <DollarSign className="w-5 h-5" />
                                 {language === 'ar' ? 'العملة' : 'Currency'}
@@ -239,7 +239,7 @@ const ItalySwitzerlandContent = () => {
                                 <h3 className={`text-xl font-bold text-primary mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'المحطة الأولى: ميلانو وبحيراتها (3 أيام) - إيطاليا' : 'Station 1: Milan & Its Lakes (3 Days) - Italy'}
                                 </h3>
-                                <ul className={`space-y-3 text-muted-foreground text-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                                <ul className={`space-y-3 text-muted-foreground ${isRTL ? 'text-right' : 'text-left'}`}>
                                     <li><strong>{language === 'ar' ? 'اليوم 1:' : 'Day 1:'}</strong> {language === 'ar' ? 'الوصول إلى ميلانو استكشاف الدومو والتسوق في جاليريا فيتوريو إيمانويل. لا تحتاج سائق.' : 'Arrival in Milan, Duomo exploration, and Galleria Vittorio Emanuele shopping. (No driver needed in city).'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 2:' : 'Day 2:'}</strong> {language === 'ar' ? 'بحيرة كومو رحلة نهارية لزيارة بلاجيو وفارينا. يفضل سائق خاص للاستمتاع بالمناظر دون قلق المواقف.' : 'Lake Como (Day Trip). Visit Bellagio and Varenna. Private driver recommended to enjoy views without parking stress.'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 3:' : 'Day 3:'}</strong> {language === 'ar' ? 'لوجانو السويسرية مدينة سويسرية بروح إيطالية. زيارة سويس مينييتور وقمة سان سالفاتوري. يمكن العودة لميلانو أو المبيت هناك.' : 'Lugano, Switzerland. Swiss city with an Italian spirit. Visit Swissminiatur and San Salvatore peak. Return to Milan or stay overnight.'}</li>
@@ -256,7 +256,7 @@ const ItalySwitzerlandContent = () => {
                                 <h3 className={`text-xl font-bold text-primary mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'المحطة الثانية: قلب الطبيعة (4 أيام) - سويسرا' : 'Station 2: Heart of Nature (4 Days) - Switzerland'}
                                 </h3>
-                                <ul className={`space-y-3 text-muted-foreground text-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                                <ul className={`space-y-3 text-muted-foreground ${isRTL ? 'text-right' : 'text-left'}`}>
                                     <li><strong>{language === 'ar' ? 'اليوم 4:' : 'Day 4:'}</strong> {language === 'ar' ? 'الانتقال إلى انترلاكن الطريق من ميلانو إلى انترلاكن حوالي 3 ساعات هو أحد أجمل طرق القيادة في العالم عبر نفق غوتارد.' : 'Transfer to Interlaken (3 hours from Milan). One of the world\'s most beautiful drives via Gotthard Tunnel.'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 5:' : 'Day 5:'}</strong> {language === 'ar' ? 'قمة يونغفراو يوخ قمة أوروبا. ركوب القطار المسنن لأعلى قمة في أوروبا واللعب بالثلوج حتى في الصيف.' : 'Jungfraujoch (Top of Europe). Cogwheel train ride and snow play even in summer.'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 6:' : 'Day 6:'}</strong> {language === 'ar' ? 'وادي لوتر برونين وقرية جريندلوالد. وادي الـ 72 شلالاً، مكان خيالي للتصوير والمشي البسيط.' : 'Lauterbrunnen Valley and Grindelwald. Valley of 72 waterfalls, a dream spot for photos and hiking.'}</li>
@@ -274,7 +274,7 @@ const ItalySwitzerlandContent = () => {
                                 <h3 className={`text-xl font-bold text-primary mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'المحطة الثالثة: العودة عبر فيرونا (3 أيام) - إيطاليا' : 'Station 3: Return via Verona (3 Days) - Italy'}
                                 </h3>
-                                <ul className={`space-y-3 text-muted-foreground text-sm ${isRTL ? 'text-right' : 'text-left'}`}>
+                                <ul className={`space-y-3 text-muted-foreground ${isRTL ? 'text-right' : 'text-left'}`}>
                                     <li><strong>{language === 'ar' ? 'اليوم 8:' : 'Day 8:'}</strong> {language === 'ar' ? 'التوجه إلى فيرونا وبحيرة جاردا. العودة للأجواء الإيطالية الدافئة زيارة قرية سيرميوني التاريخية وسط البحيرة.' : 'Heading to Verona and Lake Garda. Visit historic Sirmione village in the lake center.'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 9:' : 'Day 9:'}</strong> {language === 'ar' ? 'فيرونا مدينة الحب. زيارة شرفة جوليت وساحة أرينا الرومانية.' : 'Verona (City of Love). Visit Juliet\'s Balcony and the Roman Arena.'}</li>
                                     <li><strong>{language === 'ar' ? 'اليوم 10:' : 'Day 10:'}</strong> {language === 'ar' ? 'العودة لمطار ميلانو مالبينسا. تسوق أخير في أوت لت سيرافالي في الطريق للمطار.' : 'Return to Milan Malpensa Airport. Last-minute shopping at Serravalle Outlet on the way.'}</li>
@@ -322,21 +322,21 @@ const ItalySwitzerlandContent = () => {
                                     <Calendar className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الحجز المسبق' : 'Advance Booking'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'في عام 2026، أصبحت إيطاليا وسويسرا وجهات مزدحمة جداً، لذا احجز تذاكر الدومو في ميلانو وقطار اليونغفراو في سويسرا قبل رحلتك بشهر على الأقل.' : 'Italy and Switzerland are very busy in 2026. Book Duomo and Jungfraujoch tickets at least a month in advance.'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'في عام 2026، أصبحت إيطاليا وسويسرا وجهات مزدحمة جداً، لذا احجز تذاكر الدومو في ميلانو وقطار اليونغفراو في سويسرا قبل رحلتك بشهر على الأقل.' : 'Italy and Switzerland are very busy in 2026. Book Duomo and Jungfraujoch tickets at least a month in advance.'}</p>
                                     </div>
                                 </div>
                                 <div className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <Info className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الطقس' : 'Weather'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'أفضل وقت: مايو إلى سبتمبر (طبيعة خضراء)، أو ديسمبر (أجواء الكريسماس والثلوج).' : 'Best time: May to September (green nature), or December (Christmas atmosphere and snow).'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'أفضل وقت: مايو إلى سبتمبر (طبيعة خضراء)، أو ديسمبر (أجواء الكريسماس والثلوج).' : 'Best time: May to September (green nature), or December (Christmas atmosphere and snow).'}</p>
                                     </div>
                                 </div>
                                 <div className={`flex gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                     <div>
                                         <h4 className="font-bold">{language === 'ar' ? 'الإنترنت' : 'Internet'}</h4>
-                                        <p className="text-sm opacity-80">{language === 'ar' ? 'اشتر شريحة eSIM Airalo تعمل في أوروبا بالكامل لتشمل إيطاليا وسويسرا معاً دون تغيير الشريحة.' : 'Buy an eSIM (like Airalo) that works across all of Europe (both Italy and Switzerland) without changing the chip.'}</p>
+                                        <p className="text-muted-foreground">{language === 'ar' ? 'اشتر شريحة eSIM Airalo تعمل في أوروبا بالكامل لتشمل إيطاليا وسويسرا معاً دون تغيير الشريحة.' : 'Buy an eSIM (like Airalo) that works across all of Europe (both Italy and Switzerland) without changing the chip.'}</p>
                                     </div>
                                 </div>
                             </div>

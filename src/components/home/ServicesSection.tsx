@@ -51,7 +51,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-background relative">
+    <section className="py-16 relative">
       <div className="container-luxury">
         {/* Header */}
         <motion.div

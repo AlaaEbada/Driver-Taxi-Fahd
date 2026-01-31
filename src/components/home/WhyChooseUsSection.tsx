@@ -43,7 +43,7 @@ const WhyChooseUsSection = () => {
     ];
 
     return (
-        <section className="py-12 md:py-16 bg-background relative overflow-hidden">
+        <section className="py-12 md:py-16 relative overflow-hidden">
             <div className="container-luxury">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 text-gold mb-6 border border-gold/20">

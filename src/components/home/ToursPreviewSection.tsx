@@ -54,7 +54,7 @@ const ToursPreviewSection: React.FC = () => {
     ];
 
     return (
-        <section className="py-16 bg-gradient-to-b from-background via-gold/5 to-background">
+        <section className="py-16">
             <div className="container-luxury">
                 {/* Main Section Header */}
                 <div className="text-center max-w-3xl mx-auto mb-8">

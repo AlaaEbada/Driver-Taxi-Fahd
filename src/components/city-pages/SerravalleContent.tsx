@@ -12,7 +12,7 @@ const SerravalleContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -65,22 +65,22 @@ const SerravalleContent = () => {
                     <div className="bg-card p-6 rounded-2xl border border-border shadow-sm text-center">
                         <MapPin className="w-10 h-10 text-gold mx-auto mb-4" />
                         <h3 className="font-bold text-primary mb-2">{language === 'ar' ? 'الموقع' : 'Location'}</h3>
-                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يبعد عن ميلانو حوالي 50-60 دقيقة.' : 'About 50-60 minutes from Milan.'}</p>
+                        <p className="text-muted-foreground">{language === 'ar' ? 'يبعد عن ميلانو حوالي 50-60 دقيقة.' : 'About 50-60 minutes from Milan.'}</p>
                     </div>
                     <div className="bg-card p-6 rounded-2xl border border-border shadow-sm text-center">
                         <ShoppingBag className="w-10 h-10 text-gold mx-auto mb-4" />
                         <h3 className="font-bold text-primary mb-2">{language === 'ar' ? 'الماركات' : 'Brands'}</h3>
-                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'أكثر من 230 متجر عالمي متميز.' : 'Over 230 premium global stores.'}</p>
+                        <p className="text-muted-foreground">{language === 'ar' ? 'أكثر من 230 متجر عالمي متميز.' : 'Over 230 premium global stores.'}</p>
                     </div>
                     <div className="bg-card p-6 rounded-2xl border border-border shadow-sm text-center">
                         <CreditCard className="w-10 h-10 text-gold mx-auto mb-4" />
                         <h3 className="font-bold text-primary mb-2">{language === 'ar' ? 'التخفيضات' : 'Discounts'}</h3>
-                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'تتراوح بين 30% إلى 70% طوال العام.' : 'Between 30% to 70% all year round.'}</p>
+                        <p className="text-muted-foreground">{language === 'ar' ? 'تتراوح بين 30% إلى 70% طوال العام.' : 'Between 30% to 70% all year round.'}</p>
                     </div>
                     <div className="bg-card p-6 rounded-2xl border border-border shadow-sm text-center">
                         <Clock className="w-10 h-10 text-gold mx-auto mb-4" />
                         <h3 className="font-bold text-primary mb-2">{language === 'ar' ? 'المواعيد' : 'Hours'}</h3>
-                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يفتح من الساعة 10:00 صباحاً حتى 8:00 مساءً.' : 'Open Daily from 10:00 AM to 8:00 PM.'}</p>
+                        <p className="text-muted-foreground">{language === 'ar' ? 'يفتح من الساعة 10:00 صباحاً حتى 8:00 مساءً.' : 'Open Daily from 10:00 AM to 8:00 PM.'}</p>
                     </div>
                 </div>
 
@@ -98,11 +98,11 @@ const SerravalleContent = () => {
                         <div className="space-y-4">
                             <div className={`bg-card p-5 rounded-2xl border border-border hover:border-gold/30 transition-all shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <h3 className="font-bold text-lg text-primary mb-2">{language === 'ar' ? 'الماركات الفاخرة' : 'Luxury Brands'}</h3>
-                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'تجد فيه برادا (Prada)، جوتشي (Gucci)، فندي (Fendi)، سان لوران (Saint Laurent)، وبربري (Burberry).' : 'You will find Prada, Gucci, Fendi, Saint Laurent, and Burberry.'}</p>
+                                <p className="text-muted-foreground">{language === 'ar' ? 'تجد فيه برادا (Prada)، جوتشي (Gucci)، فندي (Fendi)، سان لوران (Saint Laurent)، وبربري (Burberry).' : 'You will find Prada, Gucci, Fendi, Saint Laurent, and Burberry.'}</p>
                             </div>
                             <div className={`bg-card p-5 rounded-2xl border border-border hover:border-gold/30 transition-all shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <h3 className="font-bold text-lg text-primary mb-2">{language === 'ar' ? 'الماركات الرياضية والكاجوال' : 'Sports & Casual Brands'}</h3>
-                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'مثل نايكي (Nike)، أديداس (Adidas)، تومي هيلفيغر (Tommy Hilfiger)، ومايكل كورس (Michael Kors).' : 'Brands like Nike, Adidas, Tommy Hilfiger, and Michael Kors.'}</p>
+                                <p className="text-muted-foreground">{language === 'ar' ? 'مثل نايكي (Nike)، أديداس (Adidas)، تومي هيلفيغر (Tommy Hilfiger)، ومايكل كورس (Michael Kors).' : 'Brands like Nike, Adidas, Tommy Hilfiger, and Michael Kors.'}</p>
                             </div>
                         </div>
                     </motion.div>
@@ -123,40 +123,40 @@ const SerravalleContent = () => {
                 </section>
 
                 {/* Services Section */}
-                <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border">
+                <section className="bg-white p-8 md:p-12 rounded-3xl border border-border shadow-xl">
                     <h2 className="text-3xl font-serif font-bold text-center mb-10">
                         {language === 'ar' ? 'الخدمات والمميزات للمسافرين' : 'Services & Features for Travelers'}
                     </h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="space-y-4">
-                            <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
+                            <div className={`flex gap-4 p-4 bg-white rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'استرداد الضرائب (Tax Free)' : 'Tax Free Refund'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'توجد مكاتب مخصصة داخل الأوت لت (Global Blue & Planet) لتسهيل استعادة الأموال في المطار لاحقاً، وفي بعض الأحيان يمكنك استلام المبلغ نقداً هناك.' : 'Dedicated offices inside the outlet (Global Blue & Planet) to facilitate tax refunds at the airport later, and sometimes you can receive the amount in cash there.'}</p>
+                                    <p className="text-muted-foreground">{language === 'ar' ? 'توجد مكاتب مخصصة داخل الأوت لت (Global Blue & Planet) لتسهيل استعادة الأموال في المطار لاحقاً، وفي بعض الأحيان يمكنك استلام المبلغ نقداً هناك.' : 'Dedicated offices inside the outlet (Global Blue & Planet) to facilitate tax refunds at the airport later, and sometimes you can receive the amount in cash there.'}</p>
                                 </div>
                             </div>
-                            <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
+                            <div className={`flex gap-4 p-4 bg-white rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <Utensils className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'المطاعم والمقاهي' : 'Restaurants & Cafes'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يضم خيارات متنوعة من الأكل الإيطالي السريع، المقاهي مثل "Starbucks"، ومطاعم الجيلاتو والباستا.' : 'Features a variety of fast Italian food options, cafes like "Starbucks", and gelato and pasta restaurants.'}</p>
+                                    <p className="text-muted-foreground">{language === 'ar' ? 'يضم خيارات متنوعة من الأكل الإيطالي السريع، المقاهي مثل "Starbucks"، ومطاعم الجيلاتو والباستا.' : 'Features a variety of fast Italian food options, cafes like "Starbucks", and gelato and pasta restaurants.'}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="space-y-4">
-                            <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
+                            <div className={`flex gap-4 p-4 bg-white rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'إنترنت مجاني' : 'Free Wi-Fi'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'تتوفر خدمة الإنترنت في جميع أنحاء المركز.' : 'Internet service is available throughout the entire center.'}</p>
+                                    <p className="text-muted-foreground">{language === 'ar' ? 'تتوفر خدمة الإنترنت في جميع أنحاء المركز.' : 'Internet service is available throughout the entire center.'}</p>
                                 </div>
                             </div>
-                            <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
+                            <div className={`flex gap-4 p-4 bg-white rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'منطقة ألعاب للأطفال' : 'Children\'s Play Area'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'لضمان راحة العائلات أثناء يوم التسوق الطويل.' : 'Ensuring family comfort during a long shopping day.'}</p>
+                                    <p className="text-muted-foreground">{language === 'ar' ? 'لضمان راحة العائلات أثناء يوم التسوق الطويل.' : 'Ensuring family comfort during a long shopping day.'}</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@ const SerravalleContent = () => {
                 </section>
 
                 {/* Shopping Tips */}
-                <section className="bg-primary/5 p-8 md:p-12 rounded-3xl border border-gold/20">
+                <section className="bg-white p-8 md:p-12 rounded-3xl border border-gold/20 shadow-xl">
                     <h2 className="text-2xl font-serif font-bold text-center mb-8">
                         {language === 'ar' ? 'نصائح ذهبية لتجربة تسوق مثالية' : 'Golden Tips for a Perfect Shopping Experience'}
                     </h2>
@@ -237,7 +237,7 @@ const SerravalleContent = () => {
                         </div>
                         <div className={`space-y-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h4 className="font-bold text-gold">{language === 'ar' ? 'بطاقة الخصم الإضافي' : 'Extra Discount Card'}</h4>
-                            <p className="text-sm text-muted-foreground leading-relaxed">
+                            <p className="text-muted-foreground leading-relaxed">
                                 {language === 'ar' ? 'توجه إلى مكتب الاستعلامات (Information Desk) وأظهر جواز سفرك؛ أحياناً يمنحون السياح بطاقة "Fashion Passport" التي تعطيك خصماً إضافياً بنسبة 10% في بعض المحلات.' : 'Head to the Information Desk and show your passport; sometimes they give tourists a "Fashion Passport" which gives you an additional 10% discount in some stores.'}
                             </p>
                         </div>
@@ -245,7 +245,7 @@ const SerravalleContent = () => {
                 </section>
 
                 {/* CTA Section */}
-                <section className="bg-primary text-primary-foreground p-8 md:p-12 rounded-3xl relative overflow-hidden text-center">
+                <section className="bg-white shadow-md/sm text-primary-foreground p-8 md:p-12 rounded-3xl relative overflow-hidden text-center">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
                     <div className="relative z-10 max-w-4xl mx-auto">
@@ -273,8 +273,8 @@ const SerravalleContent = () => {
                         </Button>
                     </div>
                 </section>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

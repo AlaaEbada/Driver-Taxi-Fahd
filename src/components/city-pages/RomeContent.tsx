@@ -12,7 +12,7 @@ const RomeContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -99,7 +99,7 @@ const RomeContent = () => {
                                 ].map((item, idx) => (
                                     <li key={idx} className="bg-card p-4 rounded-xl border border-border hover:border-gold/30 transition-colors shadow-sm">
                                         <h3 className="font-bold text-lg text-primary mb-2">{item.title}</h3>
-                                        <p className="text-muted-foreground text-sm">{item.desc}</p>
+                                        <p className="text-muted-foreground">{item.desc}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -168,17 +168,17 @@ const RomeContent = () => {
                             </div>
 
                             {/* Vatican */}
-                            <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                            <div className="bg-white p-6 rounded-2xl border border-primary/10 shadow-md">
                                 <div className="flex items-center gap-3 mb-3">
                                     <MapPin className="w-6 h-6 text-gold" />
                                     <h2 className="text-xl font-bold text-primary">
                                         {language === 'ar' ? 'دولة الفاتيكان' : 'Vatican City'}
                                     </h2>
                                 </div>
-                                <p className="text-sm text-muted-foreground mb-3">
+                                <p className="text-muted-foreground mb-3">
                                     {language === 'ar' ? 'تقع في قلب روما، وهي أصغر دولة في العالم، وتضم:' : 'Located in the heart of Rome, the smallest country in the world, featuring:'}
                                 </p>
-                                <ul className="space-y-2 text-sm text-foreground font-medium">
+                                <ul className="space-y-2 text-foreground font-medium">
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-4 h-4 text-gold" />
                                         {language === 'ar' ? 'كنيسة القديس بطرس من أضخم وأجمل الكنائس في العالم.' : 'St. Peter\'s Basilica (one of the largest and most beautiful in the world).'}
@@ -194,7 +194,7 @@ const RomeContent = () => {
                 </div>
 
                 {/* Food & Atmosphere */}
-                <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border text-center">
+                <section className="bg-white p-8 md:p-12 rounded-3xl border border-border text-center shadow-xl">
                     <Coffee className="w-12 h-12 text-gold mx-auto mb-4" />
                     <h2 className="text-3xl font-serif font-bold mb-6">
                         {language === 'ar' ? 'الأجواء والطعام' : 'Atmosphere & Food'}
@@ -205,13 +205,13 @@ const RomeContent = () => {
                             : 'Rome is a walking city; the best way to explore it is by wandering through its narrow alleys. It features a rich cuisine; you must try:'}
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
+                        <span className="px-6 py-3 bg-white rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
                             {language === 'ar' ? 'الباستا الرومانية الأصيلة مثل الكاربونارا والأماتريتشيانا' : 'Authentic Roman Pasta (Carbonara & Amatriciana)'}
                         </span>
-                        <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
+                        <span className="px-6 py-3 bg-white rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
                             {language === 'ar' ? 'البيتزا الرقيقة المقرمشة' : 'Thin Crispy Pizza'}
                         </span>
-                        <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
+                        <span className="px-6 py-3 bg-white rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
                             {language === 'ar' ? 'الجيلاتو الآيس كريم في المحلات التاريخية قريباً من الساحات' : 'Gelato (Ice Cream) in historic shops near piazzas'}
                         </span>
                     </div>

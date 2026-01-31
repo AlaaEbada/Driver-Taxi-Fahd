@@ -74,7 +74,7 @@ const ContactClient = () => {
     ];
 
     return (
-        <div className="bg-background">
+        <div className="">
             {/* 1. Hero Section - With specific text */}
             <PageHeader
                 title={language === 'ar' ? 'تواصل معي' : 'Contact Me'}
@@ -99,7 +99,7 @@ const ContactClient = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className={`flex flex-col items-center p-5 md:p-10 bg-card/80 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl border border-border transition-all duration-300 group ${method.hoverBorder} ${method.hoverShadow} hover:-translate-y-2 md:hover:-translate-y-4`}
+                                className={`flex flex-col items-center p-5 md:p-10 bg-white rounded-2xl md:rounded-3xl shadow-xl md:shadow-2xl border border-border transition-all duration-300 group ${method.hoverBorder} ${method.hoverShadow} hover:-translate-y-2 md:hover:-translate-y-4`}
                             >
                                 <div className={`w-12 h-12 md:w-20 md:h-20 rounded-xl md:rounded-2xl ${method.color} flex items-center justify-center mb-3 md:mb-8 shadow-lg group-hover:rotate-6 transition-transform duration-300`}>
                                     <method.icon className="w-6 h-6 md:w-10 md:h-10 text-white" />
@@ -120,7 +120,7 @@ const ContactClient = () => {
             </section>
 
             {/* 3. Why Choose Us Section */}
-            <section className="py-16 md:py-24 bg-muted/30">
+            <section className="py-16 md:py-24">
                 <div className="container-luxury">
                     <div className="text-center mb-10 md:mb-16">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-4">
@@ -168,7 +168,7 @@ const ContactClient = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="flex flex-col items-center text-center p-8 bg-background rounded-3xl border border-border shadow-sm hover:shadow-lg hover:border-gold/30 transition-all duration-300"
+                                className="flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-border shadow-sm hover:shadow-lg hover:border-gold/30 transition-all duration-300"
                             >
                                 <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mb-6">
                                     <v.icon className="w-7 h-7 text-gold" />
@@ -243,7 +243,7 @@ const ContactClient = () => {
             </section>
 
             {/* 5. How It Works Section */}
-            <section className="py-16 md:py-24 bg-card">
+            <section className="py-16 md:py-24">
                 <div className="container-luxury">
                     <div className="text-center mb-10 md:mb-16">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-4">
@@ -269,7 +269,7 @@ const ContactClient = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.2 }}
-                                className="relative z-10 bg-background p-8 md:p-10 rounded-3xl border border-border flex flex-col items-center text-center group hover:border-gold transition-colors"
+                                className="relative z-10 bg-white p-8 md:p-10 rounded-3xl border border-border flex flex-col items-center text-center group hover:border-gold transition-colors"
                             >
                                 <span className="text-4xl md:text-5xl font-serif font-bold text-gold/20 mb-4 md:mb-6 group-hover:text-gold/40 transition-colors">{s.step}</span>
                                 <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">{s.title}</h3>

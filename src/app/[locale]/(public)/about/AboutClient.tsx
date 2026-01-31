@@ -60,7 +60,7 @@ const AboutClient = () => {
     ];
 
     return (
-        <div className="bg-background overflow-hidden">
+        <div className="overflow-hidden">
             {/* 1. Hero Section - Dark & Premium */}
             {/* 1. Hero Section - Reverted to PageHeader with same image */}
             <PageHeader
@@ -127,7 +127,7 @@ const AboutClient = () => {
             </section>
 
             {/* 3. Why & Experience Section - Darker Background */}
-            <section className="py-20 bg-muted/20">
+            <section className="py-20">
                 <div className="container-luxury">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <motion.div
@@ -151,7 +151,7 @@ const AboutClient = () => {
                                     language === 'ar' ? 'الخبرة التي توفر عليه ساعات من الضياع في طرقات إيطاليا المعقدة.' : 'Experience saving you from getting lost.',
                                     language === 'ar' ? 'الصدق في المواعيد وفي جودة الخدمة التي تبيض الوجه.' : 'Punctuality and quality service.'
                                 ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-3 bg-background p-4 rounded-xl shadow-sm border border-border">
+                                    <li key={i} className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-border">
                                         <div className="p-1.5 rounded-full bg-gold/10 mt-0.5">
                                             <ShieldCheck className="w-4 h-4 text-gold" />
                                         </div>
@@ -216,7 +216,7 @@ const AboutClient = () => {
 
                         <div className="grid md:grid-cols-2 gap-8 text-start">
                             <motion.div
-                                className="bg-background p-8 rounded-2xl shadow-lg border border-border"
+                                className="bg-white p-8 rounded-2xl shadow-lg border border-border"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -234,7 +234,7 @@ const AboutClient = () => {
                             </motion.div>
 
                             <motion.div
-                                className="bg-background p-8 rounded-2xl shadow-lg border border-border"
+                                className="bg-white p-8 rounded-2xl shadow-lg border border-border"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -301,7 +301,7 @@ const AboutClient = () => {
             </section>
 
             {/* 4. Values / Why Me - Premium Cards */}
-            <section className="py-32 bg-background relative">
+            <section className="py-32 relative">
                 <div className="container-luxury">
                     <div className="text-center mb-20">
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
@@ -339,7 +339,7 @@ const AboutClient = () => {
                 </div>
             </section>
             {/* 5. Contact Methods Section - Added per request */}
-            <section className="py-24 bg-muted/30">
+            <section className="py-24">
                 <div className="container-luxury text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -363,7 +363,7 @@ const AboutClient = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="flex flex-col items-center p-8 bg-background rounded-2xl shadow-lg border border-border hover:border-red-500 hover:shadow-red-500/20 transition-all duration-300 group"
+                            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg border border-border hover:border-red-500 hover:shadow-red-500/20 transition-all duration-300 group"
                         >
                             <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                                 <PhoneIcon className="w-8 h-8 text-white" />
@@ -381,7 +381,7 @@ const AboutClient = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="flex flex-col items-center p-8 bg-background rounded-2xl shadow-lg border border-border hover:border-[#25D366] hover:shadow-[#25D366]/20 transition-all duration-300 group"
+                            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg border border-border hover:border-[#25D366] hover:shadow-[#25D366]/20 transition-all duration-300 group"
                         >
                             <div className="w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                                 <WhatsApp className="w-8 h-8 text-white" />
@@ -399,7 +399,7 @@ const AboutClient = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="flex flex-col items-center p-8 bg-background rounded-2xl shadow-lg border border-border hover:border-[#0088CC] hover:shadow-[#0088CC]/20 transition-all duration-300 group"
+                            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg border border-border hover:border-[#0088CC] hover:shadow-[#0088CC]/20 transition-all duration-300 group"
                         >
                             <div className="w-16 h-16 rounded-full bg-[#0088CC] flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                                 <Telegram className="w-8 h-8 text-white" />
@@ -417,7 +417,7 @@ const AboutClient = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="flex flex-col items-center p-8 bg-background rounded-2xl shadow-lg border border-border hover:border-yellow-400 hover:shadow-yellow-400/20 transition-all duration-300 group"
+                            className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg border border-border hover:border-yellow-400 hover:shadow-yellow-400/20 transition-all duration-300 group"
                         >
                             <div className="w-16 h-16 rounded-full bg-yellow-400 flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
                                 <Snapchat className="w-8 h-8 text-white" />

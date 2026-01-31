@@ -50,7 +50,7 @@ const BlogListClient = ({ initialPosts, categories }: BlogListClientProps) => {
                 }
             />
 
-            <section className="py-20 bg-background min-h-screen">
+            <section className="py-20 min-h-screen">
                 <div className="container-luxury">
                     {/* Category Filter */}
                     {mappedCategories && mappedCategories.length > 0 && (

@@ -12,7 +12,7 @@ const ComoBellagioContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -226,7 +226,7 @@ const ComoBellagioContent = () => {
                 </div>
 
                 {/* Driver Tip Section */}
-                <section className="bg-primary/5 p-8 md:p-12 rounded-3xl border border-gold/20">
+                <section className="bg-white p-8 md:p-12 rounded-3xl border border-gold/20 shadow-xl">
                     <h2 className="text-3xl font-serif font-bold text-center mb-8">
                         {language === 'ar' ? 'نصيحة السائق لهذه الرحلة' : 'Driver\'s Tip for This Trip'}
                     </h2>
@@ -236,7 +236,7 @@ const ComoBellagioContent = () => {
                                 ? 'هذا المسار (ميلانو - كومو - بيلاجيو - لوجانو - ميلانو) هو المسار الأكثر طلباً للسائقين الخاصين.'
                                 : 'This route (Milan - Como - Bellagio - Lugano - Milan) is the most requested route for private drivers.'}
                         </p>
-                        <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+                        <div className="bg-white p-6 rounded-2xl border border-border shadow-sm">
                             <h4 className="font-bold text-gold mb-3">
                                 {language === 'ar' ? 'لماذا السائق الخاص ضروري؟' : 'Why is a Private Driver Essential?'}
                             </h4>
@@ -258,28 +258,28 @@ const ComoBellagioContent = () => {
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Clock className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'الصباح' : 'Morning'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'الانطلاق من ميلانو إلى مدينة كومو (جولة سريعة).' : 'Departure from Milan to Como city (quick tour).'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Anchor className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'الظهيرة' : 'Noon'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'التوجه إلى بيلاجيو وتناول الغداء على البحيرة.' : 'Head to Bellagio and have lunch on the lake.'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Coffee className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'بعد الظهر' : 'Afternoon'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'عبور الحدود إلى لوجانو للاستمتاع بقهوة المساء والتسوق.' : 'Cross the border to Lugano to enjoy evening coffee and shopping.'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Navigation className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'المساء' : 'Evening'}</h4>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'العودة لميلانو.' : 'Return to Milan.'}
                             </p>
                         </div>

@@ -201,7 +201,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             </section>
 
             {/* Features - Premium Design */}
-            <section className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+            <section className="py-20 bg-white relative overflow-hidden">
                 {/* Decorative background */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold rounded-full blur-3xl" />
@@ -233,7 +233,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
                                 className="group relative"
                             >
                                 {/* Card with glassmorphism */}
-                                <div className="relative bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-border hover:border-gold/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-gold/20 h-full flex flex-col items-center text-center md:items-start md:text-start">
+                                <div className="relative bg-white rounded-2xl p-8 border border-border hover:border-gold/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-gold/20 h-full flex flex-col items-center text-center md:items-start md:text-start">
                                     {/* Gradient overlay on hover */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
 
@@ -259,7 +259,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             </section>
 
             {/* Services - Premium Design */}
-            <section className="py-20 bg-background relative overflow-hidden">
+            <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container-luxury">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <motion.div
@@ -292,7 +292,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: index * 0.1, duration: 0.5 }}
-                                        className="group flex items-center gap-4 p-4 rounded-xl bg-card/50 border border-border hover:border-gold/50 hover:bg-card transition-all duration-300 text-start"
+                                        className="group flex items-center gap-4 p-4 rounded-xl bg-white border border-border hover:border-gold/50 hover:bg-white transition-all duration-300 text-start"
                                     >
                                         <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-gold/20 to-gold/10 flex items-center justify-center group-hover:from-gold/30 group-hover:to-gold/20 transition-all duration-300">
                                             <Check className="w-6 h-6 text-gold" />
@@ -354,7 +354,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             {/* Attractions - Premium Design */}
             {
                 city.attractions.length > 0 && (
-                    <section className="py-20 bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
+                    <section className="py-20 bg-white relative overflow-hidden">
                         <div className="container-luxury">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -382,7 +382,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
                                         whileHover={{ y: -4, transition: { duration: 0.3 } }}
                                         className="group relative"
                                     >
-                                        <div className="relative bg-card rounded-2xl p-6 border border-border hover:border-gold/50 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-gold/10 h-full flex flex-col items-center text-center md:block md:text-start">
+                                        <div className="relative bg-white rounded-2xl p-6 border border-border hover:border-gold/50 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-gold/10 h-full flex flex-col items-center text-center md:block md:text-start">
                                             {/* Gradient overlay on hover */}
                                             <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
 

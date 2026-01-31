@@ -12,7 +12,7 @@ const NorthItalyGardaContent = () => {
     const { language, isRTL } = useLanguage();
 
     return (
-        <div className="bg-background min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -65,7 +65,7 @@ const NorthItalyGardaContent = () => {
                                 <Map className="w-5 h-5" />
                                 {language === 'ar' ? 'أهم المدن' : 'Key Cities'}
                             </h3>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'ميلانو (الموضة)، فينيسيا (القنوات المائية)، فيرونا (الرومانسية).' : 'Key Cities: Milan (Fashion), Venice (Canals), Verona (Romance).'}
                             </p>
                         </div>
@@ -74,7 +74,7 @@ const NorthItalyGardaContent = () => {
                                 <Mountain className="w-5 h-5" />
                                 {language === 'ar' ? 'الطبيعة' : 'Nature'}
                             </h3>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'يضم أجمل البحيرات في أوروبا (كومو، جاردا، وماجيوري).' : 'Nature: Home to the most beautiful lakes in Europe (Como, Garda, and Maggiore).'}
                             </p>
                         </div>
@@ -83,7 +83,7 @@ const NorthItalyGardaContent = () => {
                                 <Camera className="w-5 h-5" />
                                 {language === 'ar' ? 'الأنشطة' : 'Activities'}
                             </h3>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-muted-foreground">
                                 {language === 'ar' ? 'التزلج في الشتاء، الهايكنج في الصيف، والقيادة بين القرى الجبلية.' : 'Activities: Skiing in winter, hiking in summer, and driving between mountain villages.'}
                             </p>
                         </div>
@@ -125,7 +125,7 @@ const NorthItalyGardaContent = () => {
                                 ].map((item, idx) => (
                                     <li key={idx} className={`bg-card p-4 rounded-xl border border-border hover:border-gold/30 transition-colors shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                                         <h3 className={`font-bold text-lg text-primary mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>{item.title}</h3>
-                                        <p className={`text-muted-foreground text-sm ${isRTL ? 'text-right' : 'text-left'}`}>{item.desc}</p>
+                                        <p className={`text-muted-foreground ${isRTL ? 'text-right' : 'text-left'}`}>{item.desc}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -183,14 +183,14 @@ const NorthItalyGardaContent = () => {
                             </div>
 
                             {/* Gardaland */}
-                            <div className={`bg-primary/5 p-6 rounded-2xl border border-primary/10 ${isRTL ? 'text-right' : 'text-left'}`}>
+                            <div className={`bg-white p-6 rounded-2xl border border-primary/10 shadow-md ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <div className={`flex items-center gap-3 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <RollerCoaster className="w-8 h-8 text-gold" />
                                     <h2 className={`text-xl font-bold text-primary ${isRTL ? 'text-right' : 'text-left'}`}>
                                         {language === 'ar' ? 'مدينة الألعاب جاردا لاند (Gardaland)' : 'Gardaland Theme Park'}
                                     </h2>
                                 </div>
-                                <p className={`text-sm text-foreground mb-3 font-medium ${isRTL ? 'text-right' : 'text-left'}`}>
+                                <p className={`text-foreground mb-3 font-medium ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'أكبر وأشهر مدينة ملاهي في إيطاليا، وهي وجهة أساسية إذا كان معك أطفال.' : 'The largest and most famous amusement park in Italy, and an essential destination if you are traveling with children.'}
                                 </p>
                             </div>
@@ -200,7 +200,7 @@ const NorthItalyGardaContent = () => {
                                 <h4 className={`font-bold text-gold mb-3 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'لماذا يفضل السياح "جاردا" على "كومو"؟' : 'Why do tourists prefer Garda over Como?'}
                                 </h4>
-                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                <ul className="space-y-2 text-muted-foreground">
                                     <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                         <CheckCircle2 className="w-4 h-4 text-gold shrink-0" />
                                         <span className={`${isRTL ? 'text-right' : 'text-left'}`}><strong>{language === 'ar' ? 'للعائلات:' : 'For Families:'}</strong> {language === 'ar' ? 'جاردا أفضل لوجود مدن الملاهي والحدائق المائية والمساحات الواسعة.' : 'Garda is better due to amusement parks, water parks, and wide spaces.'}</span>
