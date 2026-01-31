@@ -201,7 +201,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             </section>
 
             {/* Features - Premium Design */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            <section className="py-20 relative overflow-hidden">
                 {/* Decorative background */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold rounded-full blur-3xl" />
@@ -259,7 +259,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             </section>
 
             {/* Services - Premium Design */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            <section className="py-20 relative overflow-hidden">
                 <div className="container-luxury">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <motion.div
@@ -354,7 +354,7 @@ const CityDriverPage = ({ city, richContent }: CityDriverPageProps) => {
             {/* Attractions - Premium Design */}
             {
                 city.attractions.length > 0 && (
-                    <section className="py-20 bg-white relative overflow-hidden">
+                    <section className="py-20 relative overflow-hidden">
                         <div className="container-luxury">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
