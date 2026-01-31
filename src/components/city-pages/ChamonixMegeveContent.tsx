@@ -40,8 +40,8 @@ const ChamonixMegeveContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'أرقى وأجمل الوجهات الجبلية في جبال الألب الفرنسية'
-                                : 'The most refined and beautiful mountain destinations in the French Alps'}
+                                ? 'تعد شامونيه وميجيف من أرقى وأجمل الوجهات الجبلية في جبال الألب الفرنسية.'
+                                : 'Chamonix and Megeve are among the most refined and beautiful mountain destinations in the French Alps.'}
                         </p>
                     </motion.div>
                 </div>
@@ -53,10 +53,10 @@ const ChamonixMegeveContent = () => {
                     <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                         {language === 'ar' ? 'جمال الألب الفرنسية' : 'Beauty of the French Alps'}
                     </h2>
-                    <p className={`text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right md:text-center' : 'text-left md:text-center'}`}>
+                    <p className={`text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                         {language === 'ar'
-                            ? 'تعد شامونيه وميجيف من الوجهات التي تجمع بين سحر الطبيعة والرفاهية العالية. قريبتان من الحدود السويسرية والإيطالية، مما يجعلهما امتداداً مثالياً لرحلتك من ميلانو أو جنيف.'
-                            : 'Chamonix and Megeve are destinations that combine natural charm with high luxury. Close to the Swiss and Italian borders, they are a perfect extension of your trip from Milan or Geneva.'}
+                            ? 'هما قريبتان جداً من الحدود السويسرية والإيطالية، مما يجعلهما امتداداً مثالياً لرحلتك من ميلانو أو جنيف. تجمع هذه الوجهات بين سحر الطبيعة والرفاهية العالية.'
+                            : 'They are very close to the Swiss and Italian borders, making them a perfect extension of your trip from Milan or Geneva. These destinations combine natural charm with high luxury.'}
                     </p>
                 </section>
 
@@ -75,16 +75,16 @@ const ChamonixMegeveContent = () => {
                             </h2>
                         </div>
                         <div className={`space-y-4 text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
-                            <p>{language === 'ar' ? 'تقع عند سفح جبل "مون بلان" أعلى قمة في أوروبا، وهي وجهة عالمية نابضة بالحياة طوال العام.' : 'Located at the foot of Mont Blanc, Europe\'s highest peak, it’s a vibrant year-round global destination.'}</p>
-                            <p><strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong> {language === 'ar' ? 'تمزج بين الروح الرياضية والرفاهية الفرنسية، شوارعها مليئة بمقاهٍ أنيقة وبوتيكات مميزة.' : 'Blends a sporty spirit with French luxury; streets are lined with elegant cafes and unique boutiques.'}</p>
+                            <p>{language === 'ar' ? 'تقع عند سفح جبل "مون بلان" (أعلى قمة في أوروبا)، وهي وجهة عالمية نابضة بالحياة طوال العام.' : 'Located at the foot of Mont Blanc (the highest peak in Europe), it is a vibrant year-round global destination.'}</p>
+                            <p><strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong> {language === 'ar' ? 'تمزج بين الروح الرياضية والرفاهية الفرنسية، شوارعها مليئة بمحلات المعدات الجبلية والمقاهي الأنيقة.' : 'It blends a sporting spirit with French luxury; its streets are full of mountain equipment shops and elegant cafes.'}</p>
                             <ul className="space-y-3">
                                 <li className="bg-card p-4 rounded-xl border border-border shadow-sm">
                                     <h4 className="font-bold text-primary">{language === 'ar' ? 'قمة "إيغوي دي ميدي" (Aiguille du Midi)' : 'Aiguille du Midi Summit'}</h4>
-                                    <p className="text-sm">{language === 'ar' ? 'الصعد بالتلفريك لأعلى نقطة لرؤية قمة المون بلان وتجربة "المشي في الفراغ" في الصندوق الزجاجي.' : 'Take the cable car to the highest point to see Mont Blanc and experience "Step into the Void" in the glass box.'}</p>
+                                    <p className="text-sm">{language === 'ar' ? 'الصعود بالتلفريك لأعلى نقطة ممكنة لرؤية قمة المون بلان؛ تجربة "المشي في الفراغ" (صندوق زجاجي معلق) لا تُنسى.' : 'Take the cable car to the highest point possible to see the summit of Mont Blanc; the "Step into the Void" experience (a suspended glass box) is unforgettable.'}</p>
                                 </li>
                                 <li className="bg-card p-4 rounded-xl border border-border shadow-sm">
                                     <h4 className="font-bold text-primary">{language === 'ar' ? 'قطار مير دي غلاس (Mer de Glace)' : 'Mer de Glace Train'}</h4>
-                                    <p className="text-sm">{language === 'ar' ? 'قطار أحمر تاريخي يأخذك إلى بحر الجليد والكهوف الجليدية الزرقاء تحت الأرض.' : 'A historic red train that takes you to the Sea of Ice and blue ice caves underground.'}</p>
+                                    <p className="text-sm">{language === 'ar' ? 'قطار أحمر تاريخي يأخذك إلى بحر الجليد حيث يمكنك الدخول إلى كهوف جليدية زرقاء تحت الأرض.' : 'A historic red train that takes you to the Sea of Ice where you can enter blue subterranean ice caves.'}</p>
                                 </li>
                             </ul>
                         </div>
@@ -134,18 +134,28 @@ const ChamonixMegeveContent = () => {
                             </h2>
                         </div>
                         <div className={`space-y-4 text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
-                            <p>{language === 'ar' ? 'إذا كانت شامونيه للمغامرة، فإن ميجيف هي للهدوء، الاسترخاء، والطبقة المخملية.' : 'If Chamonix is for adventure, Megeve is for peace, relaxation, and high society.'}</p>
-                            <p><strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong> {language === 'ar' ? 'قرية قروسطية حافظت على هويتها الأصلية بوسط خالٍ من السيارات، حيث عربات الخيول هي الوسيلة الأجمل للتنقل.' : 'A medieval village that kept its original identity with a car-free center, where horse-drawn carriages are the best way to get around.'}</p>
+                            <p>{language === 'ar' ? 'إذا كانت شامونيه للمغامرة، فإن ميجيف هي للهدوء، الاسترخاء، والطبقة المخملية.' : 'If Chamonix is for adventure, Megeve is for tranquility, relaxation, and high society.'}</p>
+                            <p><strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong> {language === 'ar' ? 'قرية قروسطية حافظت على هويتها الأصلية. يمنع دخول السيارات في وسطها القديم، لذا ستشاهد عربات الخيول هي وسيلة التنقل، مما يعطيها طابعاً خيالياً (Fairytale).' : 'A medieval village that has preserved its original identity. Cars are prohibited in its old center, so you will see horse-drawn carriages as the means of transport, giving it a fairytale character.'}</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="p-4 bg-muted/50 rounded-xl border border-border">
+                                    <Star className="w-5 h-5 text-gold mb-2" />
+                                    <h4 className="font-bold text-sm">{language === 'ar' ? 'وسط القرية التاريخي' : 'Historic Village Center'}</h4>
+                                    <p className="text-xs">{language === 'ar' ? 'ساحات مرصوفة بالحصى، كنائس قديمة، وبوتيكات لأشهر الماركات العالمية.' : 'Cobbled squares, old churches, and boutiques of world-renowned brands.'}</p>
+                                </div>
+                                <div className="p-4 bg-muted/50 rounded-xl border border-border">
                                     <Coffee className="w-5 h-5 text-gold mb-2" />
-                                    <h4 className="font-bold text-sm">{language === 'ar' ? 'المطاعم الراقية' : 'Fine Dining'}</h4>
-                                    <p className="text-xs">{language === 'ar' ? 'تضم مطاعم حائزة على نجوم ميشلان لعشاق الـ Fine Dining.' : 'Features Michelin-starred restaurants for fine dining enthusiasts.'}</p>
+                                    <h4 className="font-bold text-sm">{language === 'ar' ? 'المطاعم (Fine Dining)' : 'Fine Dining Restaurants'}</h4>
+                                    <p className="text-xs">{language === 'ar' ? 'تعتبر ميجيف وجهة لعشاق الطعام، حيث تضم مطاعم حائزة على نجوم ميشلان.' : 'Megeve is a destination for foodies, home to Michelin-starred restaurants.'}</p>
                                 </div>
                                 <div className="p-4 bg-muted/50 rounded-xl border border-border">
                                     <Plane className="w-5 h-5 text-gold mb-2" />
                                     <h4 className="font-bold text-sm">{language === 'ar' ? 'الرحلات الجوية' : 'Aerial Tours'}</h4>
-                                    <p className="text-xs">{language === 'ar' ? 'جولات طائرة بانورامية لرؤية جبال الألب من الأعلى.' : 'Panoramic flight tours to see the Alps from above.'}</p>
+                                    <p className="text-xs">{language === 'ar' ? 'يمكنك ركوب طائرة صغيرة لرؤية جبال الألب من الأعلى في جولة بانورامية.' : 'You can take a small plane to see the Alps from above in a panoramic tour.'}</p>
+                                </div>
+                                <div className={`p-4 bg-gold/5 rounded-xl border border-gold/20 ${isRTL ? 'text-right' : 'text-left'}`}>
+                                    <Info className="w-5 h-5 text-gold mb-2" />
+                                    <h4 className="font-bold text-sm">{language === 'ar' ? 'لمن تصلح؟' : 'Who is it for?'}</h4>
+                                    <p className="text-xs">{language === 'ar' ? 'للعائلات الباحثة عن الهدوء، العرسان لشهر العسل، ومحبي التسوق الراقي والخصوصية.' : 'For families seeking tranquility, honeymooners, and lovers of high-end shopping and privacy.'}</p>
                                 </div>
                             </div>
                         </div>
@@ -161,12 +171,12 @@ const ChamonixMegeveContent = () => {
                         <div className="p-6 bg-background rounded-2xl border border-border shadow-sm text-center">
                             <Wind className="w-10 h-10 text-gold mx-auto mb-4" />
                             <h4 className="text-xl font-bold mb-3 italic">{language === 'ar' ? 'شامونيه' : 'Chamonix'}</h4>
-                            <p className="text-muted-foreground">{language === 'ar' ? 'اذهب إليها إذا كنت تريد "أكشن" ومشاهد جبلية صاعقة ومغامرة حقيقية.' : 'Go there if you want "action", stunning mountain views, and real adventure.'}</p>
+                            <p className="text-muted-foreground">{language === 'ar' ? 'اذهب إليها إذا كنت تريد "أكشن" ومشاهد جبلية صاعقة.' : 'Go there if you want "action" and stunning mountain views.'}</p>
                         </div>
                         <div className="p-6 bg-background rounded-2xl border border-border shadow-sm text-center">
                             <Star className="w-10 h-10 text-gold mx-auto mb-4" />
                             <h4 className="text-xl font-bold mb-3 italic">{language === 'ar' ? 'ميجيف' : 'Megeve'}</h4>
-                            <p className="text-muted-foreground">{language === 'ar' ? 'اذهب إليها إذا كنت تريد "رومانسية" وراحة وتجربة معيشة ريفية فاخرة وخصوصية.' : 'Go there if you want "romance", comfort, and a luxury rustic experience with privacy.'}</p>
+                            <p className="text-muted-foreground">{language === 'ar' ? 'اذهب إليها إذا كنت تريد "رومانسية" وراحة وتجربة معيشة ريفية فاخرة.' : 'Go there if you want "romance", comfort, and a luxury rustic living experience.'}</p>
                         </div>
                     </div>
                 </section>
@@ -181,7 +191,7 @@ const ChamonixMegeveContent = () => {
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className={`flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <Car className="w-6 h-6 text-gold shrink-0" />
-                                <p className="text-sm">{language === 'ar' ? 'المسافة بين شامونيه وميجيف حوالي 30-40 دقيقة فقط، مما يسمح بزيارتهما معاً.' : 'The distance between Chamonix and Megeve is only about 30-40 minutes, allowing you to visit both.'}</p>
+                                <p className="text-sm">{language === 'ar' ? 'المسافة: تبعد شامونيه عن ميجيف حوالي 30 إلى 40 دقيقة فقط.' : 'Distance: Chamonix is only about 30 to 40 minutes away from Megeve.'}</p>
                             </div>
                             <div className={`flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <Info className="w-6 h-6 text-gold shrink-0" />

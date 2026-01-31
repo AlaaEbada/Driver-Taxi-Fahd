@@ -40,8 +40,8 @@ const SerravalleContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'مكة المتسوقين في أوروبا وأكبر أوت لت في القارة'
-                                : 'The shopping mecca of Europe and the continent\'s largest outlet'}
+                                ? 'أوت لت سيرافالي (Designer Serravalle Outlet) ليس مجرد مركز تسوق، بل هو "مكة المتسوقين" في أوروبا وأكبر أوت لت في القارة.'
+                                : 'Serravalle Designer Outlet is not just a shopping center, but the "shopping mecca" of Europe and the largest outlet on the continent.'}
                         </p>
                     </motion.div>
                 </div>
@@ -53,10 +53,10 @@ const SerravalleContent = () => {
                     <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                         {language === 'ar' ? 'نبذة عن سيرافالي (Serravalle Designer Outlet)' : 'About Serravalle Designer Outlet'}
                     </h2>
-                    <p className={`text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right md:text-center' : 'text-left md:text-center'}`}>
+                    <p className={`text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                         {language === 'ar'
-                            ? 'ليس مجرد مركز تسوق، بل هو قرية إيطالية مصممة خصيصاً لتجربة شوبنج لا تُنسى. يضم أكثر من 230 متجراً لأرقى الماركات العالمية بخصومات حقيقية.'
-                            : 'Not just a shopping center, but an Italian village designed for an unforgettable shopping experience. It features more than 230 stores of top global brands with real discounts.'}
+                            ? 'إليك نبذة مختصرة وشاملة تجعلك مستعداً لزيارته: يقع في منطقة "سيرافالي سكريفي"، ويعد تحفة معمارية مصممة على طراز القرى الإيطالية التقليدية المكشوفة، مع ممرات فسيحة وساحات تضم نوافير، مما يجعل التسوق فيه نزهة ممتعة.'
+                            : 'Here is a brief and comprehensive overview to get you ready for your visit: Located in the "Serravalle Scrivia" area, it is an architectural masterpiece designed in the style of traditional open-air Italian villages, with spacious corridors and squares featuring fountains, making shopping there an enjoyable excursion.'}
                     </p>
                 </section>
 
@@ -80,7 +80,7 @@ const SerravalleContent = () => {
                     <div className="bg-card p-6 rounded-2xl border border-border shadow-sm text-center">
                         <Clock className="w-10 h-10 text-gold mx-auto mb-4" />
                         <h3 className="font-bold text-primary mb-2">{language === 'ar' ? 'المواعيد' : 'Hours'}</h3>
-                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يومياً من 10 ص حتى 8 م.' : 'Daily 10 AM to 8 PM.'}</p>
+                        <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يفتح من الساعة 10:00 صباحاً حتى 8:00 مساءً.' : 'Open Daily from 10:00 AM to 8:00 PM.'}</p>
                     </div>
                 </div>
 
@@ -98,11 +98,11 @@ const SerravalleContent = () => {
                         <div className="space-y-4">
                             <div className={`bg-card p-5 rounded-2xl border border-border hover:border-gold/30 transition-all shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <h3 className="font-bold text-lg text-primary mb-2">{language === 'ar' ? 'الماركات الفاخرة' : 'Luxury Brands'}</h3>
-                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'برادا (Prada)، جوتشي (Gucci)، فندي (Fendi)، سان لوران (Saint Laurent)، وبربري (Burberry).' : 'Prada, Gucci, Fendi, Saint Laurent, and Burberry.'}</p>
+                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'تجد فيه برادا (Prada)، جوتشي (Gucci)، فندي (Fendi)، سان لوران (Saint Laurent)، وبربري (Burberry).' : 'You will find Prada, Gucci, Fendi, Saint Laurent, and Burberry.'}</p>
                             </div>
                             <div className={`bg-card p-5 rounded-2xl border border-border hover:border-gold/30 transition-all shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <h3 className="font-bold text-lg text-primary mb-2">{language === 'ar' ? 'الماركات الرياضية والكاجوال' : 'Sports & Casual Brands'}</h3>
-                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'نايكي (Nike)، أديداس (Adidas)، تومي هيلفيغر (Tommy Hilfiger)، ومايكل كورس (Michael Kors).' : 'Nike, Adidas, Tommy Hilfiger, and Michael Kors.'}</p>
+                                <p className="text-muted-foreground text-sm">{language === 'ar' ? 'مثل نايكي (Nike)، أديداس (Adidas)، تومي هيلفيغر (Tommy Hilfiger)، ومايكل كورس (Michael Kors).' : 'Brands like Nike, Adidas, Tommy Hilfiger, and Michael Kors.'}</p>
                             </div>
                         </div>
                     </motion.div>
@@ -133,14 +133,14 @@ const SerravalleContent = () => {
                                 <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'استرداد الضرائب (Tax Free)' : 'Tax Free Refund'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'مكاتب مخصصة داخل الأوت لت (Global Blue & Planet) لتسهيل استعادة أموالك.' : 'Dedicated counters inside the outlet (Global Blue & Planet) to facilitate your refund.'}</p>
+                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'توجد مكاتب مخصصة داخل الأوت لت (Global Blue & Planet) لتسهيل استعادة الأموال في المطار لاحقاً، وفي بعض الأحيان يمكنك استلام المبلغ نقداً هناك.' : 'Dedicated offices inside the outlet (Global Blue & Planet) to facilitate tax refunds at the airport later, and sometimes you can receive the amount in cash there.'}</p>
                                 </div>
                             </div>
                             <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                 <Utensils className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'المطاعم والمقاهي' : 'Restaurants & Cafes'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'خيارات متنوعة مثل ستاربكس، ومطاعم الجيلاتو والباستا الإيطالية.' : 'Various options like Starbucks, gelato shops, and Italian pasta restaurants.'}</p>
+                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'يضم خيارات متنوعة من الأكل الإيطالي السريع، المقاهي مثل "Starbucks"، ومطاعم الجيلاتو والباستا.' : 'Features a variety of fast Italian food options, cafes like "Starbucks", and gelato and pasta restaurants.'}</p>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@ const SerravalleContent = () => {
                                 <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
                                 <div>
                                     <h4 className="font-bold">{language === 'ar' ? 'إنترنت مجاني' : 'Free Wi-Fi'}</h4>
-                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'خدمة واي فاي سريعة في جميع أنحاء المركز.' : 'High-speed Wi-Fi available throughout the complex.'}</p>
+                                    <p className="text-sm text-muted-foreground">{language === 'ar' ? 'تتوفر خدمة الإنترنت في جميع أنحاء المركز.' : 'Internet service is available throughout the entire center.'}</p>
                                 </div>
                             </div>
                             <div className={`flex gap-4 p-4 bg-background rounded-xl border border-border ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
@@ -186,24 +186,24 @@ const SerravalleContent = () => {
                         className={`${isRTL ? 'order-1 lg:order-2' : 'order-2'} space-y-6`}
                     >
                         <h2 className={`text-3xl font-serif font-bold text-primary ${isRTL ? 'text-right' : 'text-left'}`}>
-                            {language === 'ar' ? 'لماذا تحتاج سائقاً خاصاً لسيرافالي؟' : 'Why Hire a Private Driver for Serravalle?'}
+                            {language === 'ar' ? 'كيفية الوصول - نصيحة السائق' : 'How to Get There - Driver Tip'}
                         </h2>
                         <ul className="space-y-4">
                             {[
                                 {
                                     num: '1',
                                     title: language === 'ar' ? 'حمولة المشتريات:' : 'Shopping Load:',
-                                    desc: language === 'ar' ? 'سيكون معك أكياس كثيرة، وجود السائق بانتظارك أمام البوابات يوفر عليك عناء الحمل.' : 'You will have many bags; having a driver waiting at the gates saves you the effort of carrying them.'
+                                    desc: language === 'ar' ? 'بعد يوم طويل، ستكون معك أكياس كثيرة وثقيلة، وجود السائق بانتظارك أمام البوابات يوفر عليك عناء حملها أو انتظار الباصات.' : 'After a long day, you will have many heavy bags; having the driver waiting for you at the gates saves you the fatigue of carrying them or waiting for buses.'
                                 },
                                 {
                                     num: '2',
-                                    title: language === 'ar' ? 'المرونة التامة:' : 'Complete Flexibility:',
-                                    desc: language === 'ar' ? 'يمكنك الذهاب والعودة في وقتك المفضل دون الارتباط بمواعيد الحافلات.' : 'Go and return at your preferred time without being tied to bus schedules.'
+                                    title: language === 'ar' ? 'المرونة:' : 'Flexibility:',
+                                    desc: language === 'ar' ? 'يمكنك الذهاب والعودة في الوقت الذي يناسبك دون الارتباط بمواعيد الحافلات السياحية.' : 'You can go and return at a time that suits you without being tied to tourist bus schedules.'
                                 },
                                 {
                                     num: '3',
-                                    title: language === 'ar' ? 'الراحة والخصوصية:' : 'Comfort & Privacy:',
-                                    desc: language === 'ar' ? 'الطريق سريع والسيارة الخاصة توفر لك خصوصية تامة بعد تعب اليوم.' : 'The highway journey in a private car provides complete privacy after an exhausting day.'
+                                    title: language === 'ar' ? 'الراحة:' : 'Comfort:',
+                                    desc: language === 'ar' ? 'الطريق سريع ومباشر والسيارة الخاصة توفر لك خصوصية تامة بعد تعب التسوق.' : 'The road is fast and direct, and the private car provides you with complete privacy after the exhaustion of shopping.'
                                 }
                             ].map((item, idx) => (
                                 <li key={idx} className={`flex gap-4 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
@@ -226,7 +226,7 @@ const SerravalleContent = () => {
                         <div className={`space-y-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h4 className="font-bold text-gold">{language === 'ar' ? 'أفضل توقيت' : 'Best Timing'}</h4>
                             <p className="text-sm text-muted-foreground leading-relaxed">
-                                {language === 'ar' ? 'يفضل الوصول مبكراً (9:45 ص) لتجنب الزحام والحصول على المقاسات قبل نفاذها.' : 'Recommended early arrival (9:45 AM) to avoid crowds and secure sizes before they run out.'}
+                                {language === 'ar' ? 'يفضل الوصول مبكراً جداً قبل الافتتاح بـ 15 دقيقة لتجنب الزحام والحصول على مقاساتك قبل نفاذها.' : 'It is preferable to arrive very early, 15 minutes before opening, to avoid crowds and secure your sizes before they run out.'}
                             </p>
                         </div>
                         <div className={`space-y-2 ${isRTL ? 'text-right' : 'text-left'}`}>
@@ -238,7 +238,7 @@ const SerravalleContent = () => {
                         <div className={`space-y-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                             <h4 className="font-bold text-gold">{language === 'ar' ? 'بطاقة الخصم الإضافي' : 'Extra Discount Card'}</h4>
                             <p className="text-sm text-muted-foreground leading-relaxed">
-                                {language === 'ar' ? 'توجه لمكتب الاستعلامات، أحياناً يمنحون السياح بطاقة Fashion Passport بخصم 10% إضافي.' : 'Head to the information desk; sometimes they offer tourists a "Fashion Passport" for an extra 10% discount.'}
+                                {language === 'ar' ? 'توجه إلى مكتب الاستعلامات (Information Desk) وأظهر جواز سفرك؛ أحياناً يمنحون السياح بطاقة "Fashion Passport" التي تعطيك خصماً إضافياً بنسبة 10% في بعض المحلات.' : 'Head to the Information Desk and show your passport; sometimes they give tourists a "Fashion Passport" which gives you an additional 10% discount in some stores.'}
                             </p>
                         </div>
                     </div>

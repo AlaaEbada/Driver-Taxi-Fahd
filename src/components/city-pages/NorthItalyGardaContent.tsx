@@ -40,8 +40,8 @@ const NorthItalyGardaContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'الوجهة المفضلة للباحثين عن الطبيعة الخلابة، الرفاهية، والأجواء الهادئة'
-                                : 'The preferred destination for those seeking stunning nature, luxury, and tranquility'}
+                                ? 'الشمال الإيطالي هو الوجهة المفضلة للمسافرين الذين يبحثون عن مزيج من الطبيعة الخلابة، الرفاهية، والأجواء الهادئة.'
+                                : 'Northern Italy is the preferred destination for travelers seeking a mix of stunning nature, luxury, and tranquil atmospheres.'}
                         </p>
                     </motion.div>
                 </div>
@@ -54,10 +54,10 @@ const NorthItalyGardaContent = () => {
                     <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                         {language === 'ar' ? 'نبذة عن الشمال الإيطالي' : 'About Northern Italy'}
                     </h2>
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                    <p className={`text-lg text-muted-foreground leading-relaxed mb-8 ${isRTL ? 'text-right' : 'text-left'}`}>
                         {language === 'ar'
-                            ? 'المنطقة الأكثر تنظيماً وثراء في إيطاليا، وتشتهر بسلسلة جبال الألب وبحيراته الساحرة. تتنوع التضاريس هنا بين قمم جبال الدولوميت المشرشرة، والسهول الخضراء، والمدن التاريخية العريقة.'
-                            : 'The most organized and wealthiest region in Italy, famous for the Alps and enchanting lakes. Terrain varies from jagged Dolomite peaks to green plains and ancient historic cities.'}
+                            ? 'هو المنطقة الأكثر تنظيماً وثراء في إيطاليا، ويشتهر بسلسلة جبال الألب وبحيراته الساحرة. تتنوع التضاريس هنا بين قمم جبال الدولوميت (Dolomites) المشرشرة، والسهول الخضراء في توسكانا الشمالية، والمدن التاريخية العريقة.'
+                            : 'It is the most organized and wealthiest region in Italy, famous for the Alps and its enchanting lakes. The terrain varies between the jagged peaks of the Dolomites, the green plains of Northern Tuscany, and ancient historical cities.'}
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className={`bg-card p-5 rounded-xl border border-border shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
@@ -66,7 +66,7 @@ const NorthItalyGardaContent = () => {
                                 {language === 'ar' ? 'أهم المدن' : 'Key Cities'}
                             </h3>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'ميلانو (الموضة)، فينيسيا (القنوات)، وفيرونا (الرومانسية).' : 'Milan (Fashion), Venice (Canals), and Verona (Romance).'}
+                                {language === 'ar' ? 'ميلانو (الموضة)، فينيسيا (القنوات المائية)، فيرونا (الرومانسية).' : 'Key Cities: Milan (Fashion), Venice (Canals), Verona (Romance).'}
                             </p>
                         </div>
                         <div className={`bg-card p-5 rounded-xl border border-border shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
@@ -75,7 +75,7 @@ const NorthItalyGardaContent = () => {
                                 {language === 'ar' ? 'الطبيعة' : 'Nature'}
                             </h3>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'يضم أجمل البحيرات في أوروبا: كومو، جاردا، وماجيوري.' : 'Home to Europe\'s most beautiful lakes: Como, Garda, and Maggiore.'}
+                                {language === 'ar' ? 'يضم أجمل البحيرات في أوروبا (كومو، جاردا، وماجيوري).' : 'Nature: Home to the most beautiful lakes in Europe (Como, Garda, and Maggiore).'}
                             </p>
                         </div>
                         <div className={`bg-card p-5 rounded-xl border border-border shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
@@ -84,7 +84,7 @@ const NorthItalyGardaContent = () => {
                                 {language === 'ar' ? 'الأنشطة' : 'Activities'}
                             </h3>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'التزلج في الشتاء، الهايكنج في الصيف، والقيادة بين القرى الجبلية.' : 'Skiing in winter, hiking in summer, and driving through mountain villages.'}
+                                {language === 'ar' ? 'التزلج في الشتاء، الهايكنج في الصيف، والقيادة بين القرى الجبلية.' : 'Activities: Skiing in winter, hiking in summer, and driving between mountain villages.'}
                             </p>
                         </div>
                     </div>
@@ -103,29 +103,29 @@ const NorthItalyGardaContent = () => {
                         >
                             <div className={`flex items-center gap-3 mb-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                 <Palmtree className="w-8 h-8 text-gold" />
-                                <h2 className="text-3xl font-serif font-bold text-primary">
+                                <h2 className={`text-3xl font-serif font-bold text-primary ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'ثانياً: بحيرة جاردا (Lago di Garda)' : 'Second: Lake Garda (Lago di Garda)'}
                                 </h2>
                             </div>
                             <p className={`text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                                 {language === 'ar'
                                     ? 'هي أكبر بحيرة في إيطاليا، وتعتبر الوجهة العائلية الأولى بامتياز. ما يميز جاردا هو تنوعها؛ فالجنوب مسطح ودافئ ومشمس، والشمال جبلي ومهيب.'
-                                    : 'The largest lake in Italy and a premier family destination. What makes Garda special is its diversity; the south is flat, warm, and sunny, while the north is mountainous and majestic.'}
+                                    : 'It is the largest lake in Italy and is considered the premier family destination. What distinguishes Garda is its diversity; the south is flat, warm, and sunny, while the north is mountainous and majestic.'}
                             </p>
                             <ul className="space-y-4">
                                 {[
                                     {
-                                        title: language === 'ar' ? 'سيرميوني (Sirmione)' : 'Sirmione',
-                                        desc: language === 'ar' ? 'لؤلؤة البحيرة، شبه جزيرة تمتد داخل الماء. تشتهر بقلعتها التاريخية "سكاليجيرو" ومياهها الكبريتية الحرارية، وزقاقاتها مليئة بمطاعم الجيلاتو.' : 'The pearl of the lake, a peninsula stretching into the water. Famous for its historic "Scaligero" castle, thermal sulfur waters, and alleys full of gelato shops.'
+                                        title: language === 'ar' ? 'سيرميوني (Sirmione):' : 'Sirmione:',
+                                        desc: language === 'ar' ? 'لؤلؤة البحيرة، وهي شبه جزيرة تمتد داخل الماء، تشتهر بقلعتها التاريخية "سكاليجيرو" ومياهها الكبريتية الحرارية، وزقاقاتها الضيقة المليئة بمطاعم الجيلاتو.' : 'The pearl of the lake, a peninsula stretching into the water. It is famous for its historic "Scaligero" castle, thermal sulfur waters, and narrow alleys filled with gelato shops.'
                                     },
                                     {
-                                        title: language === 'ar' ? 'ريفا ديل جاردا (Riva del Garda)' : 'Riva del Garda',
-                                        desc: language === 'ar' ? 'تقع في أقصى الشمال، حيث تلتقي البحيرة بالجبال الشاهقة. هي جنة لمحبي التصوير وركوب الدراجات الهوائية.' : 'Located in the far north, where the lake meets towering mountains. A paradise for photography and cycling enthusiasts.'
+                                        title: language === 'ar' ? 'ريفال ديل جاردا (Riva del Garda):' : 'Riva del Garda:',
+                                        desc: language === 'ar' ? 'تقع في أقصى الشمال، حيث تلتقي البحيرة بالجبال الشاهقة. هي جنة لمحبي التصوير وركوب الدراجات الهوائية.' : 'Located in the far north, where the lake meets towering mountains. It is a paradise for photography and cycling enthusiasts.'
                                     }
                                 ].map((item, idx) => (
                                     <li key={idx} className={`bg-card p-4 rounded-xl border border-border hover:border-gold/30 transition-colors shadow-sm ${isRTL ? 'text-right' : 'text-left'}`}>
-                                        <h3 className="font-bold text-lg text-primary mb-2">{item.title}</h3>
-                                        <p className="text-muted-foreground text-sm">{item.desc}</p>
+                                        <h3 className={`font-bold text-lg text-primary mb-2 ${isRTL ? 'text-right' : 'text-left'}`}>{item.title}</h3>
+                                        <p className={`text-muted-foreground text-sm ${isRTL ? 'text-right' : 'text-left'}`}>{item.desc}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -170,12 +170,15 @@ const NorthItalyGardaContent = () => {
                             className="order-2 space-y-8"
                         >
                             {/* Malcesine */}
-                            <div className={`space-y-4 ${isRTL ? 'text-right' : 'text-left'}`}>
-                                <h3 className="font-bold text-xl text-primary mb-2">
+                            {/* Malcesine */}
+                            <div className={`bg-card p-6 rounded-2xl border border-border shadow-sm hover:border-gold/30 transition-all ${isRTL ? 'text-right' : 'text-left'}`}>
+                                <h3 className={`font-bold text-xl text-primary mb-3 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'مالسيسيني (Malcesine)' : 'Malcesine'}
                                 </h3>
-                                <p className="text-muted-foreground">
-                                    {language === 'ar' ? 'تشتهر بالتلفريك الذي يصعد بك إلى جبل "بالدو" لتشاهد البحيرة كاملة من الأعلى في مشهد يخطف الأنفاس.' : 'Famous for the cable car that ascends Mount Baldo, offering breathtaking panoramic views of the entire lake.'}
+                                <p className={`text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
+                                    {language === 'ar'
+                                        ? 'تشتهر بالتلفريك الذي يصعد بك إلى جبل "بالدو" لتشاهد البحيرة كاملة من الأعلى في مشهد يخطف الأنفاس.'
+                                        : 'Famous for the panoramic cable car that takes you up to Mount Baldo to see the entire lake from above in a breathtaking, unforgettable scene.'}
                                 </p>
                             </div>
 
@@ -183,32 +186,32 @@ const NorthItalyGardaContent = () => {
                             <div className={`bg-primary/5 p-6 rounded-2xl border border-primary/10 ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <div className={`flex items-center gap-3 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                     <RollerCoaster className="w-8 h-8 text-gold" />
-                                    <h2 className="text-xl font-bold text-primary">
+                                    <h2 className={`text-xl font-bold text-primary ${isRTL ? 'text-right' : 'text-left'}`}>
                                         {language === 'ar' ? 'مدينة الألعاب جاردا لاند (Gardaland)' : 'Gardaland Theme Park'}
                                     </h2>
                                 </div>
-                                <p className="text-sm text-foreground mb-3 font-medium">
-                                    {language === 'ar' ? 'أكبر وأشهر مدينة ملاهي في إيطاليا، وهي وجهة أساسية إذا كان معك أطفال.' : 'Italy\'s largest and most famous amusement park, an essential destination if you are traveling with children.'}
+                                <p className={`text-sm text-foreground mb-3 font-medium ${isRTL ? 'text-right' : 'text-left'}`}>
+                                    {language === 'ar' ? 'أكبر وأشهر مدينة ملاهي في إيطاليا، وهي وجهة أساسية إذا كان معك أطفال.' : 'The largest and most famous amusement park in Italy, and an essential destination if you are traveling with children.'}
                                 </p>
                             </div>
 
                             {/* Comparison */}
                             <div className={`border-t border-gold/20 pt-6 mt-6 ${isRTL ? 'text-right' : 'text-left'}`}>
-                                <h4 className="font-bold text-gold mb-3">
+                                <h4 className={`font-bold text-gold mb-3 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     {language === 'ar' ? 'لماذا يفضل السياح "جاردا" على "كومو"؟' : 'Why do tourists prefer Garda over Como?'}
                                 </h4>
                                 <ul className="space-y-2 text-sm text-muted-foreground">
-                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                         <CheckCircle2 className="w-4 h-4 text-gold shrink-0" />
-                                        <span><strong>{language === 'ar' ? 'للعائلات:' : 'For Families:'}</strong> {language === 'ar' ? 'أفضل لوجود الملاهي والحدائق المائية.' : 'Better due to amusement parks and water parks.'}</span>
+                                        <span className={`${isRTL ? 'text-right' : 'text-left'}`}><strong>{language === 'ar' ? 'للعائلات:' : 'For Families:'}</strong> {language === 'ar' ? 'جاردا أفضل لوجود مدن الملاهي والحدائق المائية والمساحات الواسعة.' : 'Garda is better due to amusement parks, water parks, and wide spaces.'}</span>
                                     </li>
-                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                         <CheckCircle2 className="w-4 h-4 text-gold shrink-0" />
-                                        <span><strong>{language === 'ar' ? 'للنشاط:' : 'For Activity:'}</strong> {language === 'ar' ? 'توفر أنشطة رياضية مائية وجبلية أكثر.' : 'Offers more water and mountain sports activities.'}</span>
+                                        <span className={`${isRTL ? 'text-right' : 'text-left'}`}><strong>{language === 'ar' ? 'للنشاط:' : 'For Activity:'}</strong> {language === 'ar' ? 'جاردا توفر أنشطة رياضية مائية وجبلية أكثر.' : 'Garda offers more water and mountain sports activities.'}</span>
                                     </li>
-                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                                    <li className={`flex gap-2 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'}`}>
                                         <CheckCircle2 className="w-4 h-4 text-gold shrink-0" />
-                                        <span><strong>{language === 'ar' ? 'للسعر:' : 'For Price:'}</strong> {language === 'ar' ? 'خيارات السكن أكثر تنوعاً وأقل سعراً من كومو.' : 'Accommodation options are more diverse and affordable than Como.'}</span>
+                                        <span className={`${isRTL ? 'text-right' : 'text-left'}`}><strong>{language === 'ar' ? 'للسعر:' : 'For Price:'}</strong> {language === 'ar' ? 'غالباً ما تكون خيارات السكن في جاردا أكثر تنوعاً وأقل سعراً من الفلل الفارهة في كومو.' : 'Accommodation options in Garda are often more diverse and cheaper than luxury villas in Como.'}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -229,8 +232,8 @@ const NorthItalyGardaContent = () => {
                         </div>
                         <p className="text-xl md:text-2xl font-serif leading-relaxed mb-8">
                             {language === 'ar'
-                                ? 'القيادة حول بحيرة جاردا ممتعة جداً ولكنها طويلة (محيط البحيرة 160 كم). السائق الخاص سيوفر عليك عناء البحث عن مواقف في "سيرميوني" التي يمنع دخول السيارات الخاصة لقلبها، ويتيح لك زيارة أكثر من قرية في يوم واحد براحة تامة.'
-                                : 'Driving around Lake Garda is very enjoyable but long (160 km circumference). A private driver will save you the trouble of finding parking in Sirmione, where private cars are restricted from the center, and allow you to visit multiple villages in one day in complete comfort.'}
+                                ? 'القيادة حول بحيرة جاردا ممتعة جداً ولكنها طويلة (محيط البحيرة حوالي 160 كم). إذا كنت ترغب في زيارة أكثر من قرية في يوم واحد، فإن السائق الخاص سيوفر عليك عناء البحث عن مواقف خاصة في "سيرميوني" التي يمنع دخول السيارات الخاصة إلى قلبها التاريخي.'
+                                : 'Driving around Lake Garda is very enjoyable but long (lake circumference is about 160 km). If you want to visit more than one village in one day, a private driver will save you the trouble of searching for private parking in Sirmione, which prohibits private cars from entering its historic heart.'}
                         </p>
 
                         <Button

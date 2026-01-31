@@ -33,15 +33,15 @@ const MilanContent = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="inline-block px-4 py-2 rounded-full bg-gold/80 text-primary border border-white/30 mb-6 backdrop-blur-sm font-bold shadow-lg">
-                            {language === 'ar' ? 'مع أبو فهد' : 'With Abu Fahd'}
+                            {language === 'ar' ? 'مع ابو فهد' : 'With Abu Fahd'}
                         </span>
                         <h1 className="text-3xl md:text-6xl font-serif font-bold text-white mb-4 md:mb-6 drop-shadow-md">
                             {language === 'ar' ? 'افضل سائق عربي في ميلانو' : 'Best Arabic Driver in Milan'}
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'عاصمة الشمال الإيطالي، والقلب النابض للموضة والأعمال'
-                                : 'Capital of Northern Italy, the beating heart of fashion and business'}
+                                ? 'ميلانو هي عاصمة الشمال الإيطالي، والقلب النابض للموضة والأعمال، والتصميم.'
+                                : 'Milan is the capital of Northern Italy, the beating heart of fashion, business, and design.'}
                         </p>
                     </motion.div>
                 </div>
@@ -55,8 +55,8 @@ const MilanContent = () => {
                     </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         {language === 'ar'
-                            ? 'إذا كانت روما تمثل "الماضي"، فميلانو هي المستقبل والوجهة الأكثر عصرنة وتنظيماً في إيطاليا. إليك نبذة عن أهم ما يميز السياحة فيها.'
-                            : 'If Rome represents the "past", Milan is the future and the most modern and organized destination in Italy. Here is an overview of its tourism highlights.'}
+                            ? 'إذا كانت روما تمثل "الماضي"، فميلانو هي المستقبل والوجهة الأكثر عصرنة وتنظيماً في إيطاليا. إليك نبذة مختصره عن أهم ما يميز السياحة فيها:'
+                            : 'If Rome represents the "past", Milan is the future and the most modern and organized destination in Italy. Here is a brief overview of its tourism highlights:'}
                     </p>
                 </section>
 
@@ -81,20 +81,20 @@ const MilanContent = () => {
                                     {
                                         title: language === 'ar' ? 'كاتدرائية الدومو (Duomo)' : 'Milan Cathedral (Duomo)',
                                         desc: language === 'ar'
-                                            ? 'ثالث أكبر كنيسة في أوروبا، تحفة من الرخام الأبيض. لا تفوت الصعود للسطح للمشي بين التماثيل ورؤية المدينة من الأعلى.'
-                                            : 'The third largest church in Europe, a white marble masterpiece. Don\'t miss climbing to the roof to walk among the statues and see the city from above.'
+                                            ? 'ثالث أكبر كنيسة في أوروبا، وهي تحفة معمارية من الرخام الأبيض. لا تفوت فرصة الصعود إلى السطح للمشي بين التماثيل ورؤية المدينة من الأعلى.'
+                                            : 'The third largest church in Europe, a white marble architectural masterpiece. Don\'t miss climbing to the roof to walk among the statues and see the city from above.'
                                     },
                                     {
-                                        title: language === 'ar' ? 'لوحة العشاء الأخير' : 'The Last Supper',
+                                        title: language === 'ar' ? 'لوحة "العشاء الأخير"' : 'The Last Supper',
                                         desc: language === 'ar'
-                                            ? 'للفنان ليوناردو دافنشي في كنيسة "سانتا ماريا". تتطلب حجزاً مسبقاً قبل الرحلة بشهور.'
-                                            : 'By Leonardo da Vinci in the "Santa Maria" church. Requires booking months in advance.'
+                                            ? 'للفنان ليوناردو دافنشي، وتوجد في كنيسة "سانتا ماريا ديلي غرازي" (تتطلب حجزاً مسبقاً قبل الرحلة بشهور).'
+                                            : 'By Leonardo da Vinci, located in the "Santa Maria delle Grazie" church (requires booking months in advance).'
                                     },
                                     {
-                                        title: language === 'ar' ? 'قلعة سفورزيسكو (Sforzesco)' : 'Sforzesco Castle',
+                                        title: language === 'ar' ? 'قلعة سفورزيسكو (Sforzesco Castle)' : 'Sforzesco Castle',
                                         desc: language === 'ar'
-                                            ? 'قلعة ضخمة تضم متاحف فنية وحديقة "سيمبيوني" الشاسعة خلفها، مثالية للتنزه.'
-                                            : 'A massive castle housing art museums and the vast "Sempione" park behind it, perfect for a stroll.'
+                                            ? 'قلعة ضخمة تضم متاحف فنية وحديقة "سيمبيوني" الشاسعة خلفها، وهي مثالية للتنزه.'
+                                            : 'A massive castle housing art museums with the vast "Sempione" park behind it, perfect for a stroll.'
                                     }
                                 ].map((item, idx) => (
                                     <li key={idx} className="bg-card p-5 rounded-2xl border border-border shadow-sm hover:border-gold/30 transition-all">
@@ -158,8 +158,8 @@ const MilanContent = () => {
                                         </h4>
                                         <p className="text-sm text-muted-foreground">
                                             {language === 'ar'
-                                                ? 'أقدم مركز تسوق في العالم، سقف زجاجي مذهل ويضم أفخم الماركات.'
-                                                : 'World\'s oldest shopping mall, stunning glass roof and luxury brands.'}
+                                                ? 'أقدم مركز تسوق في العالم، يتميز بسقف زجاجي مذهل وأرضيات من الفسيفساء، ويضم أفخم الماركات العالمية.'
+                                                : 'The world\'s oldest shopping mall, featuring a stunning glass roof and mosaic floors, housing the most luxurious international brands.'}
                                         </p>
                                     </div>
                                     <div className={`${isRTL ? 'border-r-2' : 'border-l-2'} border-gold ${isRTL ? 'pr-4' : 'pl-4'}`}>
@@ -168,8 +168,8 @@ const MilanContent = () => {
                                         </h4>
                                         <p className="text-sm text-muted-foreground">
                                             {language === 'ar'
-                                                ? 'مربع الذهب الذي يضم شوارع راقية مثل "مونتي نابوليوني"، حيث تجد أرقى الأزياء العالمية.'
-                                                : 'Golden rectangle of high-end streets like via Montenapoleone for luxury brands.'}
+                                                ? 'مربع الموضة والشوارع الراقية مثل "مونتي نابوليوني"، حيث تجد أرقى الأزياء العالمية في بيئة فخمة جداً.'
+                                                : 'The fashion rectangle and high-end streets like "Via Montenapoleone", where you find the finest international fashion in a very luxurious environment.'}
                                         </p>
                                     </div>
                                 </div>
@@ -186,11 +186,11 @@ const MilanContent = () => {
                                 <ul className={`list-disc list-inside text-muted-foreground space-y-2 ${isRTL ? 'text-right' : 'text-left'}`}>
                                     <li>
                                         <strong>{language === 'ar' ? 'ملعب سان سيرو:' : 'San Siro Stadium:'}</strong>
-                                        {language === 'ar' ? ' الوجهة المفضلة لعشاق كرة القدم (ميلان وإنتر).' : ' Top destination for football fans (Milan & Inter).'}
+                                        {language === 'ar' ? ' الوجهة المفضلة لعشاق كرة القدم (ميلان وإنتر ميلان).' : ' The preferred destination for football fans (Milan and Inter Milan).'}
                                     </li>
                                     <li>
                                         <strong>{language === 'ar' ? 'حي نافيلي (Navigli):' : 'Navigli District:'}</strong>
-                                        {language === 'ar' ? ' منطقة القنوات المائية، قلب الحياة الاجتماعية مساءً لتجربة "الأبيريتيفو".' : ' Canal area, heart of social nightlife for the "Aperitivo".'}
+                                        {language === 'ar' ? ' منطقة القنوات المائية، وهي قلب الحياة الاجتماعية في المساء، حيث تمتلئ بالمطاعم والمقاهي التي تقدم تجربة "الأبيريتيفو" (Aperitivo) الميلانية الشهيرة.' : ' The canal area, the heart of social life in the evening, filled with restaurants and cafes offering the famous Milanese "Aperitivo" experience.'}
                                     </li>
                                 </ul>
                             </div>
@@ -211,19 +211,19 @@ const MilanContent = () => {
                         <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">1h</span>
                             <span className="text-sm text-primary font-bold">
-                                {language === 'ar' ? 'عن بحيرة كومو' : 'From Lake Como'}
+                                {language === 'ar' ? 'تبعد ساعة واحدة فقط عن بحيرة كومو.' : 'Only one hour away from Lake Como.'}
                             </span>
                         </div>
                         <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">1.5h</span>
                             <span className="text-sm text-primary font-bold">
-                                {language === 'ar' ? 'عن سويسرا (لوجانو)' : 'From Switzerland (Lugano)'}
+                                {language === 'ar' ? 'تبعد ساعة ونصف عن سويسرا (مدينة لوجانو).' : 'One and a half hours away from Switzerland (Lugano).'}
                             </span>
                         </div>
                         <div className="bg-background p-4 rounded-xl shadow-sm border border-gold/10">
                             <span className="block text-2xl font-bold text-gold mb-1">Train</span>
                             <span className="text-sm text-primary font-bold">
-                                {language === 'ar' ? 'قطارات سريعة لروما وفينيسيا' : 'Fast trains to Rome & Venice'}
+                                {language === 'ar' ? 'ترتبط بقطارات سريعة جداً مع روما، فينيسيا، وفلورنسا.' : 'Connected by very high-speed trains to Rome, Venice, and Florence.'}
                             </span>
                         </div>
                     </div>
@@ -239,8 +239,8 @@ const MilanContent = () => {
                         </div>
                         <p className="text-xl md:text-2xl font-serif leading-relaxed mb-8">
                             {language === 'ar'
-                                ? 'ميلانو مدينة عملية جداً، المترو يغطي كل مكان سياحي بامتياز. لذا لن تحتاج لسائق خاص داخل المدينة نفسها، ووفر ميزانية السائق للرحلات الخارجية مثل كومو أو الأوت ليت.'
-                                : 'Milan is very practical, the Metro covers all tourist spots perfectly. You won\'t need a private driver inside the city itself; save your budget for day trips to places like Como or the outlets.'}
+                                ? 'ميلانو مدينة عملية جداً المترو فيها يغطي كل مكان سياحي بامتياز، لذا لن تحتاج لسائق خاص داخل المدينة نفسها، ووفر ميزانية السائق للرحلات الخارجية مثل كومو، جاردا، أو الأوت لت.'
+                                : 'Milan is a very practical city, its Metro covers every tourist spot perfectly. You won\'t need a private driver inside the city itself; save your budget for day trips to places like Como, Garda, or the outlets.'}
                         </p>
                         <Button
                             asChild

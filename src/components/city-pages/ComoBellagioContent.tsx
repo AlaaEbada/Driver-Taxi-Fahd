@@ -40,8 +40,8 @@ const ComoBellagioContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'الثلاثية الذهبية للسياحة الراقية في شمال إيطاليا والجنوب السويسري'
-                                : 'The Golden Trio of luxury tourism in Northern Italy and Southern Switzerland'}
+                                ? 'تشكل هذه الثلاثية (كومو، بيلاجيو، ولوجانو) "المثلث الذهبي" للسياحة الراقية في شمال إيطاليا والجنوب السويسري.'
+                                : 'This trio (Como, Bellagio, and Lugano) forms the "Golden Triangle" of luxury tourism in Northern Italy and Southern Switzerland.'}
                         </p>
                     </motion.div>
                 </div>
@@ -55,8 +55,8 @@ const ComoBellagioContent = () => {
                     </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         {language === 'ar'
-                            ? 'استمتع بتجربة فريدة تجمع بين جمال قرى بحيرة كومو الملونة ونظام ومرونة مدينة لوجانو السويسرية في يوم واحد مليء بالمشاهد الخلابة.'
-                            : 'Enjoy a unique experience combining the beauty of colorful Lake Como villages with the order and flexibility of Lugano, Switzerland, in a day full of breathtaking views.'}
+                            ? 'هي رحلة بين سحر البحيرات الإيطالية والأناقة السويسرية، حيث يجتمع الجمال الطبيعي مع الرقي المعماري لتجربة سياحية لا تُنسى.'
+                            : 'It is a journey between the charm of Italian lakes and Swiss elegance, where natural beauty meets architectural sophistication for an unforgettable tourist experience.'}
                     </p>
                 </section>
 
@@ -80,7 +80,7 @@ const ComoBellagioContent = () => {
                                 <p>
                                     {language === 'ar'
                                         ? 'هي البحيرة الأكثر شهرة عالمياً، وتعرف بأنها وجهة الأثرياء والمشاهير (مثل جورج كلوني).'
-                                        : 'The most world-famous lake, known as a destination for the wealthy and celebrities (like George Clooney).'}
+                                        : 'It is the most world-famous lake, known as a destination for the wealthy and celebrities (like George Clooney).'}
                                 </p>
                                 <p>
                                     <strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong>
@@ -91,8 +91,8 @@ const ComoBellagioContent = () => {
                                 <p className={`bg-gold/10 p-4 rounded-xl text-primary font-medium border-gold ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
                                     <strong>{language === 'ar' ? 'النشاط الأبرز:' : 'Highlight Activity:'}</strong>
                                     {language === 'ar'
-                                        ? ' استئجار قارب خشبي كلاسيكي للتجول ورؤية الفيلات من الماء مثل "فيلا ديل بالبيانيلو".'
-                                        : ' Renting a classic wooden boat to tour and see villas from the water, such as "Villa del Balbianello".'}
+                                        ? ' استئجار قارب خشبي كلاسيكي للتجول ورؤية الفيلات من الماء مثل "فيلا ديل بالبيانيلو" التي ظهرت في أفلام جيمس بوند.'
+                                        : ' Renting a classic wooden boat to tour and see the villas from the water, such as "Villa del Balbianello", which appeared in James Bond films.'}
                                 </p>
                             </div>
                         </motion.div>
@@ -149,19 +149,19 @@ const ComoBellagioContent = () => {
                                 <p>
                                     <strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong>
                                     {language === 'ar'
-                                        ? ' شوارعها عبارة عن أدراج حجرية ضيقة (Salite) مليئة بمحلات الحرير، العطور، والمطاعم الراقية.'
+                                        ? 'شوارعها عبارة عن أدراج حجرية ضيقة (Salite) مليئة بمحلات الحرير، العطور، والمطاعم الراقية.'
                                         : ' Its streets are narrow stone stairways (Salite) filled with silk shops, perfumes, and upscale restaurants.'}
                                 </p>
                                 <ul className="space-y-2">
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-5 h-5 text-gold shrink-0" />
                                         <strong>{language === 'ar' ? 'المعالم:' : 'Landmarks:'}</strong>
-                                        {language === 'ar' ? ' "فيلا ميرزي" بحدائقها المذهلة المطلة على البحيرة.' : ' "Villa Melzi" with its stunning gardens overlooking the lake.'}
+                                        {language === 'ar' ? ' "فيلا ميرزي" بحدائقها المذهلة التي تطل على البحيرة.' : ' "Villa Melzi" with its stunning gardens that overlook the lake.'}
                                     </li>
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-5 h-5 text-gold shrink-0" />
                                         <strong>{language === 'ar' ? 'نصيحة:' : 'Tip:'}</strong>
-                                        {language === 'ar' ? ' الوصول إليها من مدينة كومو بالعبارة (Ferry) يمنحك مناظر خلابة.' : ' Arriving from Como city via ferry offers breathtaking view.'}
+                                        {language === 'ar' ? ' الوصول إليها من مدينة كومو يكون أجمل عبر العبارة (Ferry) لتستمتع بالمناظر.' : ' Getting there from Como city is more beautiful via ferry to enjoy the views.'}
                                     </li>
                                 </ul>
                             </div>
@@ -185,25 +185,25 @@ const ComoBellagioContent = () => {
                             <div className={`space-y-4 text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                                 <p>
                                     {language === 'ar'
-                                        ? 'تبعد عن كومو حوالي 30-40 دقيقة فقط، وهي مدينة سويسرية نظيفة جداً وبنظام فريد.'
-                                        : 'Just 30-40 minutes from Como, a very clean Swiss city with a unique system.'}
+                                        ? 'تبعد عن كومو حوالي 30-40 دقيقة فقط بالسيارة، وهي مدينة سويسرية تتحدث الإيطالية.'
+                                        : 'It is only about 30-40 minutes away from Como by car, and it is a Swiss city that speaks Italian.'}
                                 </p>
                                 <p>
                                     <strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong>
                                     {language === 'ar'
-                                        ? ' تجمع بين "النظام السويسري" و"الروح الإيطالية". هادئة وتعتبر مركزاً للتسوق الفاخر.'
-                                        : ' Combines "Swiss order" with "Italian spirit". Quiet and a center for luxury shopping.'}
+                                        ? ' تجمع بين "النظام السويسري" و"الروح الإيطالية". هي مدينة نظيفة جداً، هادئة، وتعتبر مركزاً للتسوق الفاخر والمصارف.'
+                                        : ' It combines "Swiss order" with the "Italian spirit". It is a very clean, quiet city, and is considered a center for luxury shopping and banking.'}
                                 </p>
                                 <ul className="space-y-2">
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-5 h-5 text-gold shrink-0" />
                                         <strong>{language === 'ar' ? 'المعالم:' : 'Landmarks:'}</strong>
-                                        {language === 'ar' ? ' بحيرة لوجانو، منتزه "باركو سيفيكو"، وشارع "فيا ناسا".' : ' Lake Lugano, "Parco Civico", and "Via Nassa" street.'}
+                                        {language === 'ar' ? ' بحيرة لوجانو، منتزه "باركو سيفيكو" الغني بالزهور، وشارع "فيا ناسا" للتسوق الراقي.' : ' Lake Lugano, "Parco Civico" park rich in flowers, and "Via Nassa" for luxury shopping.'}
                                     </li>
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-5 h-5 text-gold shrink-0" />
                                         <strong>{language === 'ar' ? 'نصيحة:' : 'Tip:'}</strong>
-                                        {language === 'ar' ? ' اصعد جبل "سان سالفاتوري" بالتلفريك لمشاهدة بانورامية للحدود.' : ' Take the funicular up Mount "San Salvatore" for a panoramic border view.'}
+                                        {language === 'ar' ? ' لا تفوت صعود جبل "سان سالفاتوري" بالتلفريك لمشاهدة بانورامية مذهلة للحدود الإيطالية السويسرية.' : ' Do not miss going up Mount "San Salvatore" by cable car for a breathtaking panoramic view of the Italian-Swiss border.'}
                                     </li>
                                 </ul>
                             </div>
@@ -233,8 +233,8 @@ const ComoBellagioContent = () => {
                     <div className="max-w-4xl mx-auto space-y-6 text-center">
                         <p className="text-lg font-medium text-primary">
                             {language === 'ar'
-                                ? 'مسار ميلانو - كومو - بيلاجيو - لوجانو - ميلانو هو المسار الأكثر طلباً.'
-                                : 'The Milan - Como - Bellagio - Lugano - Milan route is our most requested.'}
+                                ? 'هذا المسار (ميلانو - كومو - بيلاجيو - لوجانو - ميلانو) هو المسار الأكثر طلباً للسائقين الخاصين.'
+                                : 'This route (Milan - Como - Bellagio - Lugano - Milan) is the most requested route for private drivers.'}
                         </p>
                         <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
                             <h4 className="font-bold text-gold mb-3">
@@ -242,8 +242,8 @@ const ComoBellagioContent = () => {
                             </h4>
                             <p className="text-muted-foreground leading-relaxed">
                                 {language === 'ar'
-                                    ? 'الطرق في هذه المناطق ضيقة جداً (خاصة الطريق لبيلاجيو)، ومواقف السيارات شبه مستحيلة في الصيف. السائق سينزلك في قلب القرية ويذهب للانتظار بعيداً، وتطلبه بلمسة زر على الواتساب عند انتهائك.'
-                                    : 'Roads here are very narrow (especially to Bellagio), and parking is near-impossible in summer. A driver will drop you in the heart of the village and wait elsewhere, ready at a WhatsApp touch when you\'re done.'}
+                                    ? 'لماذا؟ الطرق بين هذه القرى ضيقة جداً (خاصة الطريق المؤدي لبيلاجيو)، ومواقف السيارات شبه مستحيلة في الصيف. السائق سينزلك في قلب القرية ويذهب للانتظار بعيداً، ثم يعود لأخذك بلمسة زر على الواتساب.'
+                                    : 'Why? The roads between these villages are very narrow (especially the road leading to Bellagio), and parking is almost impossible in the summer. The driver will drop you off in the heart of the village and wait far away, then return to pick you up at the touch of a button on WhatsApp.'}
                             </p>
                         </div>
                     </div>
@@ -259,28 +259,28 @@ const ComoBellagioContent = () => {
                             <Clock className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'الصباح' : 'Morning'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'الانطلاق وجولة سريعة في كومو.' : 'Departure and a quick tour of Como.'}
+                                {language === 'ar' ? 'الانطلاق من ميلانو إلى مدينة كومو (جولة سريعة).' : 'Departure from Milan to Como city (quick tour).'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Anchor className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'الظهيرة' : 'Noon'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'غداء في بيلاجيو وجولة في أزقتها.' : 'Lunch in Bellagio and exploring its alleys.'}
+                                {language === 'ar' ? 'التوجه إلى بيلاجيو وتناول الغداء على البحيرة.' : 'Head to Bellagio and have lunch on the lake.'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Coffee className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'بعد الظهر' : 'Afternoon'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'عبور الحدود للوجانو للتسوق والقهوة.' : 'Crossing to Lugano for shopping and coffee.'}
+                                {language === 'ar' ? 'عبور الحدود إلى لوجانو للاستمتاع بقهوة المساء والتسوق.' : 'Cross the border to Lugano to enjoy evening coffee and shopping.'}
                             </p>
                         </div>
                         <div className="p-6 bg-card rounded-2xl border border-border shadow-sm">
                             <Navigation className="w-8 h-8 text-gold mx-auto mb-3" />
                             <h4 className="font-bold mb-2">{language === 'ar' ? 'المساء' : 'Evening'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'العودة لميلانو (ساعة ونصف تقريباً).' : 'Return to Milan (approx. 1.5 hours).'}
+                                {language === 'ar' ? 'العودة لميلانو.' : 'Return to Milan.'}
                             </p>
                         </div>
                     </div>

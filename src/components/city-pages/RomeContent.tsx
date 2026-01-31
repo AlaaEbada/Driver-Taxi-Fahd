@@ -40,8 +40,8 @@ const RomeContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'المدينة الخالدة، قلب إيطاليا النابض وتاريخ العالم الحي'
-                                : 'The Eternal City, the beating heart of Italy and the living history of the world'}
+                                ? 'روما، "المدينة الخالدة"، هي قلب إيطاليا النابض وتاريخ العالم الحي'
+                                : 'Rome, "The Eternal City", is the beating heart of Italy and the living history of the world'}
                         </p>
                     </motion.div>
                 </div>
@@ -55,8 +55,8 @@ const RomeContent = () => {
                     </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         {language === 'ar'
-                            ? 'روما ليست مجرد زيارة لمدينة، بل هي متحف مفتوح. إليك نبذة مختصرة تلخص أهم معالمها وأجوائها مع سائقك الخاص.'
-                            : 'Rome is not just a city visit; it is an open museum. Here is a brief summary of its most important landmarks and atmosphere with your private driver.'}
+                            ? 'السياحة فيها ليست مجرد زيارة لمدينة، بل هي رحلة عبر الزمن تعود بك إلى 2000 عام. إليك نبذة مختصرة تلخص أهم معالمها وأجوائها:'
+                            : 'Tourism here is not just a city visit, but a journey through time going back 2000 years. Here is a brief summary of its key landmarks and atmosphere:'}
                     </p>
                 </section>
 
@@ -79,19 +79,19 @@ const RomeContent = () => {
                             <ul className="space-y-6">
                                 {[
                                     {
-                                        title: language === 'ar' ? 'الكولوسيوم (Colosseum)' : 'The Colosseum',
+                                        title: language === 'ar' ? 'الكولوسیوم Colosseum:' : 'The Colosseum:',
                                         desc: language === 'ar'
                                             ? 'أعظم مدرج روماني في العالم، ورمز الإمبراطورية القديمة.'
                                             : 'The greatest Roman amphitheater in the world, and a symbol of the ancient empire.'
                                     },
                                     {
-                                        title: language === 'ar' ? 'المنتدى الروماني (Roman Forum)' : 'The Roman Forum',
+                                        title: language === 'ar' ? 'المنتدى الروماني Forum Roman:' : 'The Roman Forum:',
                                         desc: language === 'ar'
                                             ? 'كان مركز الحياة السياسية والاجتماعية في روما القديمة، ويضم أطلال المعابد والقصور.'
                                             : 'The center of political and social life in ancient Rome, featuring ruins of temples and palaces.'
                                     },
                                     {
-                                        title: language === 'ar' ? 'البانثيون (Pantheon)' : 'The Pantheon',
+                                        title: language === 'ar' ? 'البانثيون Pantheon:' : 'The Pantheon:',
                                         desc: language === 'ar'
                                             ? 'معبد تاريخي يتميز بأكبر قبة خرسانية غير مدعمة في العالم، وهو من أكثر المباني المحفوظة من العصور القديمة.'
                                             : 'A historic temple featuring the world\'s largest unreinforced concrete dome, one of the best-preserved ancient buildings.'
@@ -153,15 +153,15 @@ const RomeContent = () => {
                                 </div>
                                 <ul className={`space-y-3 list-disc list-inside text-muted-foreground ${isRTL ? 'text-right' : 'text-left'}`}>
                                     <li>
-                                        <strong>{language === 'ar' ? 'نافورة تريفي (Trevi Fountain):' : 'Trevi Fountain:'}</strong>
+                                        <strong>{language === 'ar' ? 'نافورة تريفي Trevi Fountain:' : 'Trevi Fountain:'}</strong>
                                         {language === 'ar' ? ' أشهر نافورة في العالم؛ تقول الأسطورة إن من يرمي فيها عملة معدنية سيعود إلى روما مجدداً.' : ' The world\'s most famous fountain; legend says tossing a coin ensures a return to Rome.'}
                                     </li>
                                     <li>
-                                        <strong>{language === 'ar' ? 'ساحة نافونا (Piazza Navona):' : 'Piazza Navona:'}</strong>
+                                        <strong>{language === 'ar' ? 'ساحة نافونا Pizza Navona:' : 'Piazza Navona:'}</strong>
                                         {language === 'ar' ? ' ساحة نابضة بالحياة تضم نوافير باروكية رائعة ورسامين وعازفين في الهواء الطلق.' : ' A vibrant square with magnificent Baroque fountains, street painters, and musicians.'}
                                     </li>
                                     <li>
-                                        <strong>{language === 'ar' ? 'السلالم الإسبانية (Spanish Steps):' : 'Spanish Steps:'}</strong>
+                                        <strong>{language === 'ar' ? 'السلالم الإسبانية Spanish Steps:' : 'Spanish Steps:'}</strong>
                                         {language === 'ar' ? ' مكان مثالي للجلوس والاستمتاع بأجواء المدينة والتقاط الصور.' : ' A perfect spot to sit, enjoy the city atmosphere, and take photos.'}
                                     </li>
                                 </ul>
@@ -181,11 +181,11 @@ const RomeContent = () => {
                                 <ul className="space-y-2 text-sm text-foreground font-medium">
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-4 h-4 text-gold" />
-                                        {language === 'ar' ? 'كنيسة القديس بطرس (من أضخم وأجمل الكنائس).' : 'St. Peter\'s Basilica (one of the largest and most beautiful).'}
+                                        {language === 'ar' ? 'كنيسة القديس بطرس من أضخم وأجمل الكنائس في العالم.' : 'St. Peter\'s Basilica (one of the largest and most beautiful in the world).'}
                                     </li>
                                     <li className="flex gap-2">
                                         <CheckCircle2 className="w-4 h-4 text-gold" />
-                                        {language === 'ar' ? 'متاحف الفاتيكان (تحتوي على كنيسة سيستينا بلوحات ميكيلانجيلو).' : 'Vatican Museums (housing the Sistine Chapel with Michelangelo\'s ceiling).'}
+                                        {language === 'ar' ? 'متاحف الفاتيكان التي تحتوي على كنيسة سيستينا بلوحات میکیلانجيلو الشهيرة.' : 'Vatican Museums housing the Sistine Chapel with Michelangelo\'s famous ceiling.'}
                                     </li>
                                 </ul>
                             </div>
@@ -206,13 +206,13 @@ const RomeContent = () => {
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
-                            {language === 'ar' ? 'الباستا الرومانية (كاربونارا)' : 'Roman Pasta (Carbonara)'}
+                            {language === 'ar' ? 'الباستا الرومانية الأصيلة مثل الكاربونارا والأماتريتشيانا' : 'Authentic Roman Pasta (Carbonara & Amatriciana)'}
                         </span>
                         <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
                             {language === 'ar' ? 'البيتزا الرقيقة المقرمشة' : 'Thin Crispy Pizza'}
                         </span>
                         <span className="px-6 py-3 bg-background rounded-full shadow-sm border border-border font-bold text-primary hover:border-gold transition-colors">
-                            {language === 'ar' ? 'الجيلاتو (الآيس كريم)' : 'Gelato (Ice Cream)'}
+                            {language === 'ar' ? 'الجيلاتو الآيس كريم في المحلات التاريخية قريباً من الساحات' : 'Gelato (Ice Cream) in historic shops near piazzas'}
                         </span>
                     </div>
                 </section>

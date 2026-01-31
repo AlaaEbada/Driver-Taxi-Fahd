@@ -40,8 +40,8 @@ const InterlakenGenevaContent = () => {
                         </h1>
                         <p className="text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                             {language === 'ar'
-                                ? 'الوجهان الأكثر شهرة لسويسرا: الأناقة العالمية وقلب الطبيعة والمغامرة'
-                                : 'Switzerland\'s most famous faces: global elegance and the heart of nature & adventure'}
+                                ? 'تعتبر جنيف وانترلاكن الوجهين الأكثر شهرة لسويسرا، فبينما تمثل جنيف الأناقة والخدمات العالمية، تمثل انترلاكن قلب الطبيعة والمغامرة.'
+                                : 'Geneva and Interlaken are Switzerland\'s most famous faces; while Geneva represents elegance and global services, Interlaken represents the heart of nature and adventure.'}
                         </p>
                     </motion.div>
                 </div>
@@ -55,8 +55,8 @@ const InterlakenGenevaContent = () => {
                     </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         {language === 'ar'
-                            ? 'بينما تمثل جنيف الأناقة والخدمات العالمية، تمثل انترلاكن قلب الطبيعة والمغامرة. رحلة تجمع بين الحداثة الفرنسية الروح والتقاليد الجبلية السويسرية الأصيلة.'
-                            : 'While Geneva represents elegance and global services, Interlaken represents the heart of nature and adventure. A journey combining French-spirited modernity with authentic Swiss mountain traditions.'}
+                            ? 'تقع جنيف في أقصى غرب سويسرا على ضفاف بحيرة جنيف، وهي مدينة دولية بامتياز تجمع بين الثقافة الفرنسية والنظام السويسري. أما انترلاكن فتقع في قلب سويسرا بين بحيرتي "تون" و"براينز".'
+                            : 'Geneva is located in the far west of Switzerland on the shores of Lake Geneva, a truly international city combining French culture and Swiss system. Interlaken is located in the heart of Switzerland between Lake Thun and Lake Brienz.'}
                     </p>
                 </section>
 
@@ -77,16 +77,19 @@ const InterlakenGenevaContent = () => {
                         <div className={`space-y-4 text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                             <p>
                                 {language === 'ar'
-                                    ? 'تقع في أقصى غرب سويسرا على ضفاف بحيرتها الشهيرة، وهي مدينة دولية بامتياز.'
-                                    : 'Located in Switzerland\'s far west on the shores of its famous lake, a truly international city.'}
+                                    ? 'تقع في أقصى غرب سويسرا على ضفاف بحيرة جنيف، وهي مدينة دولية بامتياز تجمع بين الثقافة الفرنسية والنظام السويسري.'
+                                    : 'Located in the far west of Switzerland on the shores of Lake Geneva, it is an international city par excellence that combines French culture and the Swiss system.'}
                             </p>
                             <ul className="space-y-3">
                                 {[{
                                     title: language === 'ar' ? "نافورة جنيف (Jet d'eau)" : "Geneva Jet d'eau",
-                                    desc: language === 'ar' ? "الرمز الأشهر للمدينة، تنطلق المياه منها لارتفاع 140 متراً في مشهد مهيب." : "The city's most famous symbol, shooting water 140 meters high in a majestic scene."
+                                    desc: language === 'ar' ? "الرمز الأشهر للمدينة، تنطلق المياه منها لارتفاع 140 متراً." : "The city's most famous symbol, shooting water 140 meters high."
                                 }, {
-                                    title: language === 'ar' ? "البلدة القديمة وساعة الزهور" : "Old Town & Flower Clock",
-                                    desc: language === 'ar' ? "شوارع مرصوفة بالحصى، كاتدرائية القديس بيير، وساعة الزهور الشهيرة التي تعكس دقة الساعات السويسرية." : "Cobblestone streets, St. Pierre Cathedral, and the famous flower clock reflecting Swiss watch precision."
+                                    title: language === 'ar' ? "البلدة القديمة (Vieille Ville)" : "Old Town (Vieille Ville)",
+                                    desc: language === 'ar' ? "شوارع مرصوفة بالحصى، محلات أنتيك، وكاتدرائية القديس بيير التاريخية." : "Cobblestone streets, antique shops, and the historic St. Pierre Cathedral."
+                                }, {
+                                    title: language === 'ar' ? "حديقة الزهور (Jardin Anglais)" : "Flower Garden (Jardin Anglais)",
+                                    desc: language === 'ar' ? "حيث توجد ساعة الزهور الشهيرة التي تعكس دقة الساعات السويسرية." : "Where the famous flower clock is located, reflecting the precision of Swiss watches."
                                 }].map((item, idx) => (
                                     <li key={idx} className={`flex gap-4 p-4 bg-card rounded-xl border border-border shadow-sm ${isRTL ? 'flex-row-reverse text-right' : 'flex-row text-left'}`}>
                                         <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 text-gold font-bold">{idx + 1}</div>
@@ -98,10 +101,10 @@ const InterlakenGenevaContent = () => {
                                 ))}
                             </ul>
                             <p className={`text-sm bg-primary/5 p-4 rounded-xl border-gold italic ${isRTL ? 'border-r-4' : 'border-l-4'}`}>
-                                <strong>{language === 'ar' ? 'الأجواء:' : 'Atmosphere:'}</strong>
+                                <strong>{language === 'ar' ? 'الأجواء والتنقل:' : 'Atmosphere & Transit:'}</strong>
                                 {language === 'ar'
-                                    ? ' راقية جداً، مثالية للتسوق في شارع "الرون" (Rue du Rhône) وزيارة متاحف الساعات العالمية.'
-                                    : ' Very upscale, perfect for shopping on Rue du Rhône and visiting world-class watch museums.'}
+                                    ? ' راقية جداً، مثالية للتسوق في شارع "الرون" (Rue du Rhône) وزيارة متاحف الساعات (مثل متحف باتيك فيليب). إذا كنت تسكن في فندق، ستحصل على بطاقة نقل مجانية للباصات والقوارب.'
+                                    : ' Very upscale, perfect for shopping on Rue du Rhône and visiting watch museums (like Patek Philippe Museum). If staying in a hotel, you receive a free transport card for buses and boats.'}
                             </p>
                         </div>
                     </motion.div>
@@ -159,10 +162,10 @@ const InterlakenGenevaContent = () => {
                                 <div className="p-4 bg-muted/50 rounded-xl border border-border">
                                     <CheckCircle2 className={`w-5 h-5 text-gold mb-2 ${isRTL ? 'ml-auto' : ''}`} />
                                     <h4 className="font-bold text-sm">
-                                        {language === 'ar' ? 'ساحة هوهيمات' : 'Hohematte Square'}
+                                        {language === 'ar' ? 'هوهيمات (Höhemathe)' : 'Höhemathe Square'}
                                     </h4>
                                     <p className="text-xs">
-                                        {language === 'ar' ? 'ساحة خضراء ترى منها قمة "يونغفراو" وهبوط مظلي الطيران الشراعي.' : 'A green space where you can see the "Jungfrau" peak and paragliders landing.'}
+                                        {language === 'ar' ? 'ساحة خضراء شاسعة في وسط المدينة ترى منها قمة "يونغفراو"، وهي المكان الذي يهبط فيه محترفو الطيران الشراعي (الباراشوت).' : 'A vast green square in the town center with a view of "Jungfrau" peak, and where paragliders land.'}
                                     </p>
                                 </div>
                                 <div className="p-4 bg-muted/50 rounded-xl border border-border">
@@ -171,13 +174,13 @@ const InterlakenGenevaContent = () => {
                                         {language === 'ar' ? 'القمم القريبة' : 'Nearby Peaks'}
                                     </h4>
                                     <p className="text-xs">
-                                        {language === 'ar' ? 'يونغفراو يوخ (أعلى محطة قطار في أوروبا) وشيلتهورن.' : 'Jungfraujoch (Europe\'s highest train station) and Schilthorn.'}
+                                        {language === 'ar' ? '"يونغفراو يوخ" (أعلى محطة قطار في أوروبا) و "شيلتهورن" (مكان تصوير فيلم جيمس بوند).' : '"Jungfraujoch" (Europe\'s highest train station) and "Schilthorn" (James Bond filming location).'}
                                     </p>
                                 </div>
                             </div>
                             <p className={`${isRTL ? 'border-r-4' : 'border-l-4'} border-gold ${isRTL ? 'pr-4' : 'pl-4'}`}>
-                                <strong>{language === 'ar' ? 'القرى المجاورة:' : 'Neighboring Villages:'}</strong>
-                                {language === 'ar' ? ' لا تفوت زيارة "لوتربرونين" (وادي الشلالات) و"جريندلوالد" (قرية الأكواخ الجبلية).' : ' Don\'t miss visiting Lauterbrunnen (Valley of Waterfalls) and Grindelwald (the village of mountain chalets).'}
+                                <strong>{language === 'ar' ? 'القرى المجاورة والأجواء:' : 'Neighboring Villages & Vibe:'}</strong>
+                                {language === 'ar' ? ' لا تفوت زيارة "لوتربرونين" (وادي الشلالات) و"جريندلوالد" (قرية الأكواخ الجبلية). الأجواء سياحية بامتياز نابضة بالحياة، ومناسبة جداً للعائلات بسبب توفر المطاعم والخدمات.' : ' Don\'t miss visiting Lauterbrunnen (Valley of Waterfalls) and Grindelwald (the village of mountain chalets). The atmosphere is touristy and vibrant, very suitable for families due to available restaurants and services.'}
                             </p>
                         </div>
                     </motion.div>
@@ -193,14 +196,14 @@ const InterlakenGenevaContent = () => {
                             <Clock className="w-10 h-10 text-gold mx-auto" />
                             <h4 className="font-bold">{language === 'ar' ? 'المسافة' : 'Distance'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'تستغرق الرحلة بالسيارة بين جنيف وانترلاكن حوالي ساعتين ونصف.' : 'The car journey between Geneva and Interlaken takes about 2.5 hours.'}
+                                {language === 'ar' ? 'تستغرق الرحلة بالسيارة بين جنيف وانترلاكن حوالي ساعتين ونصف، وإذا كنت قادماً من ميلانو، فإن انترلاكن أقرب لك جغرافياً.' : 'The journey between Geneva and Interlaken takes about 2.5 hours; if coming from Milan, Interlaken is geographically closer to you.'}
                             </p>
                         </div>
                         <div className="space-y-4">
                             <ShoppingBag className="w-10 h-10 text-gold mx-auto" />
                             <h4 className="font-bold">{language === 'ar' ? 'ميزة السائق' : 'Driver Benefit'}</h4>
                             <p className="text-sm text-muted-foreground">
-                                {language === 'ar' ? 'الطريق يمر بـ "جريير" (Gruyères) المشهورة بمصانع الشوكولاتة والجبن، حيث يمكن للسائق التوقف بك هناك.' : 'The road passes through Gruyères, famous for chocolate and cheese factories, where the driver can stop for you.'}
+                                {language === 'ar' ? 'لماذا السائق؟ الطريق يمر بمصانع الشوكولاتة والجبن في "جريير" (Gruyères)، حيث يمكن للسائق التوقف بك هناك، وهو ما يصعب فعله بالقطار.' : 'Why a driver? The road passes by chocolate and cheese factories in Gruyères, where the driver can stop for you, which is difficult by train.'}
                             </p>
                         </div>
                         <div className="space-y-4">
