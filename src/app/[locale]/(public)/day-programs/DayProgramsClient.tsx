@@ -73,7 +73,7 @@ export default function DayProgramsClient() {
     ];
 
     return (
-        <div className="min-h-screen bg-background pb-20">
+        <div className="min-h-screen pb-20">
             {/* Hero Section */}
             <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
