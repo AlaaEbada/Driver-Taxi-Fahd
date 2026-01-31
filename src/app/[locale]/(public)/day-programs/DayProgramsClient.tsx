@@ -12,11 +12,11 @@ export default function DayProgramsClient() {
     const dayTrips = [
         {
             title: {
-                ar: '1. برنامج "الرومانسية والطبيعة" كومو ولوجانو',
+                ar: '1. برنامج "الرومانسية والطبيعة" (كومو ولوجانو)',
                 en: '1. Romance & Nature (Como & Lugano)'
             },
             description: {
-                ar: '<strong>الصباح:</strong> الذهاب إلى مدينة كومو، جولة قصيرة في الساحة وتناول القهوة. <strong>الظهيرة:</strong> استقلال العبارة إلى بيلاجيو لؤلؤة البحيرة لتناول الغداء واستكشاف أزقتها. <strong>المساء:</strong> عبور الحدود السويسرية لزيارة لوجانو والاستمتاع ببحيرتها الهادئة قبل العودة لميلانو.',
+                ar: '<strong>الصباح:</strong> الذهاب إلى مدينة كومو، جولة قصيرة في الساحة وتناول القهوة.<br/><strong>الظهيرة:</strong> استقلال العبارة إلى بيلاجيو "لؤلؤة البحيرة" لتناول الغداء واستكشاف أزقتها.<br/><strong>المساء:</strong> عبور الحدود السويسرية لزيارة لوجانو والاستمتاع ببحيرتها الهادئة قبل العودة لميلانو.',
                 en: '<strong>Morning:</strong> Drive to Como, tour the square and enjoy coffee. <strong>Afternoon:</strong> Ferry to Bellagio (Pearl of the Lake) for lunch and exploring alleys. <strong>Evening:</strong> Cross to Lugano, Switzerland to enjoy the lake before returning to Milan.'
             },
             duration: {
@@ -27,11 +27,11 @@ export default function DayProgramsClient() {
         },
         {
             title: {
-                ar: '2. برنامج "التاريخ والبحيرة" فيرونا وسيرميوني',
+                ar: '2. برنامج "التاريخ والبحيرة" (فيرونا وسيرميوني)',
                 en: '2. History & Lake (Verona & Sirmione)'
             },
             description: {
-                ar: '<strong>الصباح:</strong> التوجه إلى فيرونا مدينة روميو وجوليت زيارة البيت التاريخي والساحة الرومانية. <strong>الظهيرة:</strong> الانتقال لقرية سيرميوني على بحيرة جاردا. <strong>المساء:</strong> جولة بالقارب حول القلعة في سيرميوني، ثم العودة لميلانو حوالي ساعة ونصف.',
+                ar: '<strong>الصباح:</strong> التوجه إلى فيرونا "مدينة روميو وجوليت" زيارة البيت التاريخي والساحة الرومانية.<br/><strong>الظهيرة:</strong> الانتقال لقرية سيرميوني على بحيرة جاردا.<br/><strong>المساء:</strong> جولة بالقارب حول القلعة في سيرميوني، ثم العودة لميلانو (حوالي ساعة ونصف).',
                 en: '<strong>Morning:</strong> Visit Verona (Romeo & Juliet city), see the historic house and Roman arena. <strong>Afternoon:</strong> Move to Sirmione village on Lake Garda. <strong>Evening:</strong> Boat tour around the castle in Sirmione, then return to Milan.'
             },
             duration: {
@@ -42,11 +42,11 @@ export default function DayProgramsClient() {
         },
         {
             title: {
-                ar: '3. برنامج "عشاق الموضة" أوت لت سيرافالي',
+                ar: '3. برنامج "عشاق الموضة" (أوت لت سيرافالي)',
                 en: '3. Fashion Lovers (Serravalle Outlet)'
             },
             description: {
-                ar: '<strong>اليوم بالكامل:</strong> التوجه إلى Outlet Serravalle أكبر أوت لت في أوروبا. <strong>المميزات:</strong> هذا البرنامج لا يحتاج مجهوداً ذهنياً، فقط تسوق واستراحة غداء. السائق هنا ضروري جداً لتحميل الحقائب الكثيرة بخصوصية وأمان خصوصاً للعوائل.',
+                ar: '<strong>اليوم بالكامل:</strong> التوجه إلى Outlet Serravalle أكبر أوت لت في أوروبا.<br/><strong>المميزات:</strong> هذا البرنامج لا يحتاج مجهوداً ذهنياً، فقط تسوق واستراحة غداء. السائق هنا ضروري جداً لتحميل الحقائب الكثيرة بخصوصية وأمان.',
                 en: '<strong>Full Day:</strong> Head to Serravalle Outlet, Europe\'s largest. <strong>Features:</strong> Effortless day focused on shopping and dining. A private driver is essential for handling multiple bags securely and comfortably for families.'
             },
             duration: {
@@ -54,6 +54,21 @@ export default function DayProgramsClient() {
                 en: '8-9 Hours'
             },
             image: '/assets/cities/serravalle-outlet/serravalle-cover.jpg',
+        },
+        {
+            title: {
+                ar: '4. برنامج "جبال الألب والقطار الأحمر" (برنينا إكسبريس)',
+                en: '4. Alps & Red Train (Bernina Express)'
+            },
+            description: {
+                ar: '<strong>الصباح:</strong> الانطلاق من ميلانو إلى منطقة تيرانو على الحدود السويسرية.<br/><strong>النشاط:</strong> ركوب قطار "Bernina Express" المصنف من اليونسكو لرحلة قصيرة عبر الثلوج والقمم.<br/><strong>المساء:</strong> العودة بالسيارة مع السائق لميلانو.',
+                en: '<strong>Morning:</strong> Depart Milan to Tirano on the Swiss border. <strong>Activity:</strong> Ride the UNESCO-listed Bernina Express for a short journey through snow and peaks. <strong>Evening:</strong> Return by car with the driver to Milan.'
+            },
+            duration: {
+                ar: '10-12 ساعة',
+                en: '10-12 Hours'
+            },
+            image: '/assets/cities/alps.jpg',
         }
     ];
 
@@ -69,7 +84,7 @@ export default function DayProgramsClient() {
                         className="w-full h-full relative"
                     >
                         <Image
-                            src="/assets/cities/Milan/milan-2.jpg"
+                            src="/assets/cities/milan/milan-2.jpg"
                             alt="Day Programs Italy"
                             fill
                             className="object-cover"
@@ -97,7 +112,13 @@ export default function DayProgramsClient() {
                             className="text-xl md:text-2xl text-white/95 mb-10 max-w-3xl mx-auto leading-relaxed font-light"
                         >
                             {language === 'ar'
-                                ? 'ميلانو هي المايسترو الذي يدير حركة السياحة في شمال إيطاليا، فهي ليست فقط مركزاً للموضة، بل هي أذكى نقطة انطلاق لبرامج اليوم الواحد بسبب موقعها الاستراتيجي.'
+                                ? (
+                                    <>
+                                        مع ابو فهد هتشوف اللي عمرك ما شوفته
+                                        <br className="my-2" />
+                                        ميلانو هي "المايسترو" الذي يدير حركة السياحة في شمال إيطاليا، فهي ليست فقط مركزاً للموضة، بل هي أذكى نقطة انطلاق لبرامج اليوم الواحد بسبب موقعها الاستراتيجي وارتباطها بشبكة طرق سريعة.
+                                    </>
+                                )
                                 : 'Milan is the "Maestro" of northern Italian tourism. More than just a fashion capital, it is the strategic heart for unforgettable day trips across the region.'}
                         </motion.p>
                     </motion.div>
@@ -110,29 +131,58 @@ export default function DayProgramsClient() {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6 text-right rtl:text-right ltr:text-left">
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
-                                {language === 'ar' ? 'سياحة ميلانو: أناقة وجمال' : 'Milan Tourism: Elegance & Style'}
+                                {language === 'ar' ? 'أولاً: نبذة مختصرة عن سياحة ميلانو' : 'Milan Tourism: Elegance & Style'}
                             </h2>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 {language === 'ar'
-                                    ? 'ميلانو مدينة عملية وأنيقة، يكفيها يومان لاستكشاف معالمها الرئيسية:'
+                                    ? 'ميلانو مدينة "عملية" وأنيقة، يكفيها يومان لاستكشاف معالمها الرئيسية:'
                                     : 'Milan is a practical and elegant city; two days are perfect to explore its main highlights:'}
                             </p>
-                            <div className="grid grid-cols-2 gap-4">
-                                {[
-                                    { ar: 'ساحة الدومو', en: 'Duomo Square' },
-                                    { ar: 'جاليريا إيمانويل', en: 'Galleria Vittorio' },
-                                    { ar: 'منطقة نافيلي', en: 'Navigli Area' },
-                                    { ar: 'قلعة سفورزيسكو', en: 'Sforzesco Castle' }
-                                ].map((item, i) => (
-                                    <div key={i} className="bg-card p-4 rounded-xl border border-border shadow-sm">
-                                        <h4 className="font-bold text-gold">{language === 'ar' ? item.ar : item.en}</h4>
-                                    </div>
-                                ))}
-                            </div>
+                            <ul className="space-y-4 text-muted-foreground list-none">
+                                {language === 'ar' ? (
+                                    <>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>ساحة الدومو (Duomo):</strong> قلب المدينة التاريخي، والسطح البانورامي للكنيسة هو أجمل إطلالة.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>جاليريا فيتوريو إيمانويل:</strong> للتسوق الفاخر والتقاط الصور المعمارية المذهلة.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>منطقة نافيلي (Navigli):</strong> قنوات مائية محاطة بالمقاهي وهي الأجمل في المساء.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>قلعة سفورزيسكو:</strong> متنفس العائلات ومحبي التاريخ.</span>
+                                        </li>
+                                    </>
+                                ) : (
+                                    <>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>Duomo Square:</strong> The historic heart of the city; the panoramic rooftop offers the best view.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>Galleria Vittorio Emanuele:</strong> For luxury shopping and stunning architectural photos.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>Navigli District:</strong> Canals lined with cafes, most beautiful in the evening.</span>
+                                        </li>
+                                        <li className="flex gap-3">
+                                            <span className="text-gold font-bold">•</span>
+                                            <span><strong>Sforzesco Castle:</strong> A haven for families and history lovers.</span>
+                                        </li>
+                                    </>
+                                )}
+                            </ul>
                         </div>
                         <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                             <Image
-                                src="/assets/cities/Milan/milan-1.jpg"
+                                src="/assets/cities/milan/milan-1.jpg"
                                 alt="Milan Duomo"
                                 fill
                                 className="object-cover"
@@ -148,11 +198,11 @@ export default function DayProgramsClient() {
                 <div className="container-luxury space-y-12">
                     <div className="text-center max-w-3xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-                            {language === 'ar' ? 'برامج اليوم الواحد من ميلانو' : 'Day Programs from Milan'}
+                            {language === 'ar' ? 'ثانياً: برامج اليوم الواحد انطلاقاً من ميلانو' : 'Day Programs from Milan'}
                         </h2>
                         <p className="text-muted-foreground">
                             {language === 'ar'
-                                ? 'برامج مصممة لتبدأ صباحاً من ميلانو والعودة في المساء، مثالية مع سائق خاص:'
+                                ? 'هذه البرامج مصممة لتبدأ صباحاً من ميلانو والعودة في المساء، وهي المثالية لتنفيذها مع سائق خاص:'
                                 : 'Optimized itineraries starting from Milan in the morning and returning by evening, ideal for private car tours:'}
                         </p>
                     </div>
@@ -210,10 +260,10 @@ export default function DayProgramsClient() {
                                         <Clock className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <p className="font-bold mb-1">{language === 'ar' ? 'التوقيت المثالي' : 'Best Timing'}</p>
+                                        <p className="font-bold mb-1">{language === 'ar' ? 'ساعات العمل (التوقيت المثالي)' : 'Best Timing'}</p>
                                         <p className="text-xs text-muted-foreground">
                                             {language === 'ar'
-                                                ? 'ابدأ الساعة 10:00 صباحاً والعودة بحلول 7:00 مساءً لتجنب الزحام.'
+                                                ? 'ابدأ رحلتك دائماً الساعة 10:00 صباحاً والعودة بحلول الساعة 7:00 مساءً، لتتجنب زحام الدخول لميلانو وقت الذروة.'
                                                 : 'Start at 10:00 AM and return by 7:00 PM to avoid traffic.'}
                                         </p>
                                     </div>
@@ -223,10 +273,10 @@ export default function DayProgramsClient() {
                                         <Check className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <p className="font-bold mb-1">{language === 'ar' ? 'الخصومات' : 'Discounts'}</p>
+                                        <p className="font-bold mb-1">{language === 'ar' ? 'التوفير (باكيج سعر موحد)' : 'Discounts (Package Price)'}</p>
                                         <p className="text-xs text-muted-foreground">
                                             {language === 'ar'
-                                                ? 'اطلب باكيج سعر موحد عند حجز عدة أيام للحصول على خصم.'
+                                                ? 'إذا كنت ستأخذ سائقاً لعدة أيام، اطلب منه "باكيج" سعر موحد لكل هذه الرحلات للحصول على خصم.'
                                                 : 'Request a package price for multiple days to get a special discount.'}
                                         </p>
                                     </div>

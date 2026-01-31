@@ -364,7 +364,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-primary border-t border-gold/20"
+            className="lg:hidden bg-primary border-t border-gold/20 max-h-[calc(100vh-5rem)] overflow-y-auto"
           >
             <nav className="container-luxury py-6 flex flex-col gap-2">
               {/* Home */}
