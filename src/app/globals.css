@@ -189,8 +189,8 @@
 @layer base {
   :root {
     /* Core palette - Luxury Navy & Gold */
-    --background: 220 15% 94%;
-    --foreground: 220 30% 15%;
+    --background: 194 100% 77%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 30% 15%;
@@ -208,7 +208,7 @@
 
     /* Muted tones */
     --muted: 220 15% 92%;
-    --muted-foreground: 220 15% 45%;
+    --muted-foreground: 0 0% 30%;
 
     /* Accent - Rich Gold */
     --accent: 38 70% 55%;
@@ -300,6 +300,7 @@
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     max-width: 100%;
+    font-weight: 600;
   }
 
   /* Force pointer cursor on all buttons and interactive elements */
@@ -338,7 +339,7 @@
 
   p {
     @apply leading-relaxed;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.1rem;
   }
 }
@@ -542,7 +543,7 @@ html {
 
 @media (max-width: 640px) {
   html {
-    font-size: 125%;
+    font-size: 135%;
     /* Significant increase for mobile readability as requested */
   }
 }

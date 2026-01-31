@@ -65,7 +65,7 @@ const HeroSection = () => {
           </m.div>
 
           {/* Title */}
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 pt-4 pb-2 overflow-visible" style={{ lineHeight: '1.7' }}>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 pt-4 pb-2 overflow-visible" style={{ lineHeight: '1.7' }}>
             <span className="text-gold-gradient overflow-visible inline-block">{t('hero.title')}</span>
           </h1>
 
