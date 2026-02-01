@@ -22,7 +22,7 @@ const HeroSection = () => {
           className="absolute inset-0"
         >
           <Image
-            src="/assets/hero-bg.webp"
+            src="/assets/hero-bg.jpg"
             alt="Luxury car in Rome"
             fill
             className="object-cover"

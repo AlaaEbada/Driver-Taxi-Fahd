@@ -45,7 +45,7 @@ const CTASection: React.FC<{ reviewImages?: string[] }> = ({ reviewImages = [] }
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/assets/hero-bg.webp"
+          src="/assets/hero-bg.jpg"
           alt="Background"
           fill
           className="object-cover"
